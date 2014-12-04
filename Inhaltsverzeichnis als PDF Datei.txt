@@ -1,0 +1,116 @@
+10 - Studienarbeit
+   VorlageWissArbeiten_Mai_2014.docx  // report of project in docx
+   VorlageWissArbeiten_Mai_2014.pdf   // report of project in pdf
+20 - Abblidungen
+   Figure 1-1 Raspberry Pi 4
+   Figure 1-2 the board of Raspberry Pi 5
+   Figure 1-3 Mode A and Mode B 5
+   Figure 1-4 physical structure of FPGAs 6
+   Figure 1-5 the PIF board 7
+   Figure 1-6 the PIF structure 8
+   Figure 2-1 3x3 window 10
+   Figure 2-2 Gaussian kernel 11
+   Figure 2-3 convolution algorithm 11
+   Figure 2-4 sorting algorithm 12
+   Figure 2-5 neural networks 13
+   Figure 2-6 weighs, bias and activation function 14
+   Figure 2-7 sigmoid function 14
+   Figure 3-1 EFB of pif FPGAs 16
+   Figure 3-2 wishbone bus 17
+   Figure 3-3 SPI bus 17
+   Figure 3-4 the master and slave devices 18
+   Figure 3-5 OSCH clock component 18
+   Figure 3-6 dual port ram component 19
+   Figure 4-1 reset component 20
+   Figure 4-2 SPI component 21
+   Figure 4-3 OSCH component 21
+   Figure 4-4 sorting filter main hierarchy 22
+   Figure 4-5 sorting filter component 22
+   Figure 4-6 sorting filter hierarchy 23
+   Figure 4-7 window operator 24
+   Figure 4-8 sorting algorithm implementation 24
+   Figure 4-9 convolution filter main hierarchy 26
+   Figure 4-10 convolution component 27
+   Figure 4-11 convolution algorithm implementation 27
+   Figure 4-12 neural networks architecture 28
+   Figure 4-13 neural networks parameters 29
+   Figure 4-14 receiver component 30
+   Figure 4-15 output component 30
+   Figure 4-16 float_alu component 31
+   Figure 4-17 dual port ram component 31
+   Figure 4-18 load the weight and bias into RAM 32
+   Figure 4-19 MLP neural networks interface 33
+   Figure 4-20 initialization of the neural networks, read inputs from RAM 33
+   Figure 4-21 read bias and weight for each neutron 34
+   Figure 4-22 to the next input neutron or to the activation function 35
+   Figure 4-23 to the next layer or the output layer 36
+   Figure 5-1 the original image and the SPI transferred result 37
+   Figure 5-2 the result of the median filter for FPGAs and OpenCV 38
+   Figure 5-3 the result of Gaussian filter for FPGAs and OpenCV 39
+   Figure 5-4 report of the synthesis tools 41
+   Figure 5-5 patterns for the detection by neural networks 41
+30 - Literatur
+   ( Some of books are not inclued )
+
+   1. Upton E, Halfacree G. Raspberry Pi user guide[M]. John Wiley & Sons, 2013.
+   2. Pi R. FAQs[J]. Raspberry Pi, 2012.
+   3. pif - Raspberry Pi FPGA Board, version 1.0, October 03, 2013, manual.
+   4. Counters B D L, Counters L D, Counters L U, et al. Primitive Library-MachXO2 and Platform Manager 2[J]. FPGA Libraries Reference Guide, 2013: 91.
+   5. TN1199 - MachXO2 sysCLOCK PLL Design and Usage Guide.
+   6. TN1201 - Memory Usage Guide for MachXO2 Devices.
+   7. TN1202 - MachXO2 sysIO Usage Guide.
+   8. TN1204 - MachXO2 Programming and Configuration Usage Guide.
+   9. TN1205 - Using User Flash Memory and Hardened Control Functions in MachXO2 Devices.
+  10. Nelson A E. Implementation of image processing algorithms on FPGA hard-ware[D]. Vanderbilt University, 2000.
+  11. Fro?, A., Markert, E., Lange, R., & Heinkel, U. Entwicklung einer generischen FPGA-Implementierung Neuronaler Netze.
+  12. Zhou, J. L. (2010). Artificial Neural Network DSD Project Final Report.
+  13. Detrey, J., & De Dinechin, F. (2003). A VHDL library of parametrisable floating-point and LNS operators for FPGA. http//www. ens-lyon. fr/~ jdetrey/FPLibrary.
+40 - Anhang
+  Empty
+50 - Programme_Quellcodes
+  source code
+    Hardware                  // code of the hardware system development
+      Firmware                // firmware for the PIF 
+        gaussian_gaussian.jed // gaussian filter
+        median_median.jed     // median filter
+        spi_spi.jed           // spi bus
+      Hardware                // implemenation of VHDL
+        Gaussian              // Gaussian filter
+        Median                // median filter
+        MLP                   // multilayer perceptron neural networks
+      Software                // softare part of the whole system
+        gaussianFilter        // Gaussian filter
+        orderFilter           // median filter
+        spi                   // spi bus
+    Software                  // code of the OpenCV implematation for comparison
+        gaussianFilter        // Gaussian filter
+        orderFilter           // median filter
+        mlp                   // multilayer perceptron neural networks
+60 - Berechnungen
+  Empty
+70 - Vortrag
+  Praesentationen_Qiao_2.pdf  // presentation of the project
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
