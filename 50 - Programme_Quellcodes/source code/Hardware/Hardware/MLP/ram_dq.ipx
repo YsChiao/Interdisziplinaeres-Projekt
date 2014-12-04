@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="ram_dq" module="RAM_DQ" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2014 09 25 00:06:20.406" version="7.2" type="Module" synthesis="synplify" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2014 09 25 00:06:20.298"/>
+		<File name="ram_dq.lpc" type="lpc" modified="2014 09 25 00:06:18.946"/>
+		<File name="ram_dq.vhd" type="top_level_vhdl" modified="2014 09 25 00:06:19.034"/>
+		<File name="ram_dq_tmpl.vhd" type="template_vhdl" modified="2014 09 25 00:06:19.043"/>
+		<File name="tb_ram_dq_tmpl.vhd" type="testbench_vhdl" modified="2014 09 25 00:06:19.053"/>
+  </Package>
+</DiamondModule>

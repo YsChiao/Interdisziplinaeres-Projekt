@@ -1,0 +1,170 @@
+----------------------------------------------------------------------
+Report for cell main.rtl
+
+Register bits: 740 of 6864 (11%)
+PIC Latch:       0
+I/O cells:       6
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        3       100.0
+                              CCU2D      447       100.0
+                              DP8KC        2       100.0
+                                EFB        1       100.0
+                            FD1P3AX      115       100.0
+                            FD1P3BX       31       100.0
+                            FD1P3DX      556       100.0
+                            FD1P3IX       24       100.0
+                            FD1P3JX        2       100.0
+                            FD1S3AX        6       100.0
+                            FD1S3BX        1       100.0
+                            FD1S3DX        4       100.0
+                            FD1S3IX        1       100.0
+                                GSR        1       100.0
+                                 IB        3       100.0
+                                INV       12       100.0
+                           ORCALUT4      399       100.0
+                               OSCH        1       100.0
+                                PUR        1       100.0
+                           SPR16X4C        8       100.0
+                                VHI        7       100.0
+                                VLO        8       100.0
+SUB MODULES 
+                           STD_FIFO        1       100.0
+                         STD_FIFO_0        1       100.0
+                           conv_3x3        1       100.0
+                            efb_spi        1       100.0
+                         rc_counter        1       100.0
+                               spi2        1       100.0
+                         window_3x3        1       100.0
+                            
+                         TOTAL          1640           
+----------------------------------------------------------------------
+Report for cell conv_3x3.netlist
+     Instance path:  con_3x3_0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D      447       100.0
+                              DP8KC        2       100.0
+                            FD1P3AX       94        81.7
+                            FD1P3BX       31       100.0
+                            FD1P3DX      556       100.0
+                            FD1P3IX       24       100.0
+                            FD1P3JX        2       100.0
+                            FD1S3AX        4        66.7
+                            FD1S3BX        1       100.0
+                            FD1S3DX        3        75.0
+                                INV       10        83.3
+                           ORCALUT4      389        97.5
+                           SPR16X4C        8       100.0
+                                VHI        5        71.4
+                                VLO        5        62.5
+SUB MODULES 
+                           STD_FIFO        1       100.0
+                         STD_FIFO_0        1       100.0
+                         rc_counter        1       100.0
+                         window_3x3        1       100.0
+                            
+                         TOTAL          1585           
+----------------------------------------------------------------------
+Report for cell rc_counter.netlist
+     Instance path:  con_3x3_0.rc_counter0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       34         7.6
+                            FD1P3BX       31       100.0
+                            FD1P3DX       96        17.3
+                            FD1S3BX        1       100.0
+                                INV        4        33.3
+                           ORCALUT4       60        15.0
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL           228           
+----------------------------------------------------------------------
+Report for cell window_3x3.netlist
+     Instance path:  con_3x3_0.window_3x3_0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       90        20.1
+                              DP8KC        2       100.0
+                            FD1P3AX       92        80.0
+                            FD1P3DX      170        30.6
+                            FD1P3IX       24       100.0
+                            FD1P3JX        2       100.0
+                            FD1S3AX        3        50.0
+                            FD1S3DX        1        25.0
+                                INV        4        33.3
+                           ORCALUT4      172        43.1
+                                VHI        3        42.9
+                                VLO        3        37.5
+SUB MODULES 
+                           STD_FIFO        1       100.0
+                         STD_FIFO_0        1       100.0
+                            
+                         TOTAL           568           
+----------------------------------------------------------------------
+Report for cell STD_FIFO_0.netlist
+  Original Cell name STD_FIFO
+     Instance path:  con_3x3_0.window_3x3_0.fifo1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       45        10.1
+                              DP8KC        1        50.0
+                            FD1P3AX       46        40.0
+                            FD1P3DX       32         5.8
+                            FD1P3IX       12        50.0
+                            FD1P3JX        1        50.0
+                                INV        2        16.7
+                           ORCALUT4       79        19.8
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL           220           
+----------------------------------------------------------------------
+Report for cell STD_FIFO.netlist
+  Original Cell name STD_FIFO
+     Instance path:  con_3x3_0.window_3x3_0.fifo0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       45        10.1
+                              DP8KC        1        50.0
+                            FD1P3AX       46        40.0
+                            FD1P3DX       32         5.8
+                            FD1P3IX       12        50.0
+                            FD1P3JX        1        50.0
+                                INV        2        16.7
+                           ORCALUT4       81        20.3
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL           222           
+----------------------------------------------------------------------
+Report for cell spi2.netlist
+     Instance path:  spi0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        3       100.0
+                                EFB        1       100.0
+                            FD1P3AX       21        18.3
+                            FD1S3AX        2        33.3
+                            FD1S3IX        1       100.0
+                                INV        2        16.7
+                           ORCALUT4        9         2.3
+                                VHI        1        14.3
+                                VLO        2        25.0
+SUB MODULES 
+                            efb_spi        1       100.0
+                            
+                         TOTAL            43           
+----------------------------------------------------------------------
+Report for cell efb_spi.netlist
+     Instance path:  spi0.efb0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB        3       100.0
+                                EFB        1       100.0
+                                INV        1         8.3
+                                VHI        1        14.3
+                                VLO        1        12.5
+                            
+                         TOTAL             7           

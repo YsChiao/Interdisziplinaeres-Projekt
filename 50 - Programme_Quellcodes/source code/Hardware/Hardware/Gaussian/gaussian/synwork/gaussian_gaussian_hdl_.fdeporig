@@ -1,0 +1,73 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|main|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\Yisong\\Documents\\new\\gaussian\\gaussian\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\bin64\\c_vhdl.exe":1384762852
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\location.map":1384779750
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\std.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\std1164.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\numeric.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1384762728
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\arith.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1376992808
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\gaussian\\conv_3x3.vhd":1409255017
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\gaussian\\conv_3x3_pkg.vhd":1409256374
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\gaussian\\efb_spi.vhd":1410721587
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\gaussian\\main.vhd":1410724358
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\gaussian\\rc_counter.vhd":1405887558
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\gaussian\\reset.vhd":1407092345
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\gaussian\\spi.vhd":1410721694
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\gaussian\\window_3x3.vhd":1409255078
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\gaussian\\std_fifo.vhd":1405613898
+0 "C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd" vhdl
+2 "C:\Users\Yisong\Documents\new\gaussian\conv_3x3_pkg.vhd" vhdl
+3 "C:\Users\Yisong\Documents\new\gaussian\efb_spi.vhd" vhdl
+4 "C:\Users\Yisong\Documents\new\gaussian\main.vhd" vhdl
+5 "C:\Users\Yisong\Documents\new\gaussian\rc_counter.vhd" vhdl
+6 "C:\Users\Yisong\Documents\new\gaussian\reset.vhd" vhdl
+7 "C:\Users\Yisong\Documents\new\gaussian\spi.vhd" vhdl
+8 "C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd" vhdl
+9 "C:\Users\Yisong\Documents\new\gaussian\std_fifo.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 8 5 2 
+2 -1
+3 0 
+4 6 7 1 0 2 
+5 -1
+6 -1
+7 3 
+8 9 
+9 -1
+
+# Dependency Lists (Users Of)
+0 4 3 
+1 4 
+2 4 1 
+3 7 
+4 -1
+5 1 
+6 4 
+7 4 
+8 1 
+9 8 
+
+# Design Unit to File Association
+arch work conv_3x3 rtl 1
+module work conv_3x3 1
+arch work efb_spi structure 3
+module work efb_spi 3
+arch work main rtl 4
+module work main 4
+arch work rc_counter rtl 5
+module work rc_counter 5
+arch work reset rtl 6
+module work reset 6
+arch work spi2 rtl 7
+module work spi2 7
+arch work window_3x3 rtl 8
+module work window_3x3 8
+arch work std_fifo behavioral 9
+module work std_fifo 9

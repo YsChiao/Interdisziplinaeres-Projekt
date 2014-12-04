@@ -1,0 +1,53 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 800R, Built Nov 18 2013 10:58:25
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09L 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\Yisong\Documents\new\mlp\nn\nn_nn_scck.rpt 
+Printing clock  summary report in "C:\Users\Yisong\Documents\new\mlp\nn\nn_nn_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 111MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 111MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 124MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 126MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: BN362 :"c:\users\yisong\documents\new\mlp\output.vhd":39:2:39:3|Removing sequential instance output_done of view:PrimLib.dffre(prim) in hierarchy view:work.output(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\mlp\fp_exp.vhd":851:4:851:5|Removing sequential instance ofl0_a1 of view:PrimLib.dff(prim) in hierarchy view:work.fp_exp_clk(arch) because there are no references to its outputs 
+@N: BN115 :"c:\users\yisong\documents\new\mlp\fp_exp.vhd":599:2:599:10|Removing instance delay_ofl of view:work.delay_1_1_delay_ofl(arch) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\mlp\fp_exp.vhd":293:4:293:5|Removing sequential instance buf[1] of view:PrimLib.dff(prim) in hierarchy view:work.delay_1_1_delay_ofl(arch) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\mlp\receiver.vhd":44:4:44:5|Removing sequential instance count4x_sig[31:0] of view:PrimLib.dffr(prim) in hierarchy view:work.receiver(rtl) because there are no references to its outputs 
+syn_allowed_resources : blockrams=26  set on top level netlist main
+
+
+Clock Summary
+**************
+
+Start                               Requested     Requested     Clock                                          Clock              
+Clock                               Frequency     Period        Type                                           Group              
+----------------------------------------------------------------------------------------------------------------------------------
+System                              1.0 MHz       1000.000      system                                         system_clkgroup    
+main|clk_sig_inferred_clock         1.0 MHz       1000.000      inferred                                       Inferred_clkgroup_0
+output|output_new_derived_clock     1.0 MHz       1000.000      derived (from main|clk_sig_inferred_clock)     Inferred_clkgroup_0
+spi2|new_data_derived_clock         1.0 MHz       1000.000      derived (from main|clk_sig_inferred_clock)     Inferred_clkgroup_0
+==================================================================================================================================
+
+@W: MT529 :"c:\users\yisong\documents\new\mlp\spi.vhd":69:3:69:4|Found inferred clock main|clk_sig_inferred_clock which controls 6055 sequential elements including spi0.write_pending. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 96MB peak: 163MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Tue Sep 30 03:00:59 2014
+
+###########################################################]

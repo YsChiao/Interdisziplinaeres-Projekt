@@ -1,0 +1,4 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN287 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register WriteEn0 with reset has an initial value of 1. Ignoring initial value.  
+@W: BN288 :"c:\users\yisong\documents\new\gaussian\rc_counter.vhd":29:2:29:3|Register col_var[31:0] with set has an initial value of 0. Ignoring initial value.  
+@W: MT529 :"c:\users\yisong\documents\new\gaussian\spi.vhd":69:3:69:4|Found inferred clock main|clk_sig_inferred_clock which controls 26 sequential elements including spi0.write_pending. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

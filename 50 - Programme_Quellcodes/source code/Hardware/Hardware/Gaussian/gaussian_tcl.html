@@ -1,0 +1,108 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn140914220007"></A><B><U><big>pn140914220007</big></U></B>
+#Start recording tcl command: 9/14/2014 21:05:59
+#Project Location: C:/Users/Yisong/Documents/new/gaussian; Project name: gaussian
+prj_project new -name "gaussian" -impl "gaussian" -dev LCMXO2-7000HC-4TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/Yisong/Documents/new/gaussian/conv_3x3.vhd" "C:/Users/Yisong/Documents/new/gaussian/conv_3x3_pkg.vhd" "C:/Users/Yisong/Documents/new/gaussian/conv_3x3_tb.vhd" "C:/Users/Yisong/Documents/new/gaussian/efb_spi.vhd" "C:/Users/Yisong/Documents/new/gaussian/main.vhd" "C:/Users/Yisong/Documents/new/gaussian/main_tb.vhd" "C:/Users/Yisong/Documents/new/gaussian/rc_counter.vhd" "C:/Users/Yisong/Documents/new/gaussian/reset.vhd" "C:/Users/Yisong/Documents/new/gaussian/spi.vhd" "C:/Users/Yisong/Documents/new/gaussian/spi2_tb.vhd" "C:/Users/Yisong/Documents/new/gaussian/window_3x3.vhd"
+prj_src syn_sim -src "C:/Users/Yisong/Documents/new/gaussian/spi2_tb.vhd" SimulateOnly
+prj_src syn_sim -src "C:/Users/Yisong/Documents/new/gaussian/main_tb.vhd" SimulateOnly
+prj_src syn_sim -src "C:/Users/Yisong/Documents/new/gaussian/conv_3x3_tb.vhd" SimulateOnly
+prj_src add "C:/Users/Yisong/Documents/new/gaussian/testbench/testbench.spf"
+prj_src add "C:/Users/Yisong/Documents/new/gaussian/std_fifo.vhd" "C:/Users/Yisong/Documents/new/gaussian/std_fifo_tb.vhd"
+prj_src syn_sim -src "C:/Users/Yisong/Documents/new/gaussian/std_fifo_tb.vhd" SimulateOnly
+prj_run Export -impl gaussian -task Jedecgen
+prj_run Export -impl gaussian -task Jedecgen
+prj_run Export -impl gaussian -task Jedecgen
+prj_run Export -impl gaussian -task Jedecgen
+#Stop recording: 9/14/2014 22:00:07
+
+
+
+<A name="pn140915212322"></A><B><U><big>pn140915212322</big></U></B>
+#Start recording tcl command: 9/15/2014 21:23:20
+#Project Location: C:/Users/Yisong/Documents/new/gaussian; Project name: gaussian
+prj_project open "C:/Users/Yisong/Documents/new/gaussian/gaussian.ldf"
+prj_project close
+#Stop recording: 9/15/2014 21:23:22
+
+
+
+<A name="pn141002170125"></A><B><U><big>pn141002170125</big></U></B>
+#Start recording tcl command: 10/2/2014 15:32:39
+#Project Location: C:/Users/Yisong/Documents/new/gaussian; Project name: gaussian
+prj_project open "C:/Users/Yisong/Documents/new/gaussian/gaussian.ldf"
+prj_project close
+#Stop recording: 10/2/2014 17:01:25
+
+
+
+<A name="pn141003171314"></A><B><U><big>pn141003171314</big></U></B>
+#Start recording tcl command: 10/3/2014 16:51:54
+#Project Location: C:/Users/Yisong/Documents/new/gaussian; Project name: gaussian
+prj_project open "C:/Users/Yisong/Documents/new/gaussian/gaussian.ldf"
+prj_project close
+#Stop recording: 10/3/2014 17:13:14
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

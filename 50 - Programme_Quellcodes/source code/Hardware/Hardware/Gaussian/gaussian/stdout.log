@@ -1,0 +1,99 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\diamond\3.1_x64\synpbase\win64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.1_x64\synpbase
+Date:        Sun Sep 14 21:52:41 2014
+Version:     I-2013.09L 
+
+Arguments:   -product synplify_pro  -batch gaussian_gaussian_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+
+log file: "C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srr"
+
+
+
+
+
+Generating HDL info...
+
+hdl_info_gen Completed
+Return Code: 0
+Run Time:0h:00m:01s
+
+
+Copied C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srr to C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srf
+
+log file: "C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srr"
+
+
+
+
+
+Running proj_1|gaussian
+
+
+Running: Compile on proj_1|gaussian
+
+
+Running: Compile Process on proj_1|gaussian
+
+
+Running: Compile Input on proj_1|gaussian
+
+Copied C:\Users\Yisong\Documents\new\gaussian\gaussian\synwork\gaussian_gaussian_comp.srs to C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srs
+
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:02s
+
+
+Copied C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srr to C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srf
+
+Complete: Compile Process on proj_1|gaussian
+
+
+Running: Premap on proj_1|gaussian
+
+premap Completed with warnings
+Return Code: 1
+Run Time:0h:00m:02s
+
+
+Complete: Compile on proj_1|gaussian
+
+
+Running: Map on proj_1|gaussian
+
+
+Running: Map & Optimize on proj_1|gaussian
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:11s
+
+
+Complete: Map on proj_1|gaussian
+
+Copied C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srr to C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srf
+
+Complete: Logic Synthesis on proj_1|gaussian
+
+TCL script complete: "gaussian_gaussian_synplify.tcl"
+
+exit status=0
+
+
+exit status=0
+
+
+Save changes for project:
+C:\Users\Yisong\Documents\new\gaussian\gaussian\proj_1.prj
+
+batch mode default:no
+

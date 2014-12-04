@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "median_median.log"
+-o "median_median.csv"
+-pr "median_median.prf"

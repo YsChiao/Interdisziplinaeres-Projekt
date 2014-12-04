@@ -1,0 +1,99 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance con_3x3_0.rt1[31:0] 
+@N: FX493 |Applying initial value "00000000" on instance con_3x3_0.a22[7:0] 
+@N: FX493 |Applying initial value "00000000000" on instance con_3x3_0.d0[10:0] 
+@N: FX493 |Applying initial value "00000000" on instance con_3x3_0.m8[7:0] 
+@N: FX493 |Applying initial value "00000000" on instance con_3x3_0.a14[7:0] 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance DataOut_1[10] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance DataOut_1[9] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance DataOut_1[8] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance a40[14] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance a40[13] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance a40[12] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance d0[10] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance d0[9] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance d0[8] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: MF237 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":178:14:178:27|Generating a type rem remainder 
+@N: MF237 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":179:12:179:25|Generating a type rem remainder 
+@N: BN362 :|Removing sequential instance G_30 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_28 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_26 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_24 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_22 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_20 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_18 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_44 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_42 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_40 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_38 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_36 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_34 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_32 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_60 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_58 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_56 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_54 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_52 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_50 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_48 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_46 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_74 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_72 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_70 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_68 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_66 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_64 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_62 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_80 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_78 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_76 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: MF179 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Found 10 bit by 10 bit '==' comparator, 'adreg'
+@N: MF179 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":70:30:70:41|Found 10 bit by 10 bit '==' comparator, 'fifo_proc\.un3_writeen'
+@N: MF179 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":86:8:86:18|Found 10 bit by 10 bit '==' comparator, 'fifo_proc\.un17_head'
+@N: MF179 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":54:29:54:40|Found 10 bit by 10 bit '==' comparator, 'fifo_proc\.un4_readen'
+@N: FA113 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":204:12:204:24|Pipelining module un5_a10[9:1]
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a10[9:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m1[8:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m0[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w12[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w11[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a20[10:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a11[9:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Register memory[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w13[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register a11[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m2[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\spi.vhd":69:3:69:4|Register read_data[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a30[12:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a21[11:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m3[8:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":43:2:43:3|Register DataOut[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w21[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register a21[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a40[14:4] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a31[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a12[10:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a13[9:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w22[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register d0[10:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a22[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m4[9:2] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w23[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a14[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m5[8:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m7[8:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m6[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m8[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w32[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w31[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w33[7:0] pushed in.
+@N: FX404 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":178:14:178:27|Found addmux in view:work.main(rtl) inst con_3x3_0.conv_process\.un3_col_c_if_generate_plus\.mult1_remainder_0[9:0] from con_3x3_0.conv_process\.un3_col_c_if_generate_plus\.mult1_un1_rem_adjust[9:0] 
+@N: FX404 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":179:12:179:25|Found addmux in view:work.main(rtl) inst con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_remainder_0[9:0] from con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un1_rem_adjust[9:0] 
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@N: FO126 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Generating RAM con_3x3_0.row_c_CR31[31:0]
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

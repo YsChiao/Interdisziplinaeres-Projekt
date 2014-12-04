@@ -1,0 +1,75 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|main|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\bin64\\c_vhdl.exe":1384762852
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\location.map":1384779750
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\std.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\std1164.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\numeric.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1384762728
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\arith.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1376992808
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\median\\reset.vhd":1409226569
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\median\\rc_counter.vhd":1405884190
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\median\\sort_3x3.vhd":1405544964
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\median\\std_fifo.vhd":1405613898
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\median\\efb_spi.vhd":1410706427
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\median\\spi.vhd":1410615414
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\median\\window_3x3.vhd":1409252186
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\median\\sort_filter.vhd":1409252259
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\median\\main.vhd":1410809028
+0 "C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\Yisong\Documents\new\median\reset.vhd" vhdl
+2 "C:\Users\Yisong\Documents\new\median\rc_counter.vhd" vhdl
+3 "C:\Users\Yisong\Documents\new\median\sort_3x3.vhd" vhdl
+4 "C:\Users\Yisong\Documents\new\median\std_fifo.vhd" vhdl
+5 "C:\Users\Yisong\Documents\new\median\efb_spi.vhd" vhdl
+6 "C:\Users\Yisong\Documents\new\median\spi.vhd" vhdl
+7 "C:\Users\Yisong\Documents\new\median\window_3x3.vhd" vhdl
+8 "C:\Users\Yisong\Documents\new\median\sort_filter.vhd" vhdl
+9 "C:\Users\Yisong\Documents\new\median\main.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 0 
+6 5 
+7 4 
+8 3 7 2 
+9 1 6 8 0 
+
+# Dependency Lists (Users Of)
+0 9 5 
+1 9 
+2 8 
+3 8 
+4 7 
+5 6 
+6 9 
+7 8 
+8 9 
+9 -1
+
+# Design Unit to File Association
+arch work reset rtl 1
+module work reset 1
+arch work rc_counter rtl 2
+module work rc_counter 2
+arch work sort_3x3 rtl 3
+module work sort_3x3 3
+arch work std_fifo behavioral 4
+module work std_fifo 4
+arch work efb_spi structure 5
+module work efb_spi 5
+arch work spi2 rtl 6
+module work spi2 6
+arch work window_3x3 rtl 7
+module work window_3x3 7
+arch work sort_filter rtl 8
+module work sort_filter 8
+arch work main rtl 9
+module work main 9

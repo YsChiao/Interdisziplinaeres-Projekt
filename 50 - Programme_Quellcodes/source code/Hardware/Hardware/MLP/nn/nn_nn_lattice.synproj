@@ -1,0 +1,53 @@
+-a "MachXO2"
+-d LCMXO2-7000HC
+-t TQFP144
+-s 4
+-frequency 200
+-optimization_goal Balanced
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-use_carry_chain 1
+-carry_chain_length 0
+-force_gsr Auto
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+-mux_style Auto
+-max_fanout 1000
+-fsm_encoding_style Auto
+-twr_paths 3
+-use_io_insertion 1
+-resolve_mixed_drivers 0
+-use_io_reg 1
+
+
+-lpf 0
+-lib "work" -vhd "C:/Users/Yisong/Documents/new/mlp/a_s.vhd"
+"C:/Users/Yisong/Documents/new/mlp/right_shifter.vhd"
+"C:/Users/Yisong/Documents/new/mlp/fp.vhd"
+"C:/Users/Yisong/Documents/new/mlp/fp_add.vhd"
+"C:/Users/Yisong/Documents/new/mlp/fp_div.vhd"
+"C:/Users/Yisong/Documents/new/mlp/fp_exp.vhd"
+"C:/Users/Yisong/Documents/new/mlp/fp_leading_zeros_and_shift.vhd"
+"C:/Users/Yisong/Documents/new/mlp/fp_mul.vhd"
+"C:/Users/Yisong/Documents/new/mlp/spi.vhd"
+"C:/Users/Yisong/Documents/new/mlp/reset.vhd"
+"C:/Users/Yisong/Documents/new/mlp/receiver.vhd"
+"C:/Users/Yisong/Documents/new/mlp/main.vhd"
+"C:/Users/Yisong/Documents/new/mlp/mlp_pkg.vhd"
+"C:/Users/Yisong/Documents/new/mlp/efb_spi.vhd"
+"C:/Users/Yisong/Documents/new/mlp/div_nr_wsticky.vhd"
+"C:/Users/Yisong/Documents/new/mlp/loadWeight.vhd"
+"C:/Users/Yisong/Documents/new/mlp/pr.vhd"
+"C:/Users/Yisong/Documents/new/mlp/sram_dp_true.vhd"
+"C:/Users/Yisong/Documents/new/mlp/ram_dp_true.vhd"
+"C:/Users/Yisong/Documents/new/mlp/test.vhd"
+"C:/Users/Yisong/Documents/new/mlp/output.vhd"
+-top main
+
+
+-p "C:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data" "C:/Users/Yisong/Documents/new/mlp/nn" "C:/Users/Yisong/Documents/new/mlp"
+
+-ngd "nn_nn.ngd"
+

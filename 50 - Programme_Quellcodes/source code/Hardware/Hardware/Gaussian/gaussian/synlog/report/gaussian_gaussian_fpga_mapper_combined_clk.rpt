@@ -1,0 +1,18 @@
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 752 clock pin(s) of sequential element(s)
+0 instances converted, 752 sequential instances remain driven by gated/generated clocks
+
+===================================================================================================== Gated/Generated Clocks ======================================================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance              Explanation                                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       OSC0                OSCH                   740        write_req                    Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       spi0.new_data       FD1P3AX                12         con_3x3_0.row_c_CR31_ram     Need declared clock or clock from port to derive clock from ff                                                                
+===================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

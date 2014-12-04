@@ -1,0 +1,13 @@
+C:\lscc\diamond\3.1_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  C:\Users\Yisong\Documents\new\median\median  -part LCMXO2_7000HC  -package TG144C  -grade -4   -maxfan 1000    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1     -summaryfile C:\Users\Yisong\Documents\new\median\median\synlog\report\median_median_premap.xml -top_level_module  main  -oedif  C:\Users\Yisong\Documents\new\median\median\median_median.edi  -conchk_prepass  C:\Users\Yisong\Documents\new\median\median\median_median_cck_prepass.rpt  -freq 1.000  C:\Users\Yisong\Documents\new\median\median\synwork\median_median_comp.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\Yisong\Documents\new\median\median\synwork\median_median_prem.srd  -devicelib  C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\Users\Yisong\Documents\new\median\median\syntmp\median_median.plg  -osyn  C:\Users\Yisong\Documents\new\median\median\synwork\median_median_prem.srd  -prjdir  C:\Users\Yisong\Documents\new\median\median\  -prjname  proj_1  -log  C:\Users\Yisong\Documents\new\median\median\synlog\median_median_premap.srr 
+rc:1 success:1
+C:\Users\Yisong\Documents\new\median\median\median_median.edi|o|1410721203|1642194
+C:\Users\Yisong\Documents\new\median\median\median_median_cck_prepass.rpt|o|0|0
+C:\Users\Yisong\Documents\new\median\median\synwork\median_median_comp.srs|i|1410809049|38828
+C:\Users\Yisong\Documents\new\median\median\synwork\median_median_prem.srd|o|1410809052|63555
+C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\machxo2.v|i|1384764868|51625
+C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\pmi_def.v|i|1389790098|39417
+C:\Users\Yisong\Documents\new\median\median\syntmp\median_median.plg|o|1410809051|0
+C:\Users\Yisong\Documents\new\median\median\synwork\median_median_prem.srd|o|1410809052|63555
+C:\Users\Yisong\Documents\new\median\median\synlog\median_median_premap.srr|o|1410809052|41777
+C:\lscc\diamond\3.1_x64\synpbase\bin64\m_gen_lattice.exe|i|1384769014|24035840
+C:\lscc\diamond\3.1_x64\synpbase\bin\m_gen_lattice.exe|i|1384766282|20549632

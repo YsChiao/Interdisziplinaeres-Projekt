@@ -1,0 +1,16 @@
+C:\lscc\diamond\3.1_x64\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\Yisong\Documents\new\median\median\synwork\median_median_hdl_.srs  -top  main  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -divnmod -encrypt  -pro  -dmgen  C:\Users\Yisong\Documents\new\median\median\dm  -lite   -ui -fid2 -ram -sharing on  -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\Yisong\Documents\new\median\main.vhd -lib work C:\Users\Yisong\Documents\new\median\reset.vhd -lib work C:\Users\Yisong\Documents\new\median\spi.vhd -lib work C:\Users\Yisong\Documents\new\median\efb_spi.vhd -lib work C:\Users\Yisong\Documents\new\median\rc_counter.vhd -lib work C:\Users\Yisong\Documents\new\median\sort_3x3.vhd -lib work C:\Users\Yisong\Documents\new\median\sort_filter.vhd -lib work C:\Users\Yisong\Documents\new\median\std_fifo.vhd -lib work C:\Users\Yisong\Documents\new\median\window_3x3.vhd -loga  C:\Users\Yisong\Documents\new\median\median\syntax.log  -fileorder  C:\Users\Yisong\Documents\new\median\median\syntmp\hdlorder.tcl 
+rc:0 success:1
+C:\Users\Yisong\Documents\new\median\median\synwork\median_median_hdl_.srs|o|0|0
+C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd|i|1376992808|73964
+C:\Users\Yisong\Documents\new\median\main.vhd|i|1410809028|4117
+C:\Users\Yisong\Documents\new\median\reset.vhd|i|1409226569|349
+C:\Users\Yisong\Documents\new\median\spi.vhd|i|1410615414|3422
+C:\Users\Yisong\Documents\new\median\efb_spi.vhd|i|1410706427|11758
+C:\Users\Yisong\Documents\new\median\rc_counter.vhd|i|1405884190|860
+C:\Users\Yisong\Documents\new\median\sort_3x3.vhd|i|1405544964|17982
+C:\Users\Yisong\Documents\new\median\sort_filter.vhd|i|1409252259|6456
+C:\Users\Yisong\Documents\new\median\std_fifo.vhd|i|1405613898|3148
+C:\Users\Yisong\Documents\new\median\window_3x3.vhd|i|1409252186|5610
+C:\Users\Yisong\Documents\new\median\median\syntax.log|o|1410809044|1079
+C:\lscc\diamond\3.1_x64\synpbase\bin64\c_vhdl.exe|i|1384762852|5457920
+C:\lscc\diamond\3.1_x64\synpbase\bin\c_vhdl.exe|i|1384762654|1978368

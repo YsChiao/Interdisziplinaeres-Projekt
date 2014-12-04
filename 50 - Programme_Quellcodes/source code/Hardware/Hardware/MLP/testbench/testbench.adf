@@ -1,0 +1,105 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+testbench=.\testbench\testbench.lib
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+testbench=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\mlp_pkg.vhd=-1
+/..\..\output.vhd=-1
+/..\..\pr.vhd=-1
+/..\..\test.vhd=-1
+/..\..\loadWeight.vhd=-1
+/..\..\ram_dp_true.vhd=-1
+/..\..\sram_dp_true.vhd=-1
+/..\..\receiver.vhd=-1
+/..\..\fp_exp.vhd=-1
+/..\..\a_s.vhd=-1
+/..\..\div_nr_wsticky.vhd=-1
+/..\..\fp_div.vhd=-1
+/..\..\fp_mul.vhd=-1
+/..\..\fp_leading_zeros_and_shift.vhd=-1
+/..\..\right_shifter.vhd=-1
+/..\..\fp_add.vhd=-1
+/..\..\fp.vhd=-1
+/..\..\efb_spi.vhd=-1
+/..\..\spi.vhd=-1
+/..\..\reset.vhd=-1
+/..\..\main.vhd=-1
+/..\..\output_tb.vhd=-1
+/..\..\fp_add_tb.vhd=-1
+/..\..\fp_div_tb.vhd=-1
+/..\..\fp_exp_clk_tb.vhd=-1
+/..\..\spi2_tb.vhd=-1
+/..\..\main_tb.vhd=-1
+/..\..\fp_exp_tb.vhd=-1
+/..\..\fp_mul_tb.vhd=-1
+/..\..\receiver_tb.vhd=-1
+/..\..\sram_dp_tb.vhd=-1
+[Files.Data]
+.\..\mlp_pkg.vhd=VHDL Source Code
+.\..\output.vhd=VHDL Source Code
+.\..\pr.vhd=VHDL Source Code
+.\..\test.vhd=VHDL Source Code
+.\..\loadWeight.vhd=VHDL Source Code
+.\..\ram_dp_true.vhd=VHDL Source Code
+.\..\sram_dp_true.vhd=VHDL Source Code
+.\..\receiver.vhd=VHDL Source Code
+.\..\fp_exp.vhd=VHDL Source Code
+.\..\a_s.vhd=VHDL Source Code
+.\..\div_nr_wsticky.vhd=VHDL Source Code
+.\..\fp_div.vhd=VHDL Source Code
+.\..\fp_mul.vhd=VHDL Source Code
+.\..\fp_leading_zeros_and_shift.vhd=VHDL Source Code
+.\..\right_shifter.vhd=VHDL Source Code
+.\..\fp_add.vhd=VHDL Source Code
+.\..\fp.vhd=VHDL Source Code
+.\..\efb_spi.vhd=VHDL Source Code
+.\..\spi.vhd=VHDL Source Code
+.\..\reset.vhd=VHDL Source Code
+.\..\main.vhd=VHDL Source Code
+.\..\output_tb.vhd=VHDL Source Code
+.\..\fp_add_tb.vhd=VHDL Source Code
+.\..\fp_div_tb.vhd=VHDL Source Code
+.\..\fp_exp_clk_tb.vhd=VHDL Source Code
+.\..\spi2_tb.vhd=VHDL Source Code
+.\..\main_tb.vhd=VHDL Source Code
+.\..\fp_exp_tb.vhd=VHDL Source Code
+.\..\fp_mul_tb.vhd=VHDL Source Code
+.\..\receiver_tb.vhd=VHDL Source Code
+.\..\sram_dp_tb.vhd=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=testbench|behavior|0 
+ShowHide=ShowTopLevel
+Selected=

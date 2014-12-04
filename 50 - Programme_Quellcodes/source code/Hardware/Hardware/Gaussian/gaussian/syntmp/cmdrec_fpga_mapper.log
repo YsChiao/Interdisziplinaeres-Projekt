@@ -1,0 +1,11 @@
+C:\lscc\diamond\3.1_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  C:\Users\Yisong\Documents\new\gaussian\gaussian  -part LCMXO2_7000HC  -package TG144C  -grade -4   -maxfan 1000    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1     -summaryfile C:\Users\Yisong\Documents\new\gaussian\gaussian\synlog\report\gaussian_gaussian_fpga_mapper.xml -top_level_module  main  -flow mapping  -oedif  C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.edi  -freq 1.000  C:\Users\Yisong\Documents\new\gaussian\gaussian\synwork\gaussian_gaussian_prem.srd  -devicelib  C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\Users\Yisong\Documents\new\gaussian\gaussian\syntmp\gaussian_gaussian.plg  -osyn  C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srm  -prjdir  C:\Users\Yisong\Documents\new\gaussian\gaussian\  -prjname  proj_1  -log  C:\Users\Yisong\Documents\new\gaussian\gaussian\synlog\gaussian_gaussian_fpga_mapper.srr 
+rc:1 success:1
+C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.edi|o|1410724375|1291711
+C:\Users\Yisong\Documents\new\gaussian\gaussian\synwork\gaussian_gaussian_prem.srd|i|1410724365|50874
+C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\machxo2.v|i|1384764868|51625
+C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\pmi_def.v|i|1389790098|39417
+C:\Users\Yisong\Documents\new\gaussian\gaussian\syntmp\gaussian_gaussian.plg|o|1410724376|2151
+C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srm|o|1410724374|182294
+C:\Users\Yisong\Documents\new\gaussian\gaussian\synlog\gaussian_gaussian_fpga_mapper.srr|o|1410724376|87557
+C:\lscc\diamond\3.1_x64\synpbase\bin64\m_gen_lattice.exe|i|1384769014|24035840
+C:\lscc\diamond\3.1_x64\synpbase\bin\m_gen_lattice.exe|i|1384766282|20549632

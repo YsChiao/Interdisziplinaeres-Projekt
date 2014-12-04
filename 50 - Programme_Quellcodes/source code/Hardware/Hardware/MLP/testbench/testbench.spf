@@ -1,0 +1,37 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="testbench" simType="Active-HDL">
+    <Source worklib="work" path="mlp_pkg.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="output.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="pr.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="test.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="loadWeight.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="ram_dp_true.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="sram_dp_true.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="receiver.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_exp.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="a_s.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="div_nr_wsticky.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_div.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_mul.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_leading_zeros_and_shift.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="right_shifter.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_add.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="efb_spi.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="spi.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="reset.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="main.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="output_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_add_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_div_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_exp_clk_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="spi2_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="main_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_exp_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="fp_mul_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="receiver_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="sram_dp_tb.vhd" type="VHDL" include="none"/>
+    <SimLib value="pmi_work ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VHDL" name="testbench"/>
+</BaliSimProject>

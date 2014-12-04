@@ -1,0 +1,5 @@
+#Start recording tcl command: 9/15/2014 21:23:20
+#Project Location: C:/Users/Yisong/Documents/new/gaussian; Project name: gaussian
+prj_project open "C:/Users/Yisong/Documents/new/gaussian/gaussian.ldf"
+prj_project close
+#Stop recording: 9/15/2014 21:23:22

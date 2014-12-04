@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.0" title="gaussian" device="LCMXO2-7000HC-4TG144C" default_implementation="gaussian">
+    <Options/>
+    <Implementation title="gaussian" dir="gaussian" description="gaussian" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="main"/>
+        <Source name="conv_3x3.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="conv_3x3_pkg.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="conv_3x3_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="efb_spi.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="main.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="main"/>
+        </Source>
+        <Source name="main_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="rc_counter.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="reset.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="spi.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="spi2_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="window_3x3.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="std_fifo.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="std_fifo_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="gaussian.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="testbench/testbench.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="gaussian1.sty"/>
+</BaliProject>

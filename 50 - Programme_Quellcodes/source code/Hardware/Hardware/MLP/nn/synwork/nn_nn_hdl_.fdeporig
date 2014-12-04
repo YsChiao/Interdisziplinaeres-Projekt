@@ -1,0 +1,284 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|main|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-divnmod|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\Yisong\\Documents\\new\\mlp\\nn\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\bin64\\c_vhdl.exe":1384762852
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\location.map":1384779750
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\std.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\std1164.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\numeric.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1384762728
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\arith.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1384762480
+#CUR:"C:\\lscc\\diamond\\3.1_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1376992808
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\a_s.vhd":1404208796
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\right_shifter.vhd":1404208798
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\fp.vhd":1411466686
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\fp_add.vhd":1404208798
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\fp_div.vhd":1404208798
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\fp_exp.vhd":1407881087
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\fp_leading_zeros_and_shift.vhd":1404208798
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\fp_mul.vhd":1404208798
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\spi.vhd":1410615414
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\reset.vhd":1409226569
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\receiver.vhd":1410887336
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\main.vhd":1412034109
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\mlp_pkg.vhd":1412038383
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\efb_spi.vhd":1410808935
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\div_nr_wsticky.vhd":1404208798
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\loadWeight.vhd":1411775757
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\pr.vhd":1411603951
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\sram_dp_true.vhd":1411601106
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\ram_dp_true.vhd":1411484585
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\test.vhd":1412033773
+#CUR:"C:\\Users\\Yisong\\Documents\\new\\mlp\\output.vhd":1411784171
+0 "C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\Yisong\Documents\new\mlp\a_s.vhd" vhdl
+2 "C:\Users\Yisong\Documents\new\mlp\right_shifter.vhd" vhdl
+3 "C:\Users\Yisong\Documents\new\mlp\fp.vhd" vhdl
+4 "C:\Users\Yisong\Documents\new\mlp\fp_add.vhd" vhdl
+5 "C:\Users\Yisong\Documents\new\mlp\fp_div.vhd" vhdl
+6 "C:\Users\Yisong\Documents\new\mlp\fp_exp.vhd" vhdl
+7 "C:\Users\Yisong\Documents\new\mlp\fp_leading_zeros_and_shift.vhd" vhdl
+8 "C:\Users\Yisong\Documents\new\mlp\fp_mul.vhd" vhdl
+9 "C:\Users\Yisong\Documents\new\mlp\spi.vhd" vhdl
+10 "C:\Users\Yisong\Documents\new\mlp\reset.vhd" vhdl
+11 "C:\Users\Yisong\Documents\new\mlp\receiver.vhd" vhdl
+12 "C:\Users\Yisong\Documents\new\mlp\main.vhd" vhdl
+13 "C:\Users\Yisong\Documents\new\mlp\mlp_pkg.vhd" vhdl
+14 "C:\Users\Yisong\Documents\new\mlp\efb_spi.vhd" vhdl
+15 "C:\Users\Yisong\Documents\new\mlp\div_nr_wsticky.vhd" vhdl
+16 "C:\Users\Yisong\Documents\new\mlp\loadWeight.vhd" vhdl
+17 "C:\Users\Yisong\Documents\new\mlp\pr.vhd" vhdl
+18 "C:\Users\Yisong\Documents\new\mlp\sram_dp_true.vhd" vhdl
+19 "C:\Users\Yisong\Documents\new\mlp\ram_dp_true.vhd" vhdl
+20 "C:\Users\Yisong\Documents\new\mlp\test.vhd" vhdl
+21 "C:\Users\Yisong\Documents\new\mlp\output.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 4 8 5 6 
+4 2 7 
+5 15 
+6 -1
+7 -1
+8 -1
+9 14 
+10 -1
+11 -1
+12 10 9 11 16 17 21 0 20 18 3 13 
+13 -1
+14 0 
+15 1 
+16 3 18 
+17 13 3 18 20 
+18 19 
+19 0 
+20 3 18 13 
+21 13 3 
+
+# Dependency Lists (Users Of)
+0 19 14 12 
+1 15 
+2 4 
+3 21 20 17 16 12 
+4 3 
+5 3 
+6 3 
+7 4 
+8 3 
+9 12 
+10 12 
+11 12 
+12 -1
+13 21 20 17 12 
+14 9 
+15 5 
+16 12 
+17 12 
+18 20 17 16 12 
+19 18 
+20 17 12 
+21 12 
+
+# Design Unit to File Association
+arch work a_s a_s_cel_arch 1
+module work a_s 1
+arch work right_shifter behavioral 2
+module work right_shifter 2
+arch work float_alu rtl 3
+module work float_alu 3
+arch work fp_add behavioral 4
+module work fp_add 4
+arch work fp_div behavioral 5
+module work fp_div 5
+arch work fp_exp_exp_y2_clk arch 6
+module work fp_exp_exp_y2_clk 6
+arch work fp_exp_exp_y2 arch 6
+module work fp_exp_exp_y2 6
+arch work fp_exp_exp_y2_23_clk arch 6
+module work fp_exp_exp_y2_23_clk 6
+arch work fp_exp_exp_y2_23 arch 6
+module work fp_exp_exp_y2_23 6
+arch work fp_exp_exp_y2_23_t1_clk arch 6
+module work fp_exp_exp_y2_23_t1_clk 6
+arch work fp_exp_exp_y2_23_t1 arch 6
+module work fp_exp_exp_y2_23_t1 6
+arch work fp_exp_exp_y2_23_t1_t1 arch 6
+module work fp_exp_exp_y2_23_t1_t1 6
+arch work fp_exp_exp_y2_23_t1_pow arch 6
+module work fp_exp_exp_y2_23_t1_pow 6
+arch work fp_exp_exp_y2_23_t0 arch 6
+module work fp_exp_exp_y2_23_t0 6
+arch work fp_exp_exp_y2_22_clk arch 6
+module work fp_exp_exp_y2_22_clk 6
+arch work fp_exp_exp_y2_22 arch 6
+module work fp_exp_exp_y2_22 6
+arch work fp_exp_exp_y2_22_t1_clk arch 6
+module work fp_exp_exp_y2_22_t1_clk 6
+arch work fp_exp_exp_y2_22_t1 arch 6
+module work fp_exp_exp_y2_22_t1 6
+arch work fp_exp_exp_y2_22_t1_t2 arch 6
+module work fp_exp_exp_y2_22_t1_t2 6
+arch work fp_exp_exp_y2_22_t1_t1 arch 6
+module work fp_exp_exp_y2_22_t1_t1 6
+arch work fp_exp_exp_y2_22_t1_pow arch 6
+module work fp_exp_exp_y2_22_t1_pow 6
+arch work fp_exp_exp_y2_22_t0 arch 6
+module work fp_exp_exp_y2_22_t0 6
+arch work fp_exp_exp_y2_21_clk arch 6
+module work fp_exp_exp_y2_21_clk 6
+arch work fp_exp_exp_y2_21 arch 6
+module work fp_exp_exp_y2_21 6
+arch work fp_exp_exp_y2_21_t1_clk arch 6
+module work fp_exp_exp_y2_21_t1_clk 6
+arch work fp_exp_exp_y2_21_t1 arch 6
+module work fp_exp_exp_y2_21_t1 6
+arch work fp_exp_exp_y2_21_t1_t1 arch 6
+module work fp_exp_exp_y2_21_t1_t1 6
+arch work fp_exp_exp_y2_21_t1_pow arch 6
+module work fp_exp_exp_y2_21_t1_pow 6
+arch work fp_exp_exp_y2_21_t0 arch 6
+module work fp_exp_exp_y2_21_t0 6
+arch work fp_exp_exp_y2_20_clk arch 6
+module work fp_exp_exp_y2_20_clk 6
+arch work fp_exp_exp_y2_20 arch 6
+module work fp_exp_exp_y2_20 6
+arch work fp_exp_exp_y2_20_t1_clk arch 6
+module work fp_exp_exp_y2_20_t1_clk 6
+arch work fp_exp_exp_y2_20_t1 arch 6
+module work fp_exp_exp_y2_20_t1 6
+arch work fp_exp_exp_y2_20_t1_t1 arch 6
+module work fp_exp_exp_y2_20_t1_t1 6
+arch work fp_exp_exp_y2_20_t1_pow arch 6
+module work fp_exp_exp_y2_20_t1_pow 6
+arch work fp_exp_exp_y2_20_t0 arch 6
+module work fp_exp_exp_y2_20_t0 6
+arch work fp_exp_exp_y2_19 arch 6
+module work fp_exp_exp_y2_19 6
+arch work fp_exp_exp_y2_18 arch 6
+module work fp_exp_exp_y2_18 6
+arch work fp_exp_exp_y2_17 arch 6
+module work fp_exp_exp_y2_17 6
+arch work fp_exp_exp_y2_16 arch 6
+module work fp_exp_exp_y2_16 6
+arch work fp_exp_exp_y2_15 arch 6
+module work fp_exp_exp_y2_15 6
+arch work fp_exp_exp_y2_14 arch 6
+module work fp_exp_exp_y2_14 6
+arch work fp_exp_exp_y2_13 arch 6
+module work fp_exp_exp_y2_13 6
+arch work fp_exp_exp_y2_12 arch 6
+module work fp_exp_exp_y2_12 6
+arch work fp_exp_exp_y2_11 arch 6
+module work fp_exp_exp_y2_11 6
+arch work fp_exp_exp_y2_10 arch 6
+module work fp_exp_exp_y2_10 6
+arch work fp_exp_exp_y2_9 arch 6
+module work fp_exp_exp_y2_9 6
+arch work fp_exp_exp_y2_8 arch 6
+module work fp_exp_exp_y2_8 6
+arch work fp_exp_exp_y2_7 arch 6
+module work fp_exp_exp_y2_7 6
+arch work fp_exp_exp_y2_6 arch 6
+module work fp_exp_exp_y2_6 6
+arch work fp_exp_exp_y1 arch 6
+module work fp_exp_exp_y1 6
+arch work fp_exp_exp_y1_23 arch 6
+module work fp_exp_exp_y1_23 6
+arch work fp_exp_exp_y1_22 arch 6
+module work fp_exp_exp_y1_22 6
+arch work fp_exp_exp_y1_21 arch 6
+module work fp_exp_exp_y1_21 6
+arch work fp_exp_exp_y1_20 arch 6
+module work fp_exp_exp_y1_20 6
+arch work fp_exp_exp_y1_19 arch 6
+module work fp_exp_exp_y1_19 6
+arch work fp_exp_exp_y1_18 arch 6
+module work fp_exp_exp_y1_18 6
+arch work fp_exp_exp_y1_17 arch 6
+module work fp_exp_exp_y1_17 6
+arch work fp_exp_exp_y1_16 arch 6
+module work fp_exp_exp_y1_16 6
+arch work fp_exp_exp_y1_15 arch 6
+module work fp_exp_exp_y1_15 6
+arch work fp_exp_exp_y1_14 arch 6
+module work fp_exp_exp_y1_14 6
+arch work fp_exp_exp_y1_13 arch 6
+module work fp_exp_exp_y1_13 6
+arch work fp_exp_exp_y1_12 arch 6
+module work fp_exp_exp_y1_12 6
+arch work fp_exp_exp_y1_11 arch 6
+module work fp_exp_exp_y1_11 6
+arch work fp_exp_exp_y1_10 arch 6
+module work fp_exp_exp_y1_10 6
+arch work fp_exp_exp_y1_9 arch 6
+module work fp_exp_exp_y1_9 6
+arch work fp_exp_exp_y1_8 arch 6
+module work fp_exp_exp_y1_8 6
+arch work fp_exp_exp_y1_7 arch 6
+module work fp_exp_exp_y1_7 6
+arch work fp_exp_exp_y1_6 arch 6
+module work fp_exp_exp_y1_6 6
+arch work fp_exp_clk arch 6
+module work fp_exp_clk 6
+arch work fp_exp arch 6
+module work fp_exp 6
+arch work fp_exp_shift_clk arch 6
+module work fp_exp_shift_clk 6
+arch work fp_exp_shift arch 6
+module work fp_exp_shift 6
+arch work mult_clk arch 6
+module work mult_clk 6
+arch work delay arch 6
+module work delay 6
+arch work fp_leading_zeros_and_shift behavioral 7
+module work fp_leading_zeros_and_shift 7
+arch work fp_mul one_cycle 8
+module work fp_mul 8
+arch work spi2 rtl 9
+module work spi2 9
+arch work reset rtl 10
+module work reset 10
+arch work receiver rtl 11
+module work receiver 11
+arch work main rtl 12
+module work main 12
+arch work efb_spi structure 14
+module work efb_spi 14
+arch work div_nr_wsticky div_arch 15
+module work div_nr_wsticky 15
+arch work loadweight rtl 16
+module work loadweight 16
+arch work pr rtl 17
+module work pr 17
+arch work sram_dp rtl 18
+module work sram_dp 18
+config work structure_con 19
+arch work ram_dp_true structure 19
+module work ram_dp_true 19
+arch work test rtl 20
+module work test 20
+arch work output rtl 21
+module work output 21

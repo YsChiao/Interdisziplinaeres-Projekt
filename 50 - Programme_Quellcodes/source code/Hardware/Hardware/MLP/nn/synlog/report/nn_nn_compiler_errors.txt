@@ -1,0 +1,13 @@
+@E: CD428 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":24:26:24:27|Duplicate definition of package pkg_fp_exp_exp_y2
+@E: CD420 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":140:11:140:11|Expecting package name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":151:23:151:24|duplicate entity name fp_exp_exp_y2_6
+@E: CD557 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":154:10:154:10|Expecting entity name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":181:23:181:24|duplicate entity name fp_exp_exp_y2_7
+@E: CD557 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":184:10:184:10|Expecting entity name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":219:23:219:24|duplicate entity name fp_exp_exp_y2_8
+@E: CD557 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":222:10:222:10|Expecting entity name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":273:23:273:24|duplicate entity name fp_exp_exp_y2_9
+@E: CD557 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":276:10:276:10|Expecting entity name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":311:24:311:25|duplicate entity name fp_exp_exp_y2_10
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y2.vhd":311:24:311:25|Too many errors - aborting.
+

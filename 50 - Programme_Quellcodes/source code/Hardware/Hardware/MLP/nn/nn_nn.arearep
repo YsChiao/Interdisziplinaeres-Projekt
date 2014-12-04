@@ -1,0 +1,804 @@
+----------------------------------------------------------------------
+Report for cell main.rtl
+Register bits:  2842 of 5148 (55.206%)
+I/O cells:      6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2        15          100.0
+                                 BB         3          100.0
+                              CCU2D      1343          100.0
+                              DP8KC        16          100.0
+                           DPR16X4C         8          100.0
+                                EFB         1          100.0
+                             FADD2B       204          100.0
+                            FD1P3AX       945          100.0
+                            FD1P3BX         4          100.0
+                            FD1P3DX       180          100.0
+                            FD1P3IX       428          100.0
+                            FD1P3JX        42          100.0
+                             FD1S1A         8          100.0
+                            FD1S3AX      1139          100.0
+                            FD1S3BX         1          100.0
+                            FD1S3DX        62          100.0
+                            FD1S3IX        31          100.0
+                            FD1S3JX         2          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                            L6MUX21         1          100.0
+                               LUT4      3442          100.0
+                              MULT2       155          100.0
+                                ND2        12          100.0
+                               OSCH         1          100.0
+                            PDPW8KC         2          100.0
+                              PFUMX       271          100.0
+                           ROM64X1A         3          100.0
+SUB MODULES
+                            a_s(24)         1
+                         a_s(24)_U0         1
+                         a_s(24)_U1         1
+                        a_s(24)_U10         1
+                        a_s(24)_U11         1
+                        a_s(24)_U12         1
+                        a_s(24)_U13         1
+                        a_s(24)_U14         1
+                        a_s(24)_U15         1
+                        a_s(24)_U16         1
+                        a_s(24)_U17         1
+                        a_s(24)_U18         1
+                        a_s(24)_U19         1
+                         a_s(24)_U2         1
+                        a_s(24)_U20         1
+                        a_s(24)_U21         1
+                        a_s(24)_U22         1
+                        a_s(24)_U23         1
+                        a_s(24)_U24         1
+                         a_s(24)_U3         1
+                         a_s(24)_U4         1
+                         a_s(24)_U5         1
+                         a_s(24)_U6         1
+                         a_s(24)_U7         1
+                         a_s(24)_U8         1
+                         a_s(24)_U9         1
+                         delay(1,1)         1
+                        delay(22,1)         1
+                        delay(28,3)         1
+                    delay(28,3)_U25         1
+                       delay(34,14)         1
+                        delay(36,2)         1
+                        delay(36,4)         1
+                        delay(9,10)         1
+              div_nr_wsticky(24,27)         1
+                          float_alu         1
+                    fp_add(32,24,8)         1
+                fp_add(32,24,8)_U28         1
+                    fp_div(32,24,8)         1
+                   fp_exp_clk(8,23)         1
+                  fp_exp_exp_y1(23)         1
+                   fp_exp_exp_y1_23         1
+               fp_exp_exp_y2_23_clk         1
+            fp_exp_exp_y2_23_t1_clk         1
+              fp_exp_exp_y2_clk(23)         1
+             fp_exp_shift_clk(8,23)         1
+ fp_leading_zeros_and_shift(27,8,4)         1
+fp_leading_zeros_and_shift(27,8,4)_U26         1
+                    fp_mul(32,24,8)         1
+                         loadWeight         1
+     mult_clk(12,10,true,false,0,3)         1
+    mult_clk(28,22,false,false,0,2)         1
+      mult_clk(8,6,false,false,1,3)         1
+     mult_clk(9,35,true,false,-1,2)         1
+                             output         1
+                                 pr         1
+                        ram_dp_true         1
+                           receiver         1
+              right_shifter(27,8,4)         1
+          right_shifter(27,8,4)_U27         1
+                               spi2         1
+                            sram_dp         1
+                               test         1
+                              TOTAL      8386
+----------------------------------------------------------------------
+Report for cell output.v1
+Instance Path : output0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        16            1.2
+                            FD1P3AX        32            3.4
+                            FD1P3BX         1           25.0
+                            FD1P3DX        46           25.6
+                               LUT4        66            1.9
+                              PFUMX         8            3.0
+                              TOTAL       169
+----------------------------------------------------------------------
+Report for cell loadWeight.v1
+Instance Path : loadWeight0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            1.3
+                            FD1P3AX        44            4.7
+                            FD1P3DX         3            1.7
+                            FD1P3IX        32            7.5
+                            FD1S3BX         1          100.0
+                            FD1S3DX         2            3.2
+                               LUT4        24            0.7
+                              TOTAL       123
+----------------------------------------------------------------------
+Report for cell receiver.v1
+Instance Path : receiver0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17            1.3
+                            FD1P3DX        64           35.6
+                            FD1S3DX        32           51.6
+                               LUT4        52            1.5
+                              TOTAL       165
+----------------------------------------------------------------------
+Report for cell spi2.v1
+Instance Path : spi0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                EFB         1          100.0
+                            FD1P3AX        10            1.1
+                            FD1P3IX         9            2.1
+                            FD1P3JX         2            4.8
+                            FD1S3AX         2            0.2
+                            FD1S3IX         2            6.5
+                            FD1S3JX         1           50.0
+                               LUT4        19            0.6
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell pr.v1
+Instance Path : pr0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         1           25.0
+                            FD1P3DX         3            1.7
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell float_alu.v1
+Instance Path : float_alu0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D      1092           81.3
+                            FD1P3AX       337           35.7
+                            FD1P3BX         1           25.0
+                            FD1P3DX        10            5.6
+                            FD1P3IX       185           43.2
+                            FD1P3JX        36           85.7
+                            FD1S3AX      1130           99.2
+                            FD1S3DX        27           43.5
+                            FD1S3IX        29           93.5
+                            FD1S3JX         1           50.0
+                            L6MUX21         1          100.0
+                               LUT4      1863           54.1
+                            PDPW8KC         2          100.0
+                              PFUMX       167           61.6
+                           ROM64X1A         3          100.0
+SUB MODULES
+                            a_s(24)         1
+                         a_s(24)_U0         1
+                         a_s(24)_U1         1
+                        a_s(24)_U10         1
+                        a_s(24)_U11         1
+                        a_s(24)_U12         1
+                        a_s(24)_U13         1
+                        a_s(24)_U14         1
+                        a_s(24)_U15         1
+                        a_s(24)_U16         1
+                        a_s(24)_U17         1
+                        a_s(24)_U18         1
+                        a_s(24)_U19         1
+                         a_s(24)_U2         1
+                        a_s(24)_U20         1
+                        a_s(24)_U21         1
+                        a_s(24)_U22         1
+                        a_s(24)_U23         1
+                        a_s(24)_U24         1
+                         a_s(24)_U3         1
+                         a_s(24)_U4         1
+                         a_s(24)_U5         1
+                         a_s(24)_U6         1
+                         a_s(24)_U7         1
+                         a_s(24)_U8         1
+                         a_s(24)_U9         1
+                         delay(1,1)         1
+                        delay(22,1)         1
+                        delay(28,3)         1
+                    delay(28,3)_U25         1
+                       delay(34,14)         1
+                        delay(36,2)         1
+                        delay(36,4)         1
+                        delay(9,10)         1
+              div_nr_wsticky(24,27)         1
+                    fp_add(32,24,8)         1
+                fp_add(32,24,8)_U28         1
+                    fp_div(32,24,8)         1
+                   fp_exp_clk(8,23)         1
+                  fp_exp_exp_y1(23)         1
+                   fp_exp_exp_y1_23         1
+               fp_exp_exp_y2_23_clk         1
+            fp_exp_exp_y2_23_t1_clk         1
+              fp_exp_exp_y2_clk(23)         1
+             fp_exp_shift_clk(8,23)         1
+ fp_leading_zeros_and_shift(27,8,4)         1
+fp_leading_zeros_and_shift(27,8,4)_U26         1
+                    fp_mul(32,24,8)         1
+     mult_clk(12,10,true,false,0,3)         1
+    mult_clk(28,22,false,false,0,2)         1
+      mult_clk(8,6,false,false,1,3)         1
+     mult_clk(9,35,true,false,-1,2)         1
+              right_shifter(27,8,4)         1
+          right_shifter(27,8,4)_U27         1
+                              TOTAL      4938
+----------------------------------------------------------------------
+Report for cell fp_add(32,24,8).v1
+Instance Path : float_alu0.fp_sub0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        58            4.3
+                            FD1P3AX        66            7.0
+                            FD1P3IX        22            5.1
+                            FD1P3JX         8           19.0
+                               LUT4       592           17.2
+                              PFUMX        46           17.0
+SUB MODULES
+ fp_leading_zeros_and_shift(27,8,4)         1
+              right_shifter(27,8,4)         1
+                              TOTAL       794
+----------------------------------------------------------------------
+Report for cell fp_leading_zeros_and_shift(27,8,4).v1
+Instance Path : float_alu0.fp_sub0.subtraction_norm
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       174            5.1
+                              PFUMX        14            5.2
+                              TOTAL       188
+----------------------------------------------------------------------
+Report for cell right_shifter(27,8,4).v1
+Instance Path : float_alu0.fp_sub0.alignment
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       154            4.5
+                              PFUMX         7            2.6
+                              TOTAL       161
+----------------------------------------------------------------------
+Report for cell fp_mul(32,24,8).v1
+Instance Path : float_alu0.fp_mul0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        21            1.6
+                            FD1P3AX        66            7.0
+                            FD1P3IX        22            5.1
+                            FD1P3JX         8           19.0
+                               LUT4       134            3.9
+                              PFUMX         3            1.1
+                              TOTAL       254
+----------------------------------------------------------------------
+Report for cell fp_exp_clk(8,23).v1
+Instance Path : float_alu0.fp_exp_clk0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       579           43.1
+                            FD1S3AX      1130           99.2
+                            FD1S3IX        29           93.5
+                            FD1S3JX         1           50.0
+                            L6MUX21         1          100.0
+                               LUT4       296            8.6
+                            PDPW8KC         2          100.0
+                              PFUMX        41           15.1
+                           ROM64X1A         3          100.0
+SUB MODULES
+                         delay(1,1)         1
+                        delay(22,1)         1
+                        delay(28,3)         1
+                    delay(28,3)_U25         1
+                       delay(34,14)         1
+                        delay(36,2)         1
+                        delay(36,4)         1
+                        delay(9,10)         1
+                  fp_exp_exp_y1(23)         1
+                   fp_exp_exp_y1_23         1
+               fp_exp_exp_y2_23_clk         1
+            fp_exp_exp_y2_23_t1_clk         1
+              fp_exp_exp_y2_clk(23)         1
+             fp_exp_shift_clk(8,23)         1
+     mult_clk(12,10,true,false,0,3)         1
+    mult_clk(28,22,false,false,0,2)         1
+      mult_clk(8,6,false,false,1,3)         1
+     mult_clk(9,35,true,false,-1,2)         1
+                              TOTAL      2100
+----------------------------------------------------------------------
+Report for cell fp_exp_shift_clk(8,23).v1
+Instance Path : float_alu0.fp_exp_clk0.shift
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        18            1.3
+                            FD1S3AX        35            3.1
+                            FD1S3IX         8           25.8
+                               LUT4       192            5.6
+                              PFUMX        30           11.1
+SUB MODULES
+                         delay(1,1)         1
+                              TOTAL       284
+----------------------------------------------------------------------
+Report for cell delay(1,1).v1
+Instance Path : float_alu0.fp_exp_clk0.shift.delay_ufl
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            0.1
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mult_clk(28,22,false,false,0,2).v1
+Instance Path : float_alu0.fp_exp_clk0.mult_z1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       330           24.6
+                            FD1S3AX       418           36.7
+                            FD1S3IX        10           32.3
+                               LUT4         4            0.1
+                              TOTAL       762
+----------------------------------------------------------------------
+Report for cell mult_clk(9,35,true,false,-1,2).v1
+Instance Path : float_alu0.fp_exp_clk0.mult_klog2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       106            7.9
+                            FD1S3AX        69            6.1
+                               LUT4         3            0.1
+                              TOTAL       178
+----------------------------------------------------------------------
+Report for cell mult_clk(12,10,true,false,0,3).v1
+Instance Path : float_alu0.fp_exp_clk0.mult_k
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        30            2.2
+                            FD1S3AX        63            5.5
+                            FD1S3IX         9           29.0
+                               LUT4         1            0.0
+                              TOTAL       103
+----------------------------------------------------------------------
+Report for cell fp_exp_exp_y2_clk(23).v1
+Instance Path : float_alu0.fp_exp_clk0.exp_y2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        32            2.4
+                            FD1S3AX        19            1.7
+                               LUT4        16            0.5
+                            PDPW8KC         2          100.0
+                           ROM64X1A         3          100.0
+SUB MODULES
+               fp_exp_exp_y2_23_clk         1
+            fp_exp_exp_y2_23_t1_clk         1
+      mult_clk(8,6,false,false,1,3)         1
+                              TOTAL        75
+----------------------------------------------------------------------
+Report for cell fp_exp_exp_y2_23_clk.v1
+Instance Path : float_alu0.fp_exp_clk0.exp_y2.exp_y2_23.exp_y2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        32            2.4
+                            FD1S3AX        19            1.7
+                               LUT4        16            0.5
+                            PDPW8KC         2          100.0
+                           ROM64X1A         3          100.0
+SUB MODULES
+            fp_exp_exp_y2_23_t1_clk         1
+      mult_clk(8,6,false,false,1,3)         1
+                              TOTAL        74
+----------------------------------------------------------------------
+Report for cell fp_exp_exp_y2_23_t1_clk.v1
+Instance Path : float_alu0.fp_exp_clk0.exp_y2.exp_y2_23.exp_y2.t_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        25            1.9
+                            FD1S3AX        19            1.7
+                               LUT4        16            0.5
+                            PDPW8KC         2          100.0
+SUB MODULES
+      mult_clk(8,6,false,false,1,3)         1
+                              TOTAL        63
+----------------------------------------------------------------------
+Report for cell mult_clk(8,6,false,false,1,3).v1
+Instance Path : float_alu0.fp_exp_clk0.exp_y2.exp_y2_23.exp_y2.t_1.mult_r0_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        25            1.9
+                            FD1S3AX        18            1.6
+                               LUT4         6            0.2
+                            PDPW8KC         2          100.0
+                              TOTAL        51
+----------------------------------------------------------------------
+Report for cell fp_exp_exp_y1(23).v1
+Instance Path : float_alu0.fp_exp_clk0.exp_y1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        15            1.1
+                               LUT4         6            0.2
+                              PFUMX         1            0.4
+SUB MODULES
+                   fp_exp_exp_y1_23         1
+                              TOTAL        23
+----------------------------------------------------------------------
+Report for cell fp_exp_exp_y1_23.v1
+Instance Path : float_alu0.fp_exp_clk0.exp_y1.exp_y1_23.exp_y1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        15            1.1
+                               LUT4         6            0.2
+                              PFUMX         1            0.4
+                              TOTAL        22
+----------------------------------------------------------------------
+Report for cell delay(22,1).v1
+Instance Path : float_alu0.fp_exp_clk0.delay_nz0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        22            1.9
+                               LUT4        10            0.3
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell delay(36,2).v1
+Instance Path : float_alu0.fp_exp_clk0.delay_ny
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        40            3.5
+                            L6MUX21         1          100.0
+                               LUT4        33            1.0
+                              PFUMX        10            3.7
+                              TOTAL        84
+----------------------------------------------------------------------
+Report for cell delay(36,4).v1
+Instance Path : float_alu0.fp_exp_clk0.delay_nx
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX       108            9.5
+                              TOTAL       108
+----------------------------------------------------------------------
+Report for cell delay(9,10).v1
+Instance Path : float_alu0.fp_exp_clk0.delay_nk
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        80            7.0
+                              TOTAL        80
+----------------------------------------------------------------------
+Report for cell delay(28,3).v1
+Instance Path : float_alu0.fp_exp_clk0.delay_ney1_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        84            7.4
+                              TOTAL        84
+----------------------------------------------------------------------
+Report for cell delay(28,3)_U25.v1
+Instance Path : float_alu0.fp_exp_clk0.delay_ney1_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        58            5.1
+                            FD1S3JX         1           50.0
+                              TOTAL        59
+----------------------------------------------------------------------
+Report for cell delay(34,14).v1
+Instance Path : float_alu0.fp_exp_clk0.delay_fpx
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        13            1.1
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell fp_div(32,24,8).v1
+Instance Path : float_alu0.fp_div0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       360           26.8
+                            FD1P3AX        66            7.0
+                            FD1P3IX        22            5.1
+                            FD1P3JX         8           19.0
+                               LUT4       112            3.3
+SUB MODULES
+                            a_s(24)         1
+                         a_s(24)_U0         1
+                         a_s(24)_U1         1
+                        a_s(24)_U10         1
+                        a_s(24)_U11         1
+                        a_s(24)_U12         1
+                        a_s(24)_U13         1
+                        a_s(24)_U14         1
+                        a_s(24)_U15         1
+                        a_s(24)_U16         1
+                        a_s(24)_U17         1
+                        a_s(24)_U18         1
+                        a_s(24)_U19         1
+                         a_s(24)_U2         1
+                        a_s(24)_U20         1
+                        a_s(24)_U21         1
+                        a_s(24)_U22         1
+                        a_s(24)_U23         1
+                        a_s(24)_U24         1
+                         a_s(24)_U3         1
+                         a_s(24)_U4         1
+                         a_s(24)_U5         1
+                         a_s(24)_U6         1
+                         a_s(24)_U7         1
+                         a_s(24)_U8         1
+                         a_s(24)_U9         1
+              div_nr_wsticky(24,27)         1
+                              TOTAL       595
+----------------------------------------------------------------------
+Report for cell div_nr_wsticky(24,27).v1
+Instance Path : float_alu0.fp_div0.a_div
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       338           25.2
+                               LUT4        24            0.7
+SUB MODULES
+                            a_s(24)         1
+                         a_s(24)_U0         1
+                         a_s(24)_U1         1
+                        a_s(24)_U10         1
+                        a_s(24)_U11         1
+                        a_s(24)_U12         1
+                        a_s(24)_U13         1
+                        a_s(24)_U14         1
+                        a_s(24)_U15         1
+                        a_s(24)_U16         1
+                        a_s(24)_U17         1
+                        a_s(24)_U18         1
+                        a_s(24)_U19         1
+                         a_s(24)_U2         1
+                        a_s(24)_U20         1
+                        a_s(24)_U21         1
+                        a_s(24)_U22         1
+                        a_s(24)_U23         1
+                        a_s(24)_U24         1
+                         a_s(24)_U3         1
+                         a_s(24)_U4         1
+                         a_s(24)_U5         1
+                         a_s(24)_U6         1
+                         a_s(24)_U7         1
+                         a_s(24)_U8         1
+                         a_s(24)_U9         1
+                              TOTAL       388
+----------------------------------------------------------------------
+Report for cell a_s(24).v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[9].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U0.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[8].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U1.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[7].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U2.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[6].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U3.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[5].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U4.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[4].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U5.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[3].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U6.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[2].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U7.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[26].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U8.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[25].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                               LUT4         1            0.0
+                              TOTAL        14
+----------------------------------------------------------------------
+Report for cell a_s(24)_U9.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[24].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U10.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[23].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U11.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[22].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U12.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[21].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U13.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[20].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U14.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[1].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U15.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[19].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U16.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[18].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U17.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[17].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U18.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[16].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U19.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[15].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U20.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[14].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U21.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[13].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U22.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[12].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U23.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[11].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell a_s(24)_U24.v1
+Instance Path : float_alu0.fp_div0.a_div.divisor[10].int_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13            1.0
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell fp_add(32,24,8)_U28.v1
+Instance Path : float_alu0.fp_add0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        58            4.3
+                            FD1P3AX        66            7.0
+                            FD1P3IX        22            5.1
+                            FD1P3JX         8           19.0
+                               LUT4       535           15.5
+                              PFUMX        45           16.6
+SUB MODULES
+fp_leading_zeros_and_shift(27,8,4)_U26         1
+          right_shifter(27,8,4)_U27         1
+                              TOTAL       736
+----------------------------------------------------------------------
+Report for cell fp_leading_zeros_and_shift(27,8,4)_U26.v1
+Instance Path : float_alu0.fp_add0.subtraction_norm
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       189            5.5
+                              PFUMX        34           12.5
+                              TOTAL       223
+----------------------------------------------------------------------
+Report for cell right_shifter(27,8,4)_U27.v1
+Instance Path : float_alu0.fp_add0.alignment
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       133            3.9
+                              PFUMX         7            2.6
+                              TOTAL       140
+----------------------------------------------------------------------
+Report for cell test.v1
+Instance Path : test0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       201           15.0
+                           DPR16X4C         8          100.0
+                            FD1P3AX       522           55.2
+                            FD1P3BX         1           25.0
+                            FD1P3DX        54           30.0
+                            FD1P3IX       202           47.2
+                            FD1P3JX         4            9.5
+                            FD1S3AX         7            0.6
+                            FD1S3DX         1            1.6
+                               LUT4      1353           39.3
+                              PFUMX        96           35.4
+                              TOTAL      2449
+----------------------------------------------------------------------
+Report for cell sram_dp.v1
+Instance Path : sram_dp0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC        16          100.0
+SUB MODULES
+                        ram_dp_true         1
+                              TOTAL        17
+----------------------------------------------------------------------
+Report for cell ram_dp_true.v1
+Instance Path : sram_dp0.ram_dq_true0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC        16          100.0
+                              TOTAL        16

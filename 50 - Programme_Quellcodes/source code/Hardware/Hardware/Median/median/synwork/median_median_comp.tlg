@@ -1,0 +1,84 @@
+@N: CD630 :"C:\Users\Yisong\Documents\new\median\main.vhd":7:7:7:10|Synthesizing work.main.rtl 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box 
+Post processing for work.osch.syn_black_box
+@W: CG296 :"C:\Users\Yisong\Documents\new\median\main.vhd":174:1:174:7|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Yisong\Documents\new\median\main.vhd":188:15:188:24|Referenced variable write_data is not in sensitivity list
+@W: CG290 :"C:\Users\Yisong\Documents\new\median\main.vhd":187:12:187:13|Referenced variable rx is not in sensitivity list
+@W: CD638 :"C:\Users\Yisong\Documents\new\median\main.vhd":84:7:84:8|Signal tx is undriven 
+@W: CD638 :"C:\Users\Yisong\Documents\new\median\main.vhd":96:7:96:15|Signal read_data is undriven 
+@N: CD630 :"C:\Users\Yisong\Documents\new\median\sort_filter.vhd":5:7:5:17|Synthesizing work.sort_filter.rtl 
+@N: CD630 :"C:\Users\Yisong\Documents\new\median\rc_counter.vhd":4:7:4:16|Synthesizing work.rc_counter.rtl 
+Post processing for work.rc_counter.rtl
+@N: CD630 :"C:\Users\Yisong\Documents\new\median\window_3x3.vhd":5:7:5:16|Synthesizing work.window_3x3.rtl 
+@N: CD630 :"C:\Users\Yisong\Documents\new\median\std_fifo.vhd":5:7:5:14|Synthesizing work.std_fifo.behavioral 
+@N: CD364 :"C:\Users\Yisong\Documents\new\median\std_fifo.vhd":111:4:111:10|Removed redundant assignment
+Post processing for work.std_fifo.behavioral
+@N: CL134 :"C:\Users\Yisong\Documents\new\median\std_fifo.vhd":36:11:36:16|Found RAM memory, depth=640, width=8
+Post processing for work.window_3x3.rtl
+@N: CL177 :"C:\Users\Yisong\Documents\new\median\window_3x3.vhd":129:2:129:3|Sharing sequential element a33.
+@N: CL177 :"C:\Users\Yisong\Documents\new\median\window_3x3.vhd":129:2:129:3|Sharing sequential element a32.
+@N: CL177 :"C:\Users\Yisong\Documents\new\median\window_3x3.vhd":129:2:129:3|Sharing sequential element a23.
+@N: CL177 :"C:\Users\Yisong\Documents\new\median\window_3x3.vhd":129:2:129:3|Sharing sequential element a22.
+@N: CL177 :"C:\Users\Yisong\Documents\new\median\window_3x3.vhd":129:2:129:3|Sharing sequential element a13.
+@N: CL177 :"C:\Users\Yisong\Documents\new\median\window_3x3.vhd":129:2:129:3|Sharing sequential element a12.
+@N: CD630 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":5:7:5:14|Synthesizing work.sort_3x3.rtl 
+@W: CD638 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":68:7:68:11|Signal c44_l is undriven 
+@W: CD638 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":69:7:69:11|Signal c44_h is undriven 
+Post processing for work.sort_3x3.rtl
+@A: CL282 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Feedback mux created for signal dddddddddddddDV -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+Post processing for work.sort_filter.rtl
+@N: CD630 :"C:\Users\Yisong\Documents\new\median\spi.vhd":5:7:5:10|Synthesizing work.spi2.rtl 
+@N: CD233 :"C:\Users\Yisong\Documents\new\median\spi.vhd":24:12:24:13|Using sequential encoding for type states
+@N: CD630 :"C:\Users\Yisong\Documents\new\median\efb_spi.vhd":14:7:14:13|Synthesizing work.efb_spi.structure 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":2302:10:2302:12|Synthesizing work.efb.syn_black_box 
+Post processing for work.efb.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1490:10:1490:12|Synthesizing work.vlo.syn_black_box 
+Post processing for work.vlo.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":106:10:106:11|Synthesizing work.bb.syn_black_box 
+Post processing for work.bb.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1483:10:1483:12|Synthesizing work.vhi.syn_black_box 
+Post processing for work.vhi.syn_black_box
+Post processing for work.efb_spi.structure
+Post processing for work.spi2.rtl
+@N: CL177 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Sharing sequential element wbstb.
+@N: CD630 :"C:\Users\Yisong\Documents\new\median\reset.vhd":5:7:5:11|Synthesizing work.reset.rtl 
+@W: CD434 :"C:\Users\Yisong\Documents\new\median\reset.vhd":16:9:16:11|Signal clk in the sensitivity list is not used in the process
+Post processing for work.reset.rtl
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":591:10:591:12|Synthesizing work.gsr.syn_black_box 
+Post processing for work.gsr.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":599:10:599:11|Synthesizing work.ib.syn_black_box 
+Post processing for work.ib.syn_black_box
+Post processing for work.main.rtl
+@W: CL159 :"C:\Users\Yisong\Documents\new\median\reset.vhd":7:1:7:3|Input clk is unused
+@W: CL138 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Removing register 'just_written' because it is only assigned 0 or its original value.
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(4) is always 1, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(5) is always 0, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(6) is always 1, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(7) is always 0, optimizing ...
+@W: CL279 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Pruning register bits 7 to 4 of wbaddr(7 downto 0)  
+@N: CL201 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   01
+   10
+   11
+@W: CL249 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Initial value is not supported on state machine state
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(2) is always 0, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(3) is always 1, optimizing ...
+@W: CL279 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Pruning register bits 3 to 2 of wbaddr(3 downto 0)  
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift r4b1, depth=4, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift r4b5, depth=6, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift r62, depth=3, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift r73, depth=4, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift r84, depth=5, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift r95, depth=6, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift r106, depth=7, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift r117, depth=11, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift s6, depth=3, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift s5, depth=4, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift s4, depth=5, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift s3, depth=6, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift s2, depth=7, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":180:2:180:3|Found seqShift s1, depth=8, width=8
+@N: CL135 :"C:\Users\Yisong\Documents\new\median\sort_filter.vhd":199:2:199:3|Found seqShift row_c, depth=16, width=32
+@W: CL260 :"C:\Users\Yisong\Documents\new\median\sort_filter.vhd":199:2:199:3|Pruning register bit 0 of col_c(31 downto 0)  

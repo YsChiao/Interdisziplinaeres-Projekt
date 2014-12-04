@@ -1,0 +1,1 @@
+-w -s "C:\Users\Yisong\Documents\new\mlp\testbench\library.cfg"  -j "C:\Users\Yisong\Documents\new\mlp\testbench\projlib.cfg"  -d "C:\Users\Yisong\Documents\new\mlp\testbench\compile"   -work work  -O3 -e 100 -2002 "C:\Users\Yisong\Documents\new\mlp\main_tb.vhd"

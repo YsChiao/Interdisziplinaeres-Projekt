@@ -1,0 +1,11 @@
+C:\lscc\diamond\3.1_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  C:\Users\Yisong\Documents\new\median\median  -part LCMXO2_7000HC  -package TG144C  -grade -4   -maxfan 1000    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1     -summaryfile C:\Users\Yisong\Documents\new\median\median\synlog\report\median_median_fpga_mapper.xml -top_level_module  main  -flow mapping  -oedif  C:\Users\Yisong\Documents\new\median\median\median_median.edi  -freq 1.000  C:\Users\Yisong\Documents\new\median\median\synwork\median_median_prem.srd  -devicelib  C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\Users\Yisong\Documents\new\median\median\syntmp\median_median.plg  -osyn  C:\Users\Yisong\Documents\new\median\median\median_median.srm  -prjdir  C:\Users\Yisong\Documents\new\median\median\  -prjname  proj_1  -log  C:\Users\Yisong\Documents\new\median\median\synlog\median_median_fpga_mapper.srr 
+rc:1 success:1
+C:\Users\Yisong\Documents\new\median\median\median_median.edi|o|1410809063|1642196
+C:\Users\Yisong\Documents\new\median\median\synwork\median_median_prem.srd|i|1410809052|63555
+C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\machxo2.v|i|1384764868|51625
+C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\pmi_def.v|i|1389790098|39417
+C:\Users\Yisong\Documents\new\median\median\syntmp\median_median.plg|o|1410809064|2176
+C:\Users\Yisong\Documents\new\median\median\median_median.srm|o|1410809062|219334
+C:\Users\Yisong\Documents\new\median\median\synlog\median_median_fpga_mapper.srr|o|1410809064|87604
+C:\lscc\diamond\3.1_x64\synpbase\bin64\m_gen_lattice.exe|i|1384769014|24035840
+C:\lscc\diamond\3.1_x64\synpbase\bin\m_gen_lattice.exe|i|1384766282|20549632

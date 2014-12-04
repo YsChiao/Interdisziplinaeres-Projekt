@@ -1,0 +1,23 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat, Build 800R.
+#
+
+# Period Constraints 
+FREQUENCY NET "clk_sig_c" 1.0 MHz;
+FREQUENCY NET "spi0/new_data" 1.0 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+MULTICYCLE FROM CLKNET "new_data"  TO CLKNET "new_data"  2X;
+
+
+# Block Path Constraints 
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

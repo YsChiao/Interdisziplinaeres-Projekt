@@ -1,0 +1,12 @@
+#Start recording tcl command: 9/30/2014 02:29:19
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+source "C:/Users/Yisong/Documents/new/mlp/hdle_generate_Symbol.tcl"
+prj_run Export -impl nn -task Jedecgen
+prj_src add "C:/Users/Yisong/Documents/new/mlp/loadInput.vhd"
+prj_src remove "C:/Users/Yisong/Documents/new/mlp/loadInput.vhd"
+#Stop recording: 9/30/2014 08:45:31

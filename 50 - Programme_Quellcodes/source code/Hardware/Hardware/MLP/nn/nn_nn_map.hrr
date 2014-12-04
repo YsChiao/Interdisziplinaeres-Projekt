@@ -1,0 +1,30 @@
+---------------------------------------------------
+Report for cell main
+   Instance path: main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00        100.0
+                                  LUT4	       1.00        100.0
+                                 IOBUF	          5        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  spi2	          1        100.0
+---------------------------------------------------
+Report for cell spi2
+   Instance path: main/spi0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00        100.0
+                                  LUT4	       1.00        100.0
+                                 IOBUF	          3        60.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               efb_spi	          1        100.0
+---------------------------------------------------
+Report for cell efb_spi
+   Instance path: main/spi0/efb0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00        100.0
+                                  LUT4	       1.00        100.0
+                                 IOBUF	          3        60.0

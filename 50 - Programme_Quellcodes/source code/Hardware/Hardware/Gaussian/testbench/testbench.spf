@@ -1,0 +1,19 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="testbench" simType="Active-HDL">
+    <Source worklib="work" path="conv_3x3_pkg.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="std_fifo.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="std_fifo_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="rc_counter.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="window_3x3.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="conv_3x3.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="efb_spi.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="spi.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="reset.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="main.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="conv_3x3_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="main_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="spi2_tb.vhd" type="VHDL" include="none"/>
+    <SimLib value="pmi_work ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VHDL" name="testbench"/>
+</BaliSimProject>

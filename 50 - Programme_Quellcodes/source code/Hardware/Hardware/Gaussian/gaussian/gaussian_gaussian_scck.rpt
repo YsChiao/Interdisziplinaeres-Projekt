@@ -1,0 +1,30 @@
+# Synospys Constraint Checker(syntax only), version maplat, Build 800R, built Nov 18 2013
+# Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+
+# Written on Sun Sep 14 21:52:45 2014
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "main"
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+**************
+
+Start                           Requested     Requested     Clock                                          Clock              
+Clock                           Frequency     Period        Type                                           Group              
+------------------------------------------------------------------------------------------------------------------------------
+System                          1.0 MHz       1000.000      system                                         system_clkgroup    
+main|clk_sig_inferred_clock     1.0 MHz       1000.000      inferred                                       Inferred_clkgroup_0
+spi2|new_data_derived_clock     1.0 MHz       1000.000      derived (from main|clk_sig_inferred_clock)     Inferred_clkgroup_0
+==============================================================================================================================

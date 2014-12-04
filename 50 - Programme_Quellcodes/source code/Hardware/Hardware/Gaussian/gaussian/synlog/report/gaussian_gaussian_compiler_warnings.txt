@@ -1,0 +1,217 @@
+@W: CG296 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":159:0:159:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":170:10:170:19|Referenced variable write_data is not in sensitivity list
+@W: CG290 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":171:14:171:15|Referenced variable rx is not in sensitivity list
+@W: CD638 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":89:7:89:15|Signal read_data is undriven 
+@W: CL271 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning bits 3 to 0 of a40_4(20 downto 0) -- not in use ... 
+@W: CD434 :"C:\Users\Yisong\Documents\new\gaussian\reset.vhd":16:9:16:11|Signal clk in the sensitivity list is not used in the process
+@W: CL159 :"C:\Users\Yisong\Documents\new\gaussian\reset.vhd":7:1:7:3|Input clk is unused
+@W: CL138 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Removing register 'just_written' because it is only assigned 0 or its original value.
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(4) is always 1, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(5) is always 0, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(6) is always 1, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(7) is always 0, optimizing ...
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Pruning register bits 7 to 4 of wbaddr(7 downto 0)  
+@W: CL249 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Initial value is not supported on state machine state
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(2) is always 0, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(3) is always 1, optimizing ...
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Pruning register bits 3 to 2 of wbaddr(3 downto 0)  
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(1) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(16) to a constant 0
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m8(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m7(16 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of m7(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m6(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m5(16 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of m5(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 10 of m4(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 1 to 0 of m4(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m3(16 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of m3(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m2(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m1(16 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of m1(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m0(16 downto 0)  
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(17) to a constant 0
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 10 of a13(17 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 11 of a12(17 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of a12(17 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 10 of a11(17 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 10 of a10(17 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 9 of a14(17 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of m8(8 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of m6(8 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of m2(8 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of m0(8 downto 0)  
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(18) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(18) to a constant 0
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 18 to 12 of a21(18 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 18 to 9 of a22(18 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of a14(8 downto 0)  
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(18) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(19) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(18) to a constant 0
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 18 to 11 of a20(18 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 19 to 9 of a31(19 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of a22(8 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 19 to 14 of a30(19 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 20 to 15 of a40(20 downto 4)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 11 of d0(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 11 of DataOut(16 downto 0)  
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a30(13) to a constant 0
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of col_c(31 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 13 of a30(13 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of a31(8 downto 0)  
+

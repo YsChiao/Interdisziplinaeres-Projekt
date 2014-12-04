@@ -1,0 +1,94 @@
+---------------------------------------------------
+Report for cell main
+   Instance path: main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     686.00        100.0
+                                  LUT4	     412.00        100.0
+                               DISTRAM	      24.00        100.0
+                                 IOBUF	          6        100.0
+                                PFUREG	        740        100.0
+                                RIPPLE	        447        100.0
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  spi2	          1         1.5
+                              conv_3x3	          1        98.4
+---------------------------------------------------
+Report for cell conv_3x3
+   Instance path: main/con_3x3_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     675.33        98.4
+                                  LUT4	     399.00        96.8
+                               DISTRAM	      24.00        100.0
+                                PFUREG	        715        96.6
+                                RIPPLE	        447        100.0
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            window_3x3	          1        29.5
+                            rc_counter	          1         9.8
+---------------------------------------------------
+Report for cell rc_counter
+   Instance path: main/con_3x3_0/rc_counter0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      67.33         9.8
+                                  LUT4	      64.00        15.5
+                                PFUREG	        128        17.3
+                                RIPPLE	         34         7.6
+---------------------------------------------------
+Report for cell window_3x3
+   Instance path: main/con_3x3_0/window_3x3_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     202.58        29.5
+                                  LUT4	     176.00        42.7
+                                PFUREG	        292        39.5
+                                RIPPLE	         90        20.1
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              STD_FIFO	          1        11.6
+                            STD_FIFO_0	          1        12.2
+---------------------------------------------------
+Report for cell STD_FIFO_0
+   Instance path: main/con_3x3_0/window_3x3_0/fifo1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      83.92        12.2
+                                  LUT4	      81.00        19.7
+                                PFUREG	         91        12.3
+                                RIPPLE	         45        10.1
+                                   EBR	          1        50.0
+---------------------------------------------------
+Report for cell STD_FIFO
+   Instance path: main/con_3x3_0/window_3x3_0/fifo0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      79.75        11.6
+                                  LUT4	      83.00        20.1
+                                PFUREG	         91        12.3
+                                RIPPLE	         45        10.1
+                                   EBR	          1        50.0
+---------------------------------------------------
+Report for cell spi2
+   Instance path: main/spi0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.08         1.5
+                                  LUT4	      12.00         2.9
+                                 IOBUF	          3        50.0
+                                PFUREG	         24         3.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               efb_spi	          1         0.1
+---------------------------------------------------
+Report for cell efb_spi
+   Instance path: main/spi0/efb0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.67         0.1
+                                  LUT4	       2.00         0.5
+                                 IOBUF	          3        50.0

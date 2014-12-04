@@ -1,0 +1,475 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Sep 30 03:02:43 2014
+#
+
+
+Top view:               main
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.546
+
+                                    Requested     Estimated     Requested     Estimated                 Clock                                          Clock              
+Starting Clock                      Frequency     Frequency     Period        Period        Slack       Type                                           Group              
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+main|clk_sig_inferred_clock         1.0 MHz       6.9 MHz       1000.000      144.845       855.155     inferred                                       Inferred_clkgroup_0
+output|output_new_derived_clock     1.0 MHz       928.2 MHz     1000.000      1.077         998.923     derived (from main|clk_sig_inferred_clock)     Inferred_clkgroup_0
+System                              1.0 MHz       1.0 MHz       1000.000      1000.330      -0.330      system                                         system_clkgroup    
+==========================================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                         Ending                           |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+System                           main|clk_sig_inferred_clock      |  0.000       -0.330  |  No paths    -      |  No paths    -      |  No paths    -    
+main|clk_sig_inferred_clock      System                           |  0.000       0.680   |  No paths    -      |  No paths    -      |  No paths    -    
+main|clk_sig_inferred_clock      main|clk_sig_inferred_clock      |  0.000       -0.546  |  No paths    -      |  No paths    -      |  No paths    -    
+main|clk_sig_inferred_clock      output|output_new_derived_clock  |  0.000       0.606   |  No paths    -      |  No paths    -      |  No paths    -    
+output|output_new_derived_clock  main|clk_sig_inferred_clock      |  0.000       0.606   |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: main|clk_sig_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                                Arrival           
+Instance                      Reference                       Type        Pin     Net                 Time        Slack 
+                              Clock                                                                                     
+------------------------------------------------------------------------------------------------------------------------
+loadWeight0.sram_input[0]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[0]     0.680       -0.546
+loadWeight0.sram_input[1]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[1]     0.680       -0.546
+loadWeight0.sram_input[2]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[2]     0.680       -0.546
+loadWeight0.sram_input[3]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[3]     0.680       -0.546
+loadWeight0.sram_input[4]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[4]     0.680       -0.546
+loadWeight0.sram_input[5]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[5]     0.680       -0.546
+loadWeight0.sram_input[6]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[6]     0.680       -0.546
+loadWeight0.sram_input[7]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[7]     0.680       -0.546
+loadWeight0.sram_input[8]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[8]     0.680       -0.546
+loadWeight0.sram_input[9]     main|clk_sig_inferred_clock     FD1P3AX     Q       sram_input_A[9]     0.680       -0.546
+========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                             Starting                                                               Required           
+Instance                                     Reference                       Type      Pin      Net                 Time         Slack 
+                                             Clock                                                                                     
+---------------------------------------------------------------------------------------------------------------------------------------
+sram_dp0.ram_dq_true0.ram_dp_true_0_0_15     main|clk_sig_inferred_clock     DP8KC     DIA2     sram_input_A[0]     1.227        -0.546
+sram_dp0.ram_dq_true0.ram_dp_true_0_0_15     main|clk_sig_inferred_clock     DP8KC     DIA5     sram_input_A[1]     1.227        -0.546
+sram_dp0.ram_dq_true0.ram_dp_true_0_1_14     main|clk_sig_inferred_clock     DP8KC     DIA2     sram_input_A[2]     1.227        -0.546
+sram_dp0.ram_dq_true0.ram_dp_true_0_1_14     main|clk_sig_inferred_clock     DP8KC     DIA5     sram_input_A[3]     1.227        -0.546
+sram_dp0.ram_dq_true0.ram_dp_true_0_2_13     main|clk_sig_inferred_clock     DP8KC     DIA2     sram_input_A[4]     1.227        -0.546
+sram_dp0.ram_dq_true0.ram_dp_true_0_2_13     main|clk_sig_inferred_clock     DP8KC     DIA5     sram_input_A[5]     1.227        -0.546
+sram_dp0.ram_dq_true0.ram_dp_true_0_3_12     main|clk_sig_inferred_clock     DP8KC     DIA2     sram_input_A[6]     1.227        -0.546
+sram_dp0.ram_dq_true0.ram_dp_true_0_3_12     main|clk_sig_inferred_clock     DP8KC     DIA5     sram_input_A[7]     1.227        -0.546
+sram_dp0.ram_dq_true0.ram_dp_true_0_4_11     main|clk_sig_inferred_clock     DP8KC     DIA2     sram_input_A[8]     1.227        -0.546
+sram_dp0.ram_dq_true0.ram_dp_true_0_4_11     main|clk_sig_inferred_clock     DP8KC     DIA5     sram_input_A[9]     1.227        -0.546
+=======================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          loadWeight0.sram_input[0] / Q
+    Ending point:                            sram_dp0.ram_dq_true0.ram_dp_true_0_0_15 / DIA2
+    The start point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CLKA
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+loadWeight0.sram_input[0]                    FD1P3AX     Q        Out     0.680     0.680       -         
+sram_input_A[0]                              Net         -        -       -         -           1         
+sram_dp0.ram_dq_true0.ram_dp_true_0_0_15     DP8KC       DIA2     In      0.000     0.680       -         
+==========================================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          loadWeight0.sram_input[1] / Q
+    Ending point:                            sram_dp0.ram_dq_true0.ram_dp_true_0_0_15 / DIA5
+    The start point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CLKA
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+loadWeight0.sram_input[1]                    FD1P3AX     Q        Out     0.680     0.680       -         
+sram_input_A[1]                              Net         -        -       -         -           1         
+sram_dp0.ram_dq_true0.ram_dp_true_0_0_15     DP8KC       DIA5     In      0.000     0.680       -         
+==========================================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          loadWeight0.sram_input[2] / Q
+    Ending point:                            sram_dp0.ram_dq_true0.ram_dp_true_0_1_14 / DIA2
+    The start point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CLKA
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+loadWeight0.sram_input[2]                    FD1P3AX     Q        Out     0.680     0.680       -         
+sram_input_A[2]                              Net         -        -       -         -           1         
+sram_dp0.ram_dq_true0.ram_dp_true_0_1_14     DP8KC       DIA2     In      0.000     0.680       -         
+==========================================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          loadWeight0.sram_input[3] / Q
+    Ending point:                            sram_dp0.ram_dq_true0.ram_dp_true_0_1_14 / DIA5
+    The start point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CLKA
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+loadWeight0.sram_input[3]                    FD1P3AX     Q        Out     0.680     0.680       -         
+sram_input_A[3]                              Net         -        -       -         -           1         
+sram_dp0.ram_dq_true0.ram_dp_true_0_1_14     DP8KC       DIA5     In      0.000     0.680       -         
+==========================================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.227
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.546
+
+    Number of logic level(s):                0
+    Starting point:                          loadWeight0.sram_input[4] / Q
+    Ending point:                            sram_dp0.ram_dq_true0.ram_dp_true_0_2_13 / DIA2
+    The start point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CLKA
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+loadWeight0.sram_input[4]                    FD1P3AX     Q        Out     0.680     0.680       -         
+sram_input_A[4]                              Net         -        -       -         -           1         
+sram_dp0.ram_dq_true0.ram_dp_true_0_2_13     DP8KC       DIA2     In      0.000     0.680       -         
+==========================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: output|output_new_derived_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                  Starting                                                                  Arrival          
+Instance          Reference                           Type        Pin     Net               Time        Slack
+                  Clock                                                                                      
+-------------------------------------------------------------------------------------------------------------
+write_data[0]     output|output_new_derived_clock     FD1S1AY     Q       write_data[0]     0.680       0.606
+write_data[1]     output|output_new_derived_clock     FD1S1AY     Q       write_data[1]     0.680       0.606
+write_data[2]     output|output_new_derived_clock     FD1S1AY     Q       write_data[2]     0.680       0.606
+write_data[3]     output|output_new_derived_clock     FD1S1AY     Q       write_data[3]     0.680       0.606
+write_data[4]     output|output_new_derived_clock     FD1S1AY     Q       write_data[4]     0.680       0.606
+write_data[5]     output|output_new_derived_clock     FD1S1AY     Q       write_data[5]     0.680       0.606
+write_data[6]     output|output_new_derived_clock     FD1S1AY     Q       write_data[6]     0.680       0.606
+write_data[7]     output|output_new_derived_clock     FD1S1AY     Q       write_data[7]     0.680       0.606
+=============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                                                  Required          
+Instance            Reference                           Type        Pin     Net               Time         Slack
+                    Clock                                                                                       
+----------------------------------------------------------------------------------------------------------------
+spi0.wbdat_i[0]     output|output_new_derived_clock     FD1P3AX     D       write_data[0]     0.074        0.606
+spi0.wbdat_i[1]     output|output_new_derived_clock     FD1P3AX     D       write_data[1]     0.074        0.606
+spi0.wbdat_i[2]     output|output_new_derived_clock     FD1P3AX     D       write_data[2]     0.074        0.606
+spi0.wbdat_i[3]     output|output_new_derived_clock     FD1P3AX     D       write_data[3]     0.074        0.606
+spi0.wbdat_i[4]     output|output_new_derived_clock     FD1P3AX     D       write_data[4]     0.074        0.606
+spi0.wbdat_i[5]     output|output_new_derived_clock     FD1P3AX     D       write_data[5]     0.074        0.606
+spi0.wbdat_i[6]     output|output_new_derived_clock     FD1P3AX     D       write_data[6]     0.074        0.606
+spi0.wbdat_i[7]     output|output_new_derived_clock     FD1P3AX     D       write_data[7]     0.074        0.606
+================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.680
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.606
+
+    Number of logic level(s):                0
+    Starting point:                          write_data[0] / Q
+    Ending point:                            spi0.wbdat_i[0] / D
+    The start point is clocked by            output|output_new_derived_clock [rising] on pin CK
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+
+Instance / Net                  Pin      Pin               Arrival     No. of    
+Name                Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+write_data[0]       FD1S1AY     Q        Out     0.680     0.680       -         
+write_data[0]       Net         -        -       -         -           1         
+spi0.wbdat_i[0]     FD1P3AX     D        In      0.000     0.680       -         
+=================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                          Arrival           
+Instance                Reference     Type     Pin         Net            Time        Slack 
+                        Clock                                                               
+--------------------------------------------------------------------------------------------
+spi0.efb0.EFBInst_0     System        EFB      WBACKO      wback          0.000       -0.330
+spi0.efb0.EFBInst_0     System        EFB      WBDATO0     wbdat_o[0]     0.000       -0.074
+spi0.efb0.EFBInst_0     System        EFB      WBDATO1     wbdat_o[1]     0.000       -0.074
+spi0.efb0.EFBInst_0     System        EFB      WBDATO2     wbdat_o[2]     0.000       -0.074
+spi0.efb0.EFBInst_0     System        EFB      WBDATO3     wbdat_o[3]     0.000       -0.074
+spi0.efb0.EFBInst_0     System        EFB      WBDATO4     wbdat_o[4]     0.000       -0.074
+spi0.efb0.EFBInst_0     System        EFB      WBDATO5     wbdat_o[5]     0.000       -0.074
+spi0.efb0.EFBInst_0     System        EFB      WBDATO6     wbdat_o[6]     0.000       -0.074
+spi0.efb0.EFBInst_0     System        EFB      WBDATO7     wbdat_o[7]     0.000       -0.074
+============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                      Starting                                                Required           
+Instance              Reference     Type        Pin     Net                   Time         Slack 
+                      Clock                                                                      
+-------------------------------------------------------------------------------------------------
+spi0.state[0]         System        FD1P3AX     SP      wback                 0.330        -0.330
+spi0.state[1]         System        FD1P3AX     SP      wback                 0.330        -0.330
+spi0.wbwe             System        FD1S3IX     CD      wbaddr_0_sqmuxa_i     0.562        -0.130
+spi0.read_data[0]     System        FD1P3AX     D       wbdat_o[0]            0.074        -0.074
+spi0.read_data[1]     System        FD1P3AX     D       wbdat_o[1]            0.074        -0.074
+spi0.read_data[2]     System        FD1P3AX     D       wbdat_o[2]            0.074        -0.074
+spi0.read_data[3]     System        FD1P3AX     D       wbdat_o[3]            0.074        -0.074
+spi0.read_data[4]     System        FD1P3AX     D       wbdat_o[4]            0.074        -0.074
+spi0.read_data[5]     System        FD1P3AX     D       wbdat_o[5]            0.074        -0.074
+spi0.read_data[6]     System        FD1P3AX     D       wbdat_o[6]            0.074        -0.074
+=================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.330
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 -0.330
+
+    Number of logic level(s):                0
+    Starting point:                          spi0.efb0.EFBInst_0 / WBACKO
+    Ending point:                            spi0.state[0] / SP
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+
+Instance / Net                      Pin        Pin               Arrival     No. of    
+Name                    Type        Name       Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------
+spi0.efb0.EFBInst_0     EFB         WBACKO     Out     0.000     0.000       -         
+wback                   Net         -          -       -         -           8         
+spi0.state[0]           FD1P3AX     SP         In      0.000     0.000       -         
+=======================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.330
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 -0.330
+
+    Number of logic level(s):                0
+    Starting point:                          spi0.efb0.EFBInst_0 / WBACKO
+    Ending point:                            spi0.state[1] / SP
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+
+Instance / Net                      Pin        Pin               Arrival     No. of    
+Name                    Type        Name       Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------
+spi0.efb0.EFBInst_0     EFB         WBACKO     Out     0.000     0.000       -         
+wback                   Net         -          -       -         -           8         
+spi0.state[1]           FD1P3AX     SP         In      0.000     0.000       -         
+=======================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        0.432
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.562
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 -0.130
+
+    Number of logic level(s):                1
+    Starting point:                          spi0.efb0.EFBInst_0 / WBACKO
+    Ending point:                            spi0.wbwe / CD
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+
+Instance / Net                       Pin        Pin               Arrival     No. of    
+Name                    Type         Name       Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+spi0.efb0.EFBInst_0     EFB          WBACKO     Out     0.000     0.000       -         
+wback                   Net          -          -       -         -           8         
+spi0.wbwe_RNO           ORCALUT4     A          In      0.000     0.000       -         
+spi0.wbwe_RNO           ORCALUT4     Z          Out     0.432     0.432       -         
+wbaddr_0_sqmuxa_i       Net          -          -       -         -           1         
+spi0.wbwe               FD1S3IX      CD         In      0.000     0.432       -         
+========================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 -0.074
+
+    Number of logic level(s):                0
+    Starting point:                          spi0.efb0.EFBInst_0 / WBDATO0
+    Ending point:                            spi0.read_data[0] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+
+Instance / Net                      Pin         Pin               Arrival     No. of    
+Name                    Type        Name        Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+spi0.efb0.EFBInst_0     EFB         WBDATO0     Out     0.000     0.000       -         
+wbdat_o[0]              Net         -           -       -         -           1         
+spi0.read_data[0]       FD1P3AX     D           In      0.000     0.000       -         
+========================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.074
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 -0.074
+
+    Number of logic level(s):                0
+    Starting point:                          spi0.efb0.EFBInst_0 / WBDATO1
+    Ending point:                            spi0.read_data[1] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+
+Instance / Net                      Pin         Pin               Arrival     No. of    
+Name                    Type        Name        Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------
+spi0.efb0.EFBInst_0     EFB         WBDATO1     Out     0.000     0.000       -         
+wbdat_o[1]              Net         -           -       -         -           1         
+spi0.read_data[1]       FD1P3AX     D           In      0.000     0.000       -         
+========================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

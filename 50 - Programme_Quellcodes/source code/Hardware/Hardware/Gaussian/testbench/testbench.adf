@@ -1,0 +1,69 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+testbench=.\testbench\testbench.lib
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+testbench=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\conv_3x3_pkg.vhd=-1
+/..\..\std_fifo.vhd=-1
+/..\..\std_fifo_tb.vhd=-1
+/..\..\rc_counter.vhd=-1
+/..\..\window_3x3.vhd=-1
+/..\..\conv_3x3.vhd=-1
+/..\..\efb_spi.vhd=-1
+/..\..\spi.vhd=-1
+/..\..\reset.vhd=-1
+/..\..\main.vhd=-1
+/..\..\conv_3x3_tb.vhd=-1
+/..\..\main_tb.vhd=-1
+/..\..\spi2_tb.vhd=-1
+[Files.Data]
+.\..\conv_3x3_pkg.vhd=VHDL Source Code
+.\..\std_fifo.vhd=VHDL Source Code
+.\..\std_fifo_tb.vhd=VHDL Source Code
+.\..\rc_counter.vhd=VHDL Source Code
+.\..\window_3x3.vhd=VHDL Source Code
+.\..\conv_3x3.vhd=VHDL Source Code
+.\..\efb_spi.vhd=VHDL Source Code
+.\..\spi.vhd=VHDL Source Code
+.\..\reset.vhd=VHDL Source Code
+.\..\main.vhd=VHDL Source Code
+.\..\conv_3x3_tb.vhd=VHDL Source Code
+.\..\main_tb.vhd=VHDL Source Code
+.\..\spi2_tb.vhd=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=testbench|behavior|0 
+ShowHide=ShowTopLevel
+Selected=

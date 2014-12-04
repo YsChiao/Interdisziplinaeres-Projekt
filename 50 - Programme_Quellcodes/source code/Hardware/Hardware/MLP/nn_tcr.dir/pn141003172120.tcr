@@ -1,0 +1,5 @@
+#Start recording tcl command: 10/3/2014 17:13:15
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_project close
+#Stop recording: 10/3/2014 17:21:20

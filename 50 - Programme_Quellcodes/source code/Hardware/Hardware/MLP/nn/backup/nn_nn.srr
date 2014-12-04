@@ -1,0 +1,33 @@
+#Build: Synplify Pro I-2013.09L , Build 064R, Nov 15 2013
+#install: C:\lscc\diamond\3.1_x64\synpbase
+#OS: Windows 7 6.1
+#Hostname: YISONG-PC
+
+#Implementation: nn
+
+$ Start of Compile
+#Mon Sep 22 09:10:02 2014
+
+Synopsys VHDL Compiler, version comp201309rc, Build 136R, built Nov 18 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.1_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\Yisong\Documents\new\mlp\main.vhd":16:7:16:10|Top entity is set to main.
+@E: CD428 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":25:26:25:27|Duplicate definition of package pkg_fp_exp_exp_y1
+@E: CD420 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":117:11:117:11|Expecting package name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":128:23:128:24|duplicate entity name fp_exp_exp_y1_6
+@E: CD557 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":131:10:131:10|Expecting entity name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":166:23:166:24|duplicate entity name fp_exp_exp_y1_7
+@E: CD557 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":169:10:169:10|Expecting entity name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":204:23:204:24|duplicate entity name fp_exp_exp_y1_8
+@E: CD557 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":207:10:207:10|Expecting entity name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":242:23:242:24|duplicate entity name fp_exp_exp_y1_9
+@E: CD557 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":245:10:245:10|Expecting entity name
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":296:24:296:25|duplicate entity name fp_exp_exp_y1_10
+@E: CD632 :"C:\Users\Yisong\Documents\new\mlp\fp_exp_exp_y1.vhd":296:24:296:25|Too many errors - aborting.
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Sep 22 09:10:03 2014
+
+###########################################################]

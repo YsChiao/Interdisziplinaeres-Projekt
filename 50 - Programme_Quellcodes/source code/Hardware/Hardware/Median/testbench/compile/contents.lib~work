@@ -1,0 +1,23 @@
+320
+~E 1 "./../../efb_spi.vhd" 14 efb_spi
+~A 1 "./../../efb_spi.vhd" 31 Structure
+~E 1 "./../../main.vhd" 7 main
+~A 1 "./../../main.vhd" 24 rtl
+~E 1 "./../../rc_counter.vhd" 4 rc_counter
+~A 1 "./../../rc_counter.vhd" 21 rtl
+~E 1 "./../../reset.vhd" 5 reset
+~A 1 "./../../reset.vhd" 13 rtl
+~E 1 "./../../sort_3x3.vhd" 5 sort_3x3
+~A 1 "./../../sort_3x3.vhd" 35 rtl
+~E 1 "./../../sort_filter.vhd" 5 sort_filter
+~A 1 "./../../sort_filter.vhd" 21 rtl
+~E 1 "./../../spi.vhd" 5 spi2
+~A 1 "./../../spi.vhd" 22 rtl
+~E 1 "./../../std_fifo.vhd" 5 STD_FIFO
+~A 1 "./../../std_fifo.vhd" 25 Behavioral
+~E 1 "./../../test.vhd" 5 test
+~A 1 "./../../test.vhd" 17 rtl
+~E 1 "./../../main_tb.vhd" 28 testbench
+~A 1 "./../../main_tb.vhd" 31 behavior
+~E 1 "./../../window_3x3.vhd" 5 window_3x3
+~A 1 "./../../window_3x3.vhd" 29 rtl

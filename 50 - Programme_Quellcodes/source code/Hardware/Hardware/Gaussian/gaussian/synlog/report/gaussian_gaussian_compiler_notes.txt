@@ -1,0 +1,31 @@
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.1_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\Yisong\Documents\new\gaussian\main.vhd":7:7:7:10|Top entity is set to main.
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":7:7:7:10|Synthesizing work.main.rtl 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box 
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":8:7:8:14|Synthesizing work.conv_3x3.rtl 
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\rc_counter.vhd":4:7:4:16|Synthesizing work.rc_counter.rtl 
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":5:7:5:16|Synthesizing work.window_3x3.rtl 
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\std_fifo.vhd":5:7:5:14|Synthesizing work.std_fifo.behavioral 
+@N: CD364 :"C:\Users\Yisong\Documents\new\gaussian\std_fifo.vhd":111:4:111:10|Removed redundant assignment
+@N: CL134 :"C:\Users\Yisong\Documents\new\gaussian\std_fifo.vhd":36:11:36:16|Found RAM memory, depth=640, width=8
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a33.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a32.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a23.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a22.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a13.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a12.
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":5:7:5:10|Synthesizing work.spi2.rtl 
+@N: CD233 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":24:12:24:13|Using sequential encoding for type states
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\efb_spi.vhd":14:7:14:13|Synthesizing work.efb_spi.structure 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":2302:10:2302:12|Synthesizing work.efb.syn_black_box 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1490:10:1490:12|Synthesizing work.vlo.syn_black_box 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":106:10:106:11|Synthesizing work.bb.syn_black_box 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1483:10:1483:12|Synthesizing work.vhi.syn_black_box 
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Sharing sequential element wbstb.
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\reset.vhd":5:7:5:11|Synthesizing work.reset.rtl 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":591:10:591:12|Synthesizing work.gsr.syn_black_box 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":599:10:599:11|Synthesizing work.ib.syn_black_box 
+@N: CL201 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Trying to extract state machine for register state
+@N: CL135 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Found seqShift row_c, depth=8, width=32
+

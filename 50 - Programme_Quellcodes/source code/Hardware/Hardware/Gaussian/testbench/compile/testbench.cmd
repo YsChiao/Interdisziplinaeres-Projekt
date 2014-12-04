@@ -1,0 +1,1 @@
+-w -s "C:\Users\Yisong\Documents\new\gaussian\testbench\library.cfg"  -j "C:\Users\Yisong\Documents\new\gaussian\testbench\projlib.cfg"  -d "C:\Users\Yisong\Documents\new\gaussian\testbench\compile"   -work work  -O3 -e 100 -2002 "C:\Users\Yisong\Documents\new\gaussian\main_tb.vhd"

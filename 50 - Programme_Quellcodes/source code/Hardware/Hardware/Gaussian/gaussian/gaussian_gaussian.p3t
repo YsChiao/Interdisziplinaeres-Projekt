@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "gaussian_gaussian.log"
+-o "gaussian_gaussian.csv"
+-pr "gaussian_gaussian.prf"

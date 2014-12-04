@@ -1,0 +1,98 @@
+@P:  Worst Slack : 855.155
+@P:  main|clk_sig_inferred_clock - Estimated Frequency : 6.9 MHz
+@P:  main|clk_sig_inferred_clock - Requested Frequency : 1.0 MHz
+@P:  main|clk_sig_inferred_clock - Estimated Period : 144.845
+@P:  main|clk_sig_inferred_clock - Requested Period : 1000.000
+@P:  main|clk_sig_inferred_clock - Slack : 855.155
+@P:  output|output_new_derived_clock - Estimated Frequency : 928.2 MHz
+@P:  output|output_new_derived_clock - Requested Frequency : 1.0 MHz
+@P:  output|output_new_derived_clock - Estimated Period : 1.077
+@P:  output|output_new_derived_clock - Requested Period : 1000.000
+@P:  output|output_new_derived_clock - Slack : 998.923
+@P:  System - Estimated Frequency : 437.8 MHz
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : 2.284
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : 997.716
+@P:  Worst Slack(min analysis) : -0.546
+@P:  main|clk_sig_inferred_clock - Estimated Frequency(min analysis) : 6.9 MHz
+@P:  main|clk_sig_inferred_clock - Requested Frequency(min analysis) : 1.0 MHz
+@P:  main|clk_sig_inferred_clock - Estimated Period(min analysis) : 144.845
+@P:  main|clk_sig_inferred_clock - Requested Period(min analysis) : 1000.000
+@P:  main|clk_sig_inferred_clock - Slack(min analysis) : 855.155
+@P:  output|output_new_derived_clock - Estimated Frequency(min analysis) : 928.2 MHz
+@P:  output|output_new_derived_clock - Requested Frequency(min analysis) : 1.0 MHz
+@P:  output|output_new_derived_clock - Estimated Period(min analysis) : 1.077
+@P:  output|output_new_derived_clock - Requested Period(min analysis) : 1000.000
+@P:  output|output_new_derived_clock - Slack(min analysis) : 998.923
+@P:  System - Estimated Frequency(min analysis) : 1.0 MHz
+@P:  System - Requested Frequency(min analysis) : 1.0 MHz
+@P:  System - Estimated Period(min analysis) : 1000.330
+@P:  System - Requested Period(min analysis) : 1000.000
+@P:  System - Slack(min analysis) : -0.330
+@P:  Total Area : 9379.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:01m:40s

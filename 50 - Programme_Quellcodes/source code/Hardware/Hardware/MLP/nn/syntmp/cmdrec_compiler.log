@@ -1,0 +1,28 @@
+C:\lscc\diamond\3.1_x64\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\Yisong\Documents\new\mlp\nn\synwork\nn_nn_comp.srs  -top  main  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -divnmod -encrypt  -pro  -dmgen  C:\Users\Yisong\Documents\new\mlp\nn\dm  -lite   -ui -fid2 -ram -sharing on  -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\Yisong\Documents\new\mlp\a_s.vhd -lib work C:\Users\Yisong\Documents\new\mlp\right_shifter.vhd -lib work C:\Users\Yisong\Documents\new\mlp\fp_exp.vhd -lib work C:\Users\Yisong\Documents\new\mlp\fp_leading_zeros_and_shift.vhd -lib work C:\Users\Yisong\Documents\new\mlp\fp_mul.vhd -lib work C:\Users\Yisong\Documents\new\mlp\reset.vhd -lib work C:\Users\Yisong\Documents\new\mlp\receiver.vhd -lib work C:\Users\Yisong\Documents\new\mlp\mlp_pkg.vhd -lib work C:\Users\Yisong\Documents\new\mlp\fp_add.vhd -lib work C:\Users\Yisong\Documents\new\mlp\div_nr_wsticky.vhd -lib work C:\Users\Yisong\Documents\new\mlp\fp_div.vhd -lib work C:\Users\Yisong\Documents\new\mlp\fp.vhd -lib work C:\Users\Yisong\Documents\new\mlp\efb_spi.vhd -lib work C:\Users\Yisong\Documents\new\mlp\spi.vhd -lib work C:\Users\Yisong\Documents\new\mlp\ram_dp_true.vhd -lib work C:\Users\Yisong\Documents\new\mlp\sram_dp_true.vhd -lib work C:\Users\Yisong\Documents\new\mlp\loadWeight.vhd -lib work C:\Users\Yisong\Documents\new\mlp\test.vhd -lib work C:\Users\Yisong\Documents\new\mlp\pr.vhd -lib work C:\Users\Yisong\Documents\new\mlp\output.vhd -lib work C:\Users\Yisong\Documents\new\mlp\main.vhd -loga  C:\Users\Yisong\Documents\new\mlp\nn\nn_nn.srr 
+rc:0 success:1
+C:\Users\Yisong\Documents\new\mlp\nn\synwork\nn_nn_comp.srs|o|1412038855|115377
+C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd|i|1376992808|73964
+C:\Users\Yisong\Documents\new\mlp\a_s.vhd|i|1404208796|871
+C:\Users\Yisong\Documents\new\mlp\right_shifter.vhd|i|1404208798|2232
+C:\Users\Yisong\Documents\new\mlp\fp_exp.vhd|i|1407881087|397019
+C:\Users\Yisong\Documents\new\mlp\fp_leading_zeros_and_shift.vhd|i|1404208798|2685
+C:\Users\Yisong\Documents\new\mlp\fp_mul.vhd|i|1404208798|8123
+C:\Users\Yisong\Documents\new\mlp\reset.vhd|i|1409226569|349
+C:\Users\Yisong\Documents\new\mlp\receiver.vhd|i|1410887336|1873
+C:\Users\Yisong\Documents\new\mlp\mlp_pkg.vhd|i|1412038383|636
+C:\Users\Yisong\Documents\new\mlp\fp_add.vhd|i|1404208798|10488
+C:\Users\Yisong\Documents\new\mlp\div_nr_wsticky.vhd|i|1404208798|2655
+C:\Users\Yisong\Documents\new\mlp\fp_div.vhd|i|1404208798|7373
+C:\Users\Yisong\Documents\new\mlp\fp.vhd|i|1411466686|6550
+C:\Users\Yisong\Documents\new\mlp\efb_spi.vhd|i|1410808935|11758
+C:\Users\Yisong\Documents\new\mlp\spi.vhd|i|1410615414|3422
+C:\Users\Yisong\Documents\new\mlp\ram_dp_true.vhd|i|1411484585|94421
+C:\Users\Yisong\Documents\new\mlp\sram_dp_true.vhd|i|1411601106|9577
+C:\Users\Yisong\Documents\new\mlp\loadWeight.vhd|i|1411775757|2288
+C:\Users\Yisong\Documents\new\mlp\test.vhd|i|1412033773|20187
+C:\Users\Yisong\Documents\new\mlp\pr.vhd|i|1411603951|1403
+C:\Users\Yisong\Documents\new\mlp\output.vhd|i|1411784171|1905
+C:\Users\Yisong\Documents\new\mlp\main.vhd|i|1412034109|13541
+C:\Users\Yisong\Documents\new\mlp\nn\nn_nn.srr|o|1412038856|1392284
+C:\lscc\diamond\3.1_x64\synpbase\bin64\c_vhdl.exe|i|1384762852|5457920
+C:\lscc\diamond\3.1_x64\synpbase\bin\c_vhdl.exe|i|1384762654|1978368

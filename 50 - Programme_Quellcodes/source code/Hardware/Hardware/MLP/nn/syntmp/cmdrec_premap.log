@@ -1,0 +1,13 @@
+C:\lscc\diamond\3.1_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  C:\Users\Yisong\Documents\new\mlp\nn  -part LCMXO2_7000HC  -package TG144C  -grade -4   -maxfan 1000    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1     -summaryfile C:\Users\Yisong\Documents\new\mlp\nn\synlog\report\nn_nn_premap.xml -top_level_module  main  -oedif  C:\Users\Yisong\Documents\new\mlp\nn\nn_nn.edi  -conchk_prepass  C:\Users\Yisong\Documents\new\mlp\nn\nn_nn_cck_prepass.rpt  -freq 1.000  C:\Users\Yisong\Documents\new\mlp\nn\synwork\nn_nn_comp.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\Yisong\Documents\new\mlp\nn\synwork\nn_nn_prem.srd  -devicelib  C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\Users\Yisong\Documents\new\mlp\nn\syntmp\nn_nn.plg  -osyn  C:\Users\Yisong\Documents\new\mlp\nn\synwork\nn_nn_prem.srd  -prjdir  C:\Users\Yisong\Documents\new\mlp\nn\  -prjname  proj_1  -log  C:\Users\Yisong\Documents\new\mlp\nn\synlog\nn_nn_premap.srr 
+rc:1 success:1
+C:\Users\Yisong\Documents\new\mlp\nn\nn_nn.edi|o|1412038244|6925830
+C:\Users\Yisong\Documents\new\mlp\nn\nn_nn_cck_prepass.rpt|o|0|0
+C:\Users\Yisong\Documents\new\mlp\nn\synwork\nn_nn_comp.srs|i|1412038855|115377
+C:\Users\Yisong\Documents\new\mlp\nn\synwork\nn_nn_prem.srd|o|1412038859|375932
+C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\machxo2.v|i|1384764868|51625
+C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\pmi_def.v|i|1389790098|39417
+C:\Users\Yisong\Documents\new\mlp\nn\syntmp\nn_nn.plg|o|1412038857|0
+C:\Users\Yisong\Documents\new\mlp\nn\synwork\nn_nn_prem.srd|o|1412038859|375932
+C:\Users\Yisong\Documents\new\mlp\nn\synlog\nn_nn_premap.srr|o|1412038859|4354
+C:\lscc\diamond\3.1_x64\synpbase\bin64\m_gen_lattice.exe|i|1384769014|24035840
+C:\lscc\diamond\3.1_x64\synpbase\bin\m_gen_lattice.exe|i|1384766282|20549632

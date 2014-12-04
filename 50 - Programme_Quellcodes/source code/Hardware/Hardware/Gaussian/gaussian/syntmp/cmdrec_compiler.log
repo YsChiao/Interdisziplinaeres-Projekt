@@ -1,0 +1,16 @@
+C:\lscc\diamond\3.1_x64\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\Yisong\Documents\new\gaussian\gaussian\synwork\gaussian_gaussian_comp.srs  -top  main  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -divnmod -encrypt  -pro  -dmgen  C:\Users\Yisong\Documents\new\gaussian\gaussian\dm  -lite   -ui -fid2 -ram -sharing on  -ll 2000 -autosm -ignore_undefined_lib  -lib work C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\Yisong\Documents\new\gaussian\conv_3x3_pkg.vhd -lib work C:\Users\Yisong\Documents\new\gaussian\rc_counter.vhd -lib work C:\Users\Yisong\Documents\new\gaussian\reset.vhd -lib work C:\Users\Yisong\Documents\new\gaussian\std_fifo.vhd -lib work C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd -lib work C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd -lib work C:\Users\Yisong\Documents\new\gaussian\efb_spi.vhd -lib work C:\Users\Yisong\Documents\new\gaussian\spi.vhd -lib work C:\Users\Yisong\Documents\new\gaussian\main.vhd -loga  C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srr 
+rc:0 success:1
+C:\Users\Yisong\Documents\new\gaussian\gaussian\synwork\gaussian_gaussian_comp.srs|o|1410724363|34506
+C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd|i|1376992808|73964
+C:\Users\Yisong\Documents\new\gaussian\conv_3x3_pkg.vhd|i|1409256374|1234
+C:\Users\Yisong\Documents\new\gaussian\rc_counter.vhd|i|1405887558|807
+C:\Users\Yisong\Documents\new\gaussian\reset.vhd|i|1407092345|375
+C:\Users\Yisong\Documents\new\gaussian\std_fifo.vhd|i|1405613898|3148
+C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd|i|1409255078|5610
+C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd|i|1409255017|6657
+C:\Users\Yisong\Documents\new\gaussian\efb_spi.vhd|i|1410721587|11758
+C:\Users\Yisong\Documents\new\gaussian\spi.vhd|i|1410721694|3286
+C:\Users\Yisong\Documents\new\gaussian\main.vhd|i|1410724358|4071
+C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srr|o|1410724363|32376
+C:\lscc\diamond\3.1_x64\synpbase\bin64\c_vhdl.exe|i|1384762852|5457920
+C:\lscc\diamond\3.1_x64\synpbase\bin\c_vhdl.exe|i|1384762654|1978368

@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(mlp )
+find_package( OpenCV REQUIRED )
+add_executable( mlp mlp.cpp )
+target_link_libraries( mlp ${OpenCV_LIBS} )

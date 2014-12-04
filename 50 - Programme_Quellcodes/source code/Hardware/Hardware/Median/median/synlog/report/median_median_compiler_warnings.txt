@@ -1,0 +1,21 @@
+@W: CG296 :"C:\Users\Yisong\Documents\new\median\main.vhd":174:1:174:7|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Yisong\Documents\new\median\main.vhd":188:15:188:24|Referenced variable write_data is not in sensitivity list
+@W: CG290 :"C:\Users\Yisong\Documents\new\median\main.vhd":187:12:187:13|Referenced variable rx is not in sensitivity list
+@W: CD638 :"C:\Users\Yisong\Documents\new\median\main.vhd":84:7:84:8|Signal tx is undriven 
+@W: CD638 :"C:\Users\Yisong\Documents\new\median\main.vhd":96:7:96:15|Signal read_data is undriven 
+@W: CD638 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":68:7:68:11|Signal c44_l is undriven 
+@W: CD638 :"C:\Users\Yisong\Documents\new\median\sort_3x3.vhd":69:7:69:11|Signal c44_h is undriven 
+@W: CD434 :"C:\Users\Yisong\Documents\new\median\reset.vhd":16:9:16:11|Signal clk in the sensitivity list is not used in the process
+@W: CL159 :"C:\Users\Yisong\Documents\new\median\reset.vhd":7:1:7:3|Input clk is unused
+@W: CL138 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Removing register 'just_written' because it is only assigned 0 or its original value.
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(4) is always 1, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(5) is always 0, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(6) is always 1, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(7) is always 0, optimizing ...
+@W: CL279 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Pruning register bits 7 to 4 of wbaddr(7 downto 0)  
+@W: CL249 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Initial value is not supported on state machine state
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(2) is always 0, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Register bit wbaddr(3) is always 1, optimizing ...
+@W: CL279 :"C:\Users\Yisong\Documents\new\median\spi.vhd":69:3:69:4|Pruning register bits 3 to 2 of wbaddr(3 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\median\sort_filter.vhd":199:2:199:3|Pruning register bit 0 of col_c(31 downto 0)  
+

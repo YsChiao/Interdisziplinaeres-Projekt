@@ -1,0 +1,10 @@
+#Start recording tcl command: 9/30/2014 00:32:17
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_run Synthesis -impl nn -task Synplify_Synthesis
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+prj_project save
+prj_project close
+#Stop recording: 9/30/2014 02:17:49

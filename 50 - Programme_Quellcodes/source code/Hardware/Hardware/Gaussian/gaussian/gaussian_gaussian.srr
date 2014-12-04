@@ -1,0 +1,1195 @@
+#Build: Synplify Pro I-2013.09L , Build 064R, Nov 15 2013
+#install: C:\lscc\diamond\3.1_x64\synpbase
+#OS: Windows 7 6.1
+#Hostname: YISONG-PC
+
+#Implementation: gaussian
+
+$ Start of Compile
+#Sun Sep 14 21:52:42 2014
+
+Synopsys VHDL Compiler, version comp201309rc, Build 136R, built Nov 18 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.1_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\Yisong\Documents\new\gaussian\main.vhd":7:7:7:10|Top entity is set to main.
+File C:\Users\Yisong\Documents\new\gaussian\main.vhd changed - recompiling
+File C:\lscc\diamond\3.1_x64\synpbase\lib\lucent\machxo2.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\Users\Yisong\Documents\new\gaussian\main.vhd changed - recompiling
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":7:7:7:10|Synthesizing work.main.rtl 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box 
+Post processing for work.osch.syn_black_box
+@W: CG296 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":159:0:159:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":170:10:170:19|Referenced variable write_data is not in sensitivity list
+@W: CG290 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":171:14:171:15|Referenced variable rx is not in sensitivity list
+@W: CD638 :"C:\Users\Yisong\Documents\new\gaussian\main.vhd":89:7:89:15|Signal read_data is undriven 
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":8:7:8:14|Synthesizing work.conv_3x3.rtl 
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\rc_counter.vhd":4:7:4:16|Synthesizing work.rc_counter.rtl 
+Post processing for work.rc_counter.rtl
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":5:7:5:16|Synthesizing work.window_3x3.rtl 
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\std_fifo.vhd":5:7:5:14|Synthesizing work.std_fifo.behavioral 
+@N: CD364 :"C:\Users\Yisong\Documents\new\gaussian\std_fifo.vhd":111:4:111:10|Removed redundant assignment
+Post processing for work.std_fifo.behavioral
+@N: CL134 :"C:\Users\Yisong\Documents\new\gaussian\std_fifo.vhd":36:11:36:16|Found RAM memory, depth=640, width=8
+Post processing for work.window_3x3.rtl
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a33.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a32.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a23.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a22.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a13.
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\window_3x3.vhd":129:2:129:3|Sharing sequential element a12.
+Post processing for work.conv_3x3.rtl
+@W: CL271 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning bits 3 to 0 of a40_4(20 downto 0) -- not in use ... 
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":5:7:5:10|Synthesizing work.spi2.rtl 
+@N: CD233 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":24:12:24:13|Using sequential encoding for type states
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\efb_spi.vhd":14:7:14:13|Synthesizing work.efb_spi.structure 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":2302:10:2302:12|Synthesizing work.efb.syn_black_box 
+Post processing for work.efb.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1490:10:1490:12|Synthesizing work.vlo.syn_black_box 
+Post processing for work.vlo.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":106:10:106:11|Synthesizing work.bb.syn_black_box 
+Post processing for work.bb.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1483:10:1483:12|Synthesizing work.vhi.syn_black_box 
+Post processing for work.vhi.syn_black_box
+Post processing for work.efb_spi.structure
+Post processing for work.spi2.rtl
+@N: CL177 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Sharing sequential element wbstb.
+@N: CD630 :"C:\Users\Yisong\Documents\new\gaussian\reset.vhd":5:7:5:11|Synthesizing work.reset.rtl 
+@W: CD434 :"C:\Users\Yisong\Documents\new\gaussian\reset.vhd":16:9:16:11|Signal clk in the sensitivity list is not used in the process
+Post processing for work.reset.rtl
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":591:10:591:12|Synthesizing work.gsr.syn_black_box 
+Post processing for work.gsr.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":599:10:599:11|Synthesizing work.ib.syn_black_box 
+Post processing for work.ib.syn_black_box
+Post processing for work.main.rtl
+@W: CL159 :"C:\Users\Yisong\Documents\new\gaussian\reset.vhd":7:1:7:3|Input clk is unused
+@W: CL138 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Removing register 'just_written' because it is only assigned 0 or its original value.
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(4) is always 1, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(5) is always 0, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(6) is always 1, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(7) is always 0, optimizing ...
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Pruning register bits 7 to 4 of wbaddr(7 downto 0)  
+@N: CL201 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   01
+   10
+   11
+@W: CL249 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Initial value is not supported on state machine state
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(2) is always 0, optimizing ...
+@W: CL189 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Register bit wbaddr(3) is always 1, optimizing ...
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\spi.vhd":69:3:69:4|Pruning register bits 3 to 2 of wbaddr(3 downto 0)  
+@N: CL135 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Found seqShift row_c, depth=8, width=32
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m1(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m3(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(1) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m4(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m5(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m7(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(16) to a constant 0
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m8(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m7(16 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of m7(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m6(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m5(16 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of m5(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 10 of m4(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 1 to 0 of m4(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m3(16 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of m3(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m2(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m1(16 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of m1(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 9 of m0(16 downto 0)  
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m0(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m2(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m6(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit m8(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a10(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a11(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(0) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a12(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a13(17) to a constant 0
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 10 of a13(17 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 11 of a12(17 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of a12(17 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 10 of a11(17 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 10 of a10(17 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 17 to 9 of a14(17 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of m8(8 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of m6(8 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of m2(8 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of m0(8 downto 0)  
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a14(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(18) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a21(18) to a constant 0
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 18 to 12 of a21(18 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 18 to 9 of a22(18 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of a14(8 downto 0)  
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a22(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(9) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(10) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(18) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(19) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(11) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(12) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(13) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(14) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(15) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(16) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(17) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a20(18) to a constant 0
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 18 to 11 of a20(18 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 19 to 9 of a31(19 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of a22(8 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 19 to 14 of a30(19 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 20 to 15 of a40(20 downto 4)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 11 of d0(16 downto 0)  
+@W: CL279 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bits 16 to 11 of DataOut(16 downto 0)  
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a31(8) to a constant 0
+@W: CL190 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Optimizing register bit a30(13) to a constant 0
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 0 of col_c(31 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 13 of a30(13 downto 0)  
+@W: CL260 :"C:\Users\Yisong\Documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Pruning register bit 8 of a31(8 downto 0)  
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 77MB peak: 85MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Sep 14 21:52:43 2014
+
+###########################################################]
+Premap Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 800R, Built Nov 18 2013 10:58:25
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09L 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian_scck.rpt 
+Printing clock  summary report in "C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 115MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN287 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register WriteEn0 with reset has an initial value of 1. Ignoring initial value.  
+@W: BN288 :"c:\users\yisong\documents\new\gaussian\rc_counter.vhd":29:2:29:3|Register col_var[31:0] with set has an initial value of 0. Ignoring initial value.  
+syn_allowed_resources : blockrams=26  set on top level netlist main
+
+
+Clock Summary
+**************
+
+Start                           Requested     Requested     Clock                                          Clock              
+Clock                           Frequency     Period        Type                                           Group              
+------------------------------------------------------------------------------------------------------------------------------
+System                          1.0 MHz       1000.000      system                                         system_clkgroup    
+main|clk_sig_inferred_clock     1.0 MHz       1000.000      inferred                                       Inferred_clkgroup_0
+spi2|new_data_derived_clock     1.0 MHz       1000.000      derived (from main|clk_sig_inferred_clock)     Inferred_clkgroup_0
+==============================================================================================================================
+
+@W: MT529 :"c:\users\yisong\documents\new\gaussian\spi.vhd":69:3:69:4|Found inferred clock main|clk_sig_inferred_clock which controls 26 sequential elements including spi0.write_pending. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 144MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Sep 14 21:52:45 2014
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 800R, Built Nov 18 2013 10:58:25
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09L 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 116MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 144MB)
+
+@W: MO171 :|Sequential instance con_3x3_0.G_17 reduced to a combinational gate by constant propagation 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance con_3x3_0.rt1[31:0] 
+@N: FX493 |Applying initial value "00000000" on instance con_3x3_0.a22[7:0] 
+@N: FX493 |Applying initial value "00000000000" on instance con_3x3_0.d0[10:0] 
+@N: FX493 |Applying initial value "00000000" on instance con_3x3_0.m8[7:0] 
+@N: FX493 |Applying initial value "00000000" on instance con_3x3_0.a14[7:0] 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 144MB)
+
+Encoding state machine state[0:2] (view:work.spi2(rtl))
+original code -> new code
+   01 -> 00
+   10 -> 01
+   11 -> 10
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance DataOut_1[10] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance DataOut_1[9] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance DataOut_1[8] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance a40[14] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance a40[13] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance a40[12] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance d0[10] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance d0[9] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing sequential instance d0[8] in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: MF237 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":178:14:178:27|Generating a type rem remainder 
+@N: MF237 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":179:12:179:25|Generating a type rem remainder 
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":202:1:202:2|Removing instance con_3x3_0.window_3x3_0.dwrreqb,  because it is equivalent to instance con_3x3_0.window_3x3_0.ReadEn0
+@W: BN132 :|Removing instance con_3x3_0.G_9,  because it is equivalent to instance con_3x3_0.G_1
+@W: BN132 :|Removing instance con_3x3_0.G_2,  because it is equivalent to instance con_3x3_0.G_10
+@W: BN132 :|Removing instance con_3x3_0.G_11,  because it is equivalent to instance con_3x3_0.G_3
+@W: BN132 :|Removing instance con_3x3_0.G_4,  because it is equivalent to instance con_3x3_0.G_12
+@W: BN132 :|Removing instance con_3x3_0.G_13,  because it is equivalent to instance con_3x3_0.G_5
+@W: BN132 :|Removing instance con_3x3_0.G_6,  because it is equivalent to instance con_3x3_0.G_14
+@W: BN132 :|Removing instance con_3x3_0.G_15,  because it is equivalent to instance con_3x3_0.G_7
+@W: BN132 :|Removing instance con_3x3_0.G_8,  because it is equivalent to instance con_3x3_0.G_16
+@N: BN362 :|Removing sequential instance G_30 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_28 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_26 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_24 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_22 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_20 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_18 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_44 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_42 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_40 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_38 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_36 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_34 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_32 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_60 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_58 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_56 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_54 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_52 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_50 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_48 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_46 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_74 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_72 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_70 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_68 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_66 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_64 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_62 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_80 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_78 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_76 in hierarchy view:work.conv_3x3(rtl) because there are no references to its outputs 
+@N:"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":103:2:103:3|Found updn counter in view:work.STD_FIFO(behavioral) inst usedw_t[31:0] 
+@N: MF179 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Found 10 bit by 10 bit '==' comparator, 'adreg'
+@N: MF179 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":70:30:70:41|Found 10 bit by 10 bit '==' comparator, 'fifo_proc\.un3_writeen'
+@N: MF179 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":86:8:86:18|Found 10 bit by 10 bit '==' comparator, 'fifo_proc\.un17_head'
+@N: MF179 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":54:29:54:40|Found 10 bit by 10 bit '==' comparator, 'fifo_proc\.un4_readen'
+
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 149MB)
+
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[0],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[0]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[1],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[1]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[2],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[2]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[3],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[3]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[4],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[4]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[5],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[5]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[6],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[6]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[7],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[7]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[8],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[8]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo1.memory_raddr_tmp[9],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo1.tail[9]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[0],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[0]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[1],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[1]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[2],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[2]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[3],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[3]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[4],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[4]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[5],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[5]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[6],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[6]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[7],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[7]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[8],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[8]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Removing instance con_3x3_0.window_3x3_0.fifo0.memory_raddr_tmp[9],  because it is equivalent to instance con_3x3_0.window_3x3_0.fifo0.tail[9]
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 151MB)
+
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 151MB)
+
+@N: FA113 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":204:12:204:24|Pipelining module un5_a10[9:1]
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a10[9:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m1[8:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m0[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w12[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w11[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a20[10:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a11[9:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":36:11:36:16|Register memory[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w13[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register a11[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m2[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\spi.vhd":69:3:69:4|Register read_data[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a30[12:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a21[11:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m3[8:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\std_fifo.vhd":43:2:43:3|Register DataOut[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w21[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register a21[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a40[14:4] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a31[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a12[10:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a13[9:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w22[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register d0[10:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a22[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m4[9:2] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w23[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register a14[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m5[8:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m7[8:1] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m6[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Register m8[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w32[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w31[7:0] pushed in.
+@N: MF169 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register w33[7:0] pushed in.
+@N: FX404 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":178:14:178:27|Found addmux in view:work.main(rtl) inst con_3x3_0.conv_process\.un3_col_c_if_generate_plus\.mult1_remainder_0[9:0] from con_3x3_0.conv_process\.un3_col_c_if_generate_plus\.mult1_un1_rem_adjust[9:0] 
+@N: FX404 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":179:12:179:25|Found addmux in view:work.main(rtl) inst con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_remainder_0[9:0] from con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un1_rem_adjust[9:0] 
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 153MB peak: 154MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 153MB peak: 154MB)
+
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[15],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[17],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[19],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[21],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[23],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[25],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[27],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[29],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[31],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[30],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[28],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[26],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[24],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[22],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[20],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[18],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[16],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[14],  because it is equivalent to instance con_3x3_0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[13],  because it is equivalent to instance con_3x3_0.rt1[12]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.rt1[12],  because it is equivalent to instance con_3x3_0.rt1[11]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[15],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[17],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[19],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[21],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[23],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[25],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[27],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[29],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[31],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[30],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[28],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[26],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[24],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[22],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[20],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[18],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[16],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[14],  because it is equivalent to instance con_3x3_0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[13],  because it is equivalent to instance con_3x3_0.col_c[12]
+@W: BN132 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Removing instance con_3x3_0.col_c[12],  because it is equivalent to instance con_3x3_0.col_c[11]
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 152MB peak: 154MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 153MB peak: 154MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 160MB peak: 163MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 153MB peak: 163MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@N: FO126 :"c:\users\yisong\documents\new\gaussian\conv_3x3.vhd":141:2:141:3|Generating RAM con_3x3_0.row_c_CR31[31:0]
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 153MB peak: 163MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 752 clock pin(s) of sequential element(s)
+0 instances converted, 752 sequential instances remain driven by gated/generated clocks
+
+===================================================================================================== Gated/Generated Clocks ======================================================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance              Explanation                                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       OSC0                OSCH                   740        write_req                    Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       spi0.new_data       FD1P3AX                12         con_3x3_0.row_c_CR31_ram     Need declared clock or clock from port to derive clock from ff                                                                
+===================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 150MB peak: 163MB)
+
+Writing EDIF Netlist and constraint files
+I-2013.09L 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 154MB peak: 163MB)
+
+@W: MT246 :"c:\users\yisong\documents\new\gaussian\main.vhd":124:4:124:7|Blackbox OSCH is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\yisong\documents\new\gaussian\efb_spi.vhd":165:4:165:12|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock main|clk_sig_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:clk_sig"
+
+Found clock spi2|new_data_derived_clock with period 1000.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sun Sep 14 21:52:56 2014
+#
+
+
+Top view:               main
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 899.689
+
+                                Requested     Estimated     Requested     Estimated                 Clock                                          Clock              
+Starting Clock                  Frequency     Frequency     Period        Period        Slack       Type                                           Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+main|clk_sig_inferred_clock     1.0 MHz       10.0 MHz      1000.000      100.311       899.689     inferred                                       Inferred_clkgroup_0
+spi2|new_data_derived_clock     1.0 MHz       60.7 MHz      1000.000      16.474        991.117     derived (from main|clk_sig_inferred_clock)     Inferred_clkgroup_0
+System                          1.0 MHz       302.9 MHz     1000.000      3.301         996.699     system                                         system_clkgroup    
+======================================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                    |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                     Ending                       |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------
+System                       main|clk_sig_inferred_clock  |  1000.000    996.699  |  No paths    -      |  No paths    -      |  No paths    -    
+main|clk_sig_inferred_clock  System                       |  1000.000    998.956  |  No paths    -      |  No paths    -      |  No paths    -    
+main|clk_sig_inferred_clock  main|clk_sig_inferred_clock  |  1000.000    899.690  |  No paths    -      |  No paths    -      |  No paths    -    
+main|clk_sig_inferred_clock  spi2|new_data_derived_clock  |  1000.000    983.526  |  No paths    -      |  No paths    -      |  No paths    -    
+spi2|new_data_derived_clock  main|clk_sig_inferred_clock  |  1000.000    991.117  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: main|clk_sig_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                       Arrival            
+Instance                         Reference                       Type        Pin     Net        Time        Slack  
+                                 Clock                                                                             
+-------------------------------------------------------------------------------------------------------------------
+con_3x3_0.rc_counter0.row[0]     main|clk_sig_inferred_clock     FD1P3DX     Q       row[0]     1.180       899.689
+con_3x3_0.rc_counter0.col[3]     main|clk_sig_inferred_clock     FD1P3DX     Q       col[3]     1.180       901.170
+con_3x3_0.rc_counter0.row[1]     main|clk_sig_inferred_clock     FD1P3DX     Q       row[1]     1.108       901.250
+con_3x3_0.rc_counter0.row[2]     main|clk_sig_inferred_clock     FD1P3DX     Q       row[2]     1.044       901.314
+con_3x3_0.rc_counter0.col[4]     main|clk_sig_inferred_clock     FD1P3DX     Q       col[4]     1.044       901.449
+con_3x3_0.rc_counter0.col[5]     main|clk_sig_inferred_clock     FD1P3DX     Q       col[5]     1.044       901.449
+con_3x3_0.rc_counter0.row[3]     main|clk_sig_inferred_clock     FD1P3DX     Q       row[3]     1.044       901.457
+con_3x3_0.rc_counter0.row[4]     main|clk_sig_inferred_clock     FD1P3DX     Q       row[4]     1.044       901.457
+con_3x3_0.rc_counter0.col[6]     main|clk_sig_inferred_clock     FD1P3DX     Q       col[6]     1.044       901.592
+con_3x3_0.rc_counter0.col[7]     main|clk_sig_inferred_clock     FD1P3DX     Q       col[7]     1.044       901.592
+===================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                      Starting                                                          Required            
+Instance              Reference                       Type        Pin     Net           Time         Slack  
+                      Clock                                                                                 
+------------------------------------------------------------------------------------------------------------
+con_3x3_0.rt1[11]     main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[31]     1000.089     899.689
+con_3x3_0.rt1[9]      main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[9]      1000.089     899.832
+con_3x3_0.rt1[10]     main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[10]     1000.089     899.832
+con_3x3_0.rt1[1]      main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[1]      1000.089     899.912
+con_3x3_0.rt1[2]      main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[2]      1000.089     899.912
+con_3x3_0.rt1[3]      main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[3]      1000.089     899.912
+con_3x3_0.rt1[4]      main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[4]      1000.089     899.912
+con_3x3_0.rt1[5]      main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[5]      1000.089     899.912
+con_3x3_0.rt1[6]      main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[6]      1000.089     899.912
+con_3x3_0.rt1[7]      main|clk_sig_inferred_clock     FD1P3DX     D       rt1_1[7]      1000.089     899.912
+============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      100.399
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     899.689
+
+    Number of logic level(s):                79
+    Starting point:                          con_3x3_0.rc_counter0.row[0] / Q
+    Ending point:                            con_3x3_0.rt1[11] / D
+    The start point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                               Pin      Pin               Arrival     No. of    
+Name                                                                            Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------
+con_3x3_0.rc_counter0.row[0]                                                    FD1P3DX      Q        Out     1.180     1.180       -         
+row[0]                                                                          Net          -        -       -         -           5         
+con_3x3_0.conv_process\.un19_rt1_cry_0_0                                        CCU2D        A1       In      0.000     1.180       -         
+con_3x3_0.conv_process\.un19_rt1_cry_0_0                                        CCU2D        S1       Out     1.346     2.526       -         
+un8_rt1                                                                         Net          -        -       -         -           3         
+con_3x3_0.un1_rt1_cry_0_0                                                       CCU2D        A1       In      0.000     2.526       -         
+con_3x3_0.un1_rt1_cry_0_0                                                       CCU2D        COUT     Out     1.545     4.070       -         
+un1_rt1_cry_0                                                                   Net          -        -       -         -           1         
+con_3x3_0.un1_rt1_cry_1_0                                                       CCU2D        CIN      In      0.000     4.070       -         
+con_3x3_0.un1_rt1_cry_1_0                                                       CCU2D        COUT     Out     0.143     4.213       -         
+un1_rt1_cry_2                                                                   Net          -        -       -         -           1         
+con_3x3_0.un1_rt1_cry_3_0                                                       CCU2D        CIN      In      0.000     4.213       -         
+con_3x3_0.un1_rt1_cry_3_0                                                       CCU2D        COUT     Out     0.143     4.356       -         
+un1_rt1_cry_4                                                                   Net          -        -       -         -           1         
+con_3x3_0.un1_rt1_cry_5_0                                                       CCU2D        CIN      In      0.000     4.356       -         
+con_3x3_0.un1_rt1_cry_5_0                                                       CCU2D        COUT     Out     0.143     4.499       -         
+un1_rt1_cry_6                                                                   Net          -        -       -         -           1         
+con_3x3_0.un1_rt1_cry_7_0                                                       CCU2D        CIN      In      0.000     4.499       -         
+con_3x3_0.un1_rt1_cry_7_0                                                       CCU2D        COUT     Out     0.143     4.641       -         
+un1_rt1_cry_8                                                                   Net          -        -       -         -           1         
+con_3x3_0.un1_rt1_cry_9_0                                                       CCU2D        CIN      In      0.000     4.641       -         
+con_3x3_0.un1_rt1_cry_9_0                                                       CCU2D        S1       Out     1.685     6.327       -         
+un1_rt1[22]                                                                     Net          -        -       -         -           3         
+con_3x3_0.un8_rt1_cry_9_0                                                       CCU2D        A1       In      0.000     6.327       -         
+con_3x3_0.un8_rt1_cry_9_0                                                       CCU2D        COUT     Out     1.545     7.871       -         
+un8_rt1_cry_10                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_11_0                                                      CCU2D        CIN      In      0.000     7.871       -         
+con_3x3_0.un8_rt1_cry_11_0                                                      CCU2D        COUT     Out     0.143     8.014       -         
+un8_rt1_cry_12                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_13_0                                                      CCU2D        CIN      In      0.000     8.014       -         
+con_3x3_0.un8_rt1_cry_13_0                                                      CCU2D        COUT     Out     0.143     8.157       -         
+un8_rt1_cry_14                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_15_0                                                      CCU2D        CIN      In      0.000     8.157       -         
+con_3x3_0.un8_rt1_cry_15_0                                                      CCU2D        COUT     Out     0.143     8.299       -         
+un8_rt1_cry_16                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_17_0                                                      CCU2D        CIN      In      0.000     8.299       -         
+con_3x3_0.un8_rt1_cry_17_0                                                      CCU2D        COUT     Out     0.143     8.442       -         
+un8_rt1_cry_18                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_19_0                                                      CCU2D        CIN      In      0.000     8.442       -         
+con_3x3_0.un8_rt1_cry_19_0                                                      CCU2D        COUT     Out     0.143     8.585       -         
+un8_rt1_cry_20                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_21_0                                                      CCU2D        CIN      In      0.000     8.585       -         
+con_3x3_0.un8_rt1_cry_21_0                                                      CCU2D        COUT     Out     0.143     8.728       -         
+un8_rt1_cry_22                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_23_0                                                      CCU2D        CIN      In      0.000     8.728       -         
+con_3x3_0.un8_rt1_cry_23_0                                                      CCU2D        COUT     Out     0.143     8.871       -         
+un8_rt1_cry_24                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_25_0                                                      CCU2D        CIN      In      0.000     8.871       -         
+con_3x3_0.un8_rt1_cry_25_0                                                      CCU2D        COUT     Out     0.143     9.013       -         
+un8_rt1_cry_26                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_27_0                                                      CCU2D        CIN      In      0.000     9.013       -         
+con_3x3_0.un8_rt1_cry_27_0                                                      CCU2D        COUT     Out     0.143     9.156       -         
+un8_rt1_cry_28                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_cry_29_0                                                      CCU2D        CIN      In      0.000     9.156       -         
+con_3x3_0.un8_rt1_cry_29_0                                                      CCU2D        COUT     Out     0.143     9.299       -         
+un8_rt1_cry_30                                                                  Net          -        -       -         -           1         
+con_3x3_0.un8_rt1_s_31_0                                                        CCU2D        CIN      In      0.000     9.299       -         
+con_3x3_0.un8_rt1_s_31_0                                                        CCU2D        S0       Out     1.621     10.920      -         
+un8_rt1[31]                                                                     Net          -        -       -         -           2         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un61_sum_cry_7_0        CCU2D        B1       In      0.000     10.920      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un61_sum_cry_7_0        CCU2D        COUT     Out     1.545     12.464      -         
+mult1_un61_sum_cry_7_0                                                          Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un61_sum_cry_8_0        CCU2D        CIN      In      0.000     12.464      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un61_sum_cry_8_0        CCU2D        COUT     Out     0.143     12.607      -         
+mult1_un61_sum_cry_9_0                                                          Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un61_sum_cry_10_0       CCU2D        CIN      In      0.000     12.607      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un61_sum_cry_10_0       CCU2D        S1       Out     1.725     14.332      -         
+mult1_un61_sum_0[11]                                                            Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un68_sum_cry_8_0        CCU2D        A1       In      0.000     14.332      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un68_sum_cry_8_0        CCU2D        COUT     Out     1.545     15.877      -         
+mult1_un68_sum_cry_9_0                                                          Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un68_sum_cry_10_0       CCU2D        CIN      In      0.000     15.877      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un68_sum_cry_10_0       CCU2D        S1       Out     1.725     17.602      -         
+mult1_un68_sum_0[11]                                                            Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un75_sum_cry_8_0        CCU2D        A1       In      0.000     17.602      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un75_sum_cry_8_0        CCU2D        COUT     Out     1.545     19.146      -         
+mult1_un75_sum_cry_9_0                                                          Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un75_sum_cry_10_0       CCU2D        CIN      In      0.000     19.146      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un75_sum_cry_10_0       CCU2D        S1       Out     1.725     20.871      -         
+mult1_un75_sum_0[11]                                                            Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un82_sum_cry_8_0        CCU2D        A1       In      0.000     20.871      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un82_sum_cry_8_0        CCU2D        COUT     Out     1.545     22.416      -         
+mult1_un82_sum_cry_9_0                                                          Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un82_sum_cry_10_0       CCU2D        CIN      In      0.000     22.416      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un82_sum_cry_10_0       CCU2D        S1       Out     1.725     24.141      -         
+mult1_un82_sum_0[11]                                                            Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un89_sum_cry_8_0        CCU2D        A1       In      0.000     24.141      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un89_sum_cry_8_0        CCU2D        COUT     Out     1.545     25.685      -         
+mult1_un89_sum_cry_9_0                                                          Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un89_sum_cry_10_0       CCU2D        CIN      In      0.000     25.685      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un89_sum_cry_10_0       CCU2D        S1       Out     1.725     27.410      -         
+mult1_un89_sum_0[11]                                                            Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un96_sum_cry_8_0        CCU2D        A1       In      0.000     27.410      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un96_sum_cry_8_0        CCU2D        COUT     Out     1.545     28.955      -         
+mult1_un96_sum_cry_9_0                                                          Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un96_sum_cry_10_0       CCU2D        CIN      In      0.000     28.955      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un96_sum_cry_10_0       CCU2D        S1       Out     1.725     30.680      -         
+mult1_un96_sum_0[11]                                                            Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un103_sum_cry_8_0       CCU2D        A1       In      0.000     30.680      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un103_sum_cry_8_0       CCU2D        COUT     Out     1.545     32.224      -         
+mult1_un103_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un103_sum_cry_10_0      CCU2D        CIN      In      0.000     32.224      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un103_sum_cry_10_0      CCU2D        S1       Out     1.725     33.949      -         
+mult1_un103_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un110_sum_cry_8_0       CCU2D        A1       In      0.000     33.949      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un110_sum_cry_8_0       CCU2D        COUT     Out     1.545     35.494      -         
+mult1_un110_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un110_sum_cry_10_0      CCU2D        CIN      In      0.000     35.494      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un110_sum_cry_10_0      CCU2D        S1       Out     1.725     37.219      -         
+mult1_un110_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un117_sum_cry_8_0       CCU2D        A1       In      0.000     37.219      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un117_sum_cry_8_0       CCU2D        COUT     Out     1.545     38.763      -         
+mult1_un117_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un117_sum_cry_10_0      CCU2D        CIN      In      0.000     38.763      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un117_sum_cry_10_0      CCU2D        S1       Out     1.725     40.488      -         
+mult1_un117_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un124_sum_cry_8_0       CCU2D        A1       In      0.000     40.488      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un124_sum_cry_8_0       CCU2D        COUT     Out     1.545     42.033      -         
+mult1_un124_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un124_sum_cry_10_0      CCU2D        CIN      In      0.000     42.033      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un124_sum_cry_10_0      CCU2D        S1       Out     1.725     43.758      -         
+mult1_un124_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un131_sum_cry_8_0       CCU2D        A1       In      0.000     43.758      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un131_sum_cry_8_0       CCU2D        COUT     Out     1.545     45.302      -         
+mult1_un131_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un131_sum_cry_10_0      CCU2D        CIN      In      0.000     45.302      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un131_sum_cry_10_0      CCU2D        S1       Out     1.725     47.027      -         
+mult1_un131_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un138_sum_cry_8_0       CCU2D        A1       In      0.000     47.027      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un138_sum_cry_8_0       CCU2D        COUT     Out     1.545     48.572      -         
+mult1_un138_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un138_sum_cry_10_0      CCU2D        CIN      In      0.000     48.572      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un138_sum_cry_10_0      CCU2D        S1       Out     1.725     50.297      -         
+mult1_un138_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un145_sum_cry_8_0       CCU2D        A1       In      0.000     50.297      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un145_sum_cry_8_0       CCU2D        COUT     Out     1.545     51.841      -         
+mult1_un145_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un145_sum_cry_10_0      CCU2D        CIN      In      0.000     51.841      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un145_sum_cry_10_0      CCU2D        S1       Out     1.725     53.566      -         
+mult1_un145_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un152_sum_cry_8_0       CCU2D        A1       In      0.000     53.566      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un152_sum_cry_8_0       CCU2D        COUT     Out     1.545     55.111      -         
+mult1_un152_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un152_sum_cry_10_0      CCU2D        CIN      In      0.000     55.111      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un152_sum_cry_10_0      CCU2D        S1       Out     1.725     56.836      -         
+mult1_un152_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un159_sum_cry_8_0       CCU2D        A1       In      0.000     56.836      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un159_sum_cry_8_0       CCU2D        COUT     Out     1.545     58.380      -         
+mult1_un159_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un159_sum_cry_10_0      CCU2D        CIN      In      0.000     58.380      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un159_sum_cry_10_0      CCU2D        S1       Out     1.725     60.105      -         
+mult1_un159_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un166_sum_cry_8_0       CCU2D        A1       In      0.000     60.105      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un166_sum_cry_8_0       CCU2D        COUT     Out     1.545     61.650      -         
+mult1_un166_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un166_sum_cry_10_0      CCU2D        CIN      In      0.000     61.650      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un166_sum_cry_10_0      CCU2D        S1       Out     1.725     63.375      -         
+mult1_un166_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un173_sum_cry_8_0       CCU2D        A1       In      0.000     63.375      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un173_sum_cry_8_0       CCU2D        COUT     Out     1.545     64.919      -         
+mult1_un173_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un173_sum_cry_10_0      CCU2D        CIN      In      0.000     64.919      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un173_sum_cry_10_0      CCU2D        S1       Out     1.725     66.644      -         
+mult1_un173_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un180_sum_cry_8_0       CCU2D        A1       In      0.000     66.644      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un180_sum_cry_8_0       CCU2D        COUT     Out     1.545     68.189      -         
+mult1_un180_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un180_sum_cry_10_0      CCU2D        CIN      In      0.000     68.189      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un180_sum_cry_10_0      CCU2D        S1       Out     1.725     69.914      -         
+mult1_un180_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un187_sum_cry_8_0       CCU2D        A1       In      0.000     69.914      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un187_sum_cry_8_0       CCU2D        COUT     Out     1.545     71.458      -         
+mult1_un187_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un187_sum_cry_10_0      CCU2D        CIN      In      0.000     71.458      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un187_sum_cry_10_0      CCU2D        S1       Out     1.725     73.183      -         
+mult1_un187_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un194_sum_cry_8_0       CCU2D        A1       In      0.000     73.183      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un194_sum_cry_8_0       CCU2D        COUT     Out     1.545     74.728      -         
+mult1_un194_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un194_sum_cry_10_0      CCU2D        CIN      In      0.000     74.728      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un194_sum_cry_10_0      CCU2D        S1       Out     1.725     76.453      -         
+mult1_un194_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un201_sum_cry_8_0       CCU2D        A1       In      0.000     76.453      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un201_sum_cry_8_0       CCU2D        COUT     Out     1.545     77.997      -         
+mult1_un201_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un201_sum_cry_10_0      CCU2D        CIN      In      0.000     77.997      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un201_sum_cry_10_0      CCU2D        S1       Out     1.725     79.722      -         
+mult1_un201_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un208_sum_cry_8_0       CCU2D        A1       In      0.000     79.722      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un208_sum_cry_8_0       CCU2D        COUT     Out     1.545     81.267      -         
+mult1_un208_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un208_sum_cry_10_0      CCU2D        CIN      In      0.000     81.267      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un208_sum_cry_10_0      CCU2D        S1       Out     1.725     82.992      -         
+mult1_un208_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un215_sum_cry_8_0       CCU2D        A1       In      0.000     82.992      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un215_sum_cry_8_0       CCU2D        COUT     Out     1.545     84.536      -         
+mult1_un215_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un215_sum_cry_10_0      CCU2D        CIN      In      0.000     84.536      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un215_sum_cry_10_0      CCU2D        S1       Out     1.725     86.261      -         
+mult1_un215_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un222_sum_cry_8_0       CCU2D        A1       In      0.000     86.261      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un222_sum_cry_8_0       CCU2D        COUT     Out     1.545     87.806      -         
+mult1_un222_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un222_sum_cry_10_0      CCU2D        CIN      In      0.000     87.806      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un222_sum_cry_10_0      CCU2D        S1       Out     1.725     89.531      -         
+mult1_un222_sum_0[11]                                                           Net          -        -       -         -           4         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un229_sum_cry_8_0       CCU2D        A1       In      0.000     89.531      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un229_sum_cry_8_0       CCU2D        COUT     Out     1.545     91.075      -         
+mult1_un229_sum_cry_9_0                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un229_sum_cry_10_0      CCU2D        CIN      In      0.000     91.075      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_un229_sum_cry_10_0      CCU2D        S1       Out     1.813     92.888      -         
+mult1_un229_sum_0[11]                                                           Net          -        -       -         -           11        
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_remainder_0_cry_1_0     CCU2D        A1       In      0.000     92.888      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_remainder_0_cry_1_0     CCU2D        COUT     Out     1.545     94.433      -         
+mult1_remainder_0_cry_1                                                         Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_remainder_0_cry_2_0     CCU2D        CIN      In      0.000     94.433      -         
+con_3x3_0.conv_process\.un3_rt1_if_generate_plus\.mult1_remainder_0_cry_2_0     CCU2D        S0       Out     1.685     96.118      -         
+un3_rt1[2]                                                                      Net          -        -       -         -           3         
+con_3x3_0.conv_process\.un19_rt1_cry_1_0                                        CCU2D        A1       In      0.000     96.118      -         
+con_3x3_0.conv_process\.un19_rt1_cry_1_0                                        CCU2D        COUT     Out     1.545     97.662      -         
+un19_rt1_cry_2                                                                  Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un19_rt1_cry_3_0                                        CCU2D        CIN      In      0.000     97.662      -         
+con_3x3_0.conv_process\.un19_rt1_cry_3_0                                        CCU2D        COUT     Out     0.143     97.805      -         
+un19_rt1_cry_4                                                                  Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un19_rt1_cry_5_0                                        CCU2D        CIN      In      0.000     97.805      -         
+con_3x3_0.conv_process\.un19_rt1_cry_5_0                                        CCU2D        COUT     Out     0.143     97.948      -         
+un19_rt1_cry_6                                                                  Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un19_rt1_cry_7_0                                        CCU2D        CIN      In      0.000     97.948      -         
+con_3x3_0.conv_process\.un19_rt1_cry_7_0                                        CCU2D        COUT     Out     0.143     98.091      -         
+un19_rt1_cry_8                                                                  Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un19_rt1_cry_9_0                                        CCU2D        CIN      In      0.000     98.091      -         
+con_3x3_0.conv_process\.un19_rt1_cry_9_0                                        CCU2D        COUT     Out     0.143     98.234      -         
+un19_rt1_cry_10                                                                 Net          -        -       -         -           1         
+con_3x3_0.conv_process\.un19_rt1_s_11_0                                         CCU2D        CIN      In      0.000     98.234      -         
+con_3x3_0.conv_process\.un19_rt1_s_11_0                                         CCU2D        S0       Out     1.549     99.782      -         
+un19_rt1[31]                                                                    Net          -        -       -         -           1         
+con_3x3_0.rt1_RNO[11]                                                           ORCALUT4     A        In      0.000     99.782      -         
+con_3x3_0.rt1_RNO[11]                                                           ORCALUT4     Z        Out     0.617     100.399     -         
+rt1_1[31]                                                                       Net          -        -       -         -           1         
+con_3x3_0.rt1[11]                                                               FD1P3DX      D        In      0.000     100.399     -         
+==============================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: spi2|new_data_derived_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                   Starting                                                                  Arrival            
+Instance                                           Reference                       Type      Pin      Net                    Time        Slack  
+                                                   Clock                                                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------
+con_3x3_0.window_3x3_0.fifo1.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA0     memory_dout_tmp[0]     8.778       991.117
+con_3x3_0.window_3x3_0.fifo0.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA0     memory_dout_tmp[0]     8.778       991.117
+con_3x3_0.window_3x3_0.fifo1.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA1     memory_dout_tmp[1]     8.778       991.117
+con_3x3_0.window_3x3_0.fifo0.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA1     memory_dout_tmp[1]     8.778       991.117
+con_3x3_0.window_3x3_0.fifo1.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA2     memory_dout_tmp[2]     8.778       991.117
+con_3x3_0.window_3x3_0.fifo0.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA2     memory_dout_tmp[2]     8.778       991.117
+con_3x3_0.window_3x3_0.fifo1.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA3     memory_dout_tmp[3]     8.778       991.117
+con_3x3_0.window_3x3_0.fifo0.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA3     memory_dout_tmp[3]     8.778       991.117
+con_3x3_0.window_3x3_0.fifo1.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA4     memory_dout_tmp[4]     8.778       991.117
+con_3x3_0.window_3x3_0.fifo0.memory_memory_0_0     spi2|new_data_derived_clock     DP8KC     DOA4     memory_dout_tmp[4]     8.778       991.117
+================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                 Starting                                                                   Required            
+Instance                                         Reference                       Type        Pin     Net                    Time         Slack  
+                                                 Clock                                                                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+con_3x3_0.window_3x3_0.fifo1.DataOut_pipe        spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[0]     999.894      991.117
+con_3x3_0.window_3x3_0.fifo0.DataOut_pipe        spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[0]     999.894      991.117
+con_3x3_0.window_3x3_0.fifo1.DataOut_pipe_3      spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[1]     999.894      991.117
+con_3x3_0.window_3x3_0.fifo0.DataOut_pipe_3      spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[1]     999.894      991.117
+con_3x3_0.window_3x3_0.fifo1.DataOut_pipe_6      spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[2]     999.894      991.117
+con_3x3_0.window_3x3_0.fifo0.DataOut_pipe_6      spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[2]     999.894      991.117
+con_3x3_0.window_3x3_0.fifo1.DataOut_pipe_9      spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[3]     999.894      991.117
+con_3x3_0.window_3x3_0.fifo0.DataOut_pipe_9      spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[3]     999.894      991.117
+con_3x3_0.window_3x3_0.fifo1.DataOut_pipe_12     spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[4]     999.894      991.117
+con_3x3_0.window_3x3_0.fifo0.DataOut_pipe_12     spi2|new_data_derived_clock     FD1P3AX     D       memory_dout_tmp[4]     999.894      991.117
+================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.894
+
+    - Propagation time:                      8.778
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 991.117
+
+    Number of logic level(s):                0
+    Starting point:                          con_3x3_0.window_3x3_0.fifo1.memory_memory_0_0 / DOA0
+    Ending point:                            con_3x3_0.window_3x3_0.fifo1.DataOut_pipe / D
+    The start point is clocked by            spi2|new_data_derived_clock [rising] on pin CLKA
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+
+Instance / Net                                                 Pin      Pin               Arrival     No. of    
+Name                                               Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+con_3x3_0.window_3x3_0.fifo1.memory_memory_0_0     DP8KC       DOA0     Out     8.778     8.778       -         
+memory_dout_tmp[0]                                 Net         -        -       -         -           1         
+con_3x3_0.window_3x3_0.fifo1.DataOut_pipe          FD1P3AX     D        In      0.000     8.778       -         
+================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                          Arrival            
+Instance                Reference     Type     Pin         Net            Time        Slack  
+                        Clock                                                                
+---------------------------------------------------------------------------------------------
+spi0.efb0.EFBInst_0     System        EFB      WBACKO      wback          0.000       996.699
+spi0.efb0.EFBInst_0     System        EFB      WBDATO3     wbdat_o[3]     0.000       999.472
+spi0.efb0.EFBInst_0     System        EFB      WBDATO4     wbdat_o[4]     0.000       999.472
+spi0.efb0.EFBInst_0     System        EFB      WBDATO0     wbdat_o[0]     0.000       999.894
+spi0.efb0.EFBInst_0     System        EFB      WBDATO1     wbdat_o[1]     0.000       999.894
+spi0.efb0.EFBInst_0     System        EFB      WBDATO2     wbdat_o[2]     0.000       999.894
+spi0.efb0.EFBInst_0     System        EFB      WBDATO5     wbdat_o[5]     0.000       999.894
+spi0.efb0.EFBInst_0     System        EFB      WBDATO6     wbdat_o[6]     0.000       999.894
+spi0.efb0.EFBInst_0     System        EFB      WBDATO7     wbdat_o[7]     0.000       999.894
+=============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                            Starting                                                  Required            
+Instance                                    Reference     Type        Pin     Net                     Time         Slack  
+                                            Clock                                                                         
+--------------------------------------------------------------------------------------------------------------------------
+con_3x3_0.window_3x3_0.fifo1.usedw_t[0]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+con_3x3_0.window_3x3_0.fifo1.usedw_t[1]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+con_3x3_0.window_3x3_0.fifo1.usedw_t[2]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+con_3x3_0.window_3x3_0.fifo1.usedw_t[3]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+con_3x3_0.window_3x3_0.fifo1.usedw_t[4]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+con_3x3_0.window_3x3_0.fifo1.usedw_t[5]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+con_3x3_0.window_3x3_0.fifo1.usedw_t[6]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+con_3x3_0.window_3x3_0.fifo1.usedw_t[7]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+con_3x3_0.window_3x3_0.fifo1.usedw_t[8]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+con_3x3_0.window_3x3_0.fifo1.usedw_t[9]     System        FD1P3DX     SP      usedw_t_RNI6QLMF[0]     999.528      996.699
+==========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.528
+
+    - Propagation time:                      2.830
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 996.699
+
+    Number of logic level(s):                3
+    Starting point:                          spi0.efb0.EFBInst_0 / WBACKO
+    Ending point:                            con_3x3_0.window_3x3_0.fifo1.usedw_t[0] / SP
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            main|clk_sig_inferred_clock [rising] on pin CK
+
+Instance / Net                                                    Pin        Pin               Arrival     No. of    
+Name                                                 Type         Name       Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------
+spi0.efb0.EFBInst_0                                  EFB          WBACKO     Out     0.000     0.000       -         
+wback                                                Net          -          -       -         -           9         
+spi0.new_data_RNI3OE01                               ORCALUT4     D          In      0.000     0.000       -         
+spi0.new_data_RNI3OE01                               ORCALUT4     Z          Out     0.449     0.449       -         
+new_data_RNI3OE01                                    Net          -          -       -         -           241       
+con_3x3_0.window_3x3_0.fifo1.usedw_t_RNI2H066[0]     ORCALUT4     B          In      0.000     0.449       -         
+con_3x3_0.window_3x3_0.fifo1.usedw_t_RNI2H066[0]     ORCALUT4     Z          Out     1.017     1.466       -         
+G_11_4                                               Net          -          -       -         -           1         
+con_3x3_0.window_3x3_0.fifo1.usedw_t_RNI6QLMF[0]     ORCALUT4     A          In      0.000     1.466       -         
+con_3x3_0.window_3x3_0.fifo1.usedw_t_RNI6QLMF[0]     ORCALUT4     Z          Out     1.364     2.830       -         
+usedw_t_RNI6QLMF[0]                                  Net          -          -       -         -           32        
+con_3x3_0.window_3x3_0.fifo1.usedw_t[0]              FD1P3DX      SP         In      0.000     2.830       -         
+=====================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000hc-4
+
+Register bits: 740 of 6864 (11%)
+PIC Latch:       0
+I/O cells:       6
+Block Rams : 2 of 26 (7%)
+
+
+Details:
+BB:             3
+CCU2D:          447
+DP8KC:          2
+FD1P3AX:        115
+FD1P3BX:        31
+FD1P3DX:        556
+FD1P3IX:        24
+FD1P3JX:        2
+FD1S3AX:        6
+FD1S3BX:        1
+FD1S3DX:        4
+FD1S3IX:        1
+GSR:            1
+IB:             3
+INV:            12
+ORCALUT4:       399
+PUR:            1
+SPR16X4C:       8
+VHI:            7
+VLO:            8
+true:           1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 57MB peak: 163MB)
+
+Process took 0h:00m:10s realtime, 0h:00m:09s cputime
+# Sun Sep 14 21:52:56 2014
+
+###########################################################]

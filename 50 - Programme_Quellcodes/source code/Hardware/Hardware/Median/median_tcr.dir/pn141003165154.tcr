@@ -1,0 +1,5 @@
+#Start recording tcl command: 10/3/2014 14:35:29
+#Project Location: C:/Users/Yisong/Documents/new/median; Project name: median
+prj_project open "C:/Users/Yisong/Documents/new/median/median.ldf"
+prj_project close
+#Stop recording: 10/3/2014 16:51:54

@@ -1,0 +1,2038 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>             Lattice Mapping Report File for Design Module 'main'
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HC -t TQFP144 -s 4 -oc Commercial
+     median_median.ngd -o median_median_map.ncd -pr median_median.prf -mp
+     median_median.mrp C:/Users/Yisong/Documents/new/median/median.lpf -c 0 -gui
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HCTQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.1.0.96
+Mapped on:  09/15/14  21:24:32
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    873 out of  7209 (12%)
+      PFU registers:          873 out of  6864 (13%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:       986 out of  3432 (29%)
+      SLICEs as Logic/ROM:    932 out of  3432 (27%)
+      SLICEs as RAM:           54 out of  2574 (2%)
+      SLICEs as Carry:        521 out of  3432 (15%)
+   Number of LUT4s:        1960 out of  6864 (29%)
+      Number of logic LUTs:      810
+      Number of distributed RAM:  54 (108 LUT4s)
+      Number of ripple logic:    521 (1042 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 6 + 1(JTAGENB) out of 115 (6%)
+   Number of block RAMs:  2 out of 26 (8%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       Yes
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  3
+     Net clk_sig_c: 447 loads, 447 rising, 0 falling (Driver: OSC0 )
+     Net new_data: 52 loads, 52 rising, 0 falling (Driver: spi0/new_data )
+     Net spi0/efb0/spi_clk_i: 1 loads, 1 rising, 0 falling (Driver: PIO SCLK )
+   Number of Clock Enables:  20
+     Net new_data_RNI3OE01: 122 loads, 122 LSLICEs
+
+     Net sort_filter0/rc_counter0/col_cnv[0]: 51 loads, 51 LSLICEs
+     Net sort_filter0/rc_counter0/un2_en_28_RNIA4IJ1: 15 loads, 15 LSLICEs
+     Net sort_filter0/window_3x3_0/fifo1/usedw_t_RNI3JROF[0]: 17 loads, 17
+     LSLICEs
+     Net sort_filter0/window_3x3_0/fifo1/full_t_RNO_0: 1 loads, 1 LSLICEs
+     Net sort_filter0/window_3x3_0/fifo1/empty_t_RNO_0_0: 1 loads, 1 LSLICEs
+     Net sort_filter0/window_3x3_0/fifo1/un1_readen_RNIJ3EK1: 4 loads, 4 LSLICEs
+     Net sort_filter0/window_3x3_0/fifo0/empty_t_RNO_0: 1 loads, 1 LSLICEs
+     Net sort_filter0/window_3x3_0/fifo0/full_t_RNO: 1 loads, 1 LSLICEs
+     Net sort_filter0/window_3x3_0/fifo0/usedw_t_RNIB5KHO[31]: 17 loads, 17
+     LSLICEs
+     Net sort_filter0/window_3x3_0/fifo0/un1_readen_RNIHERR1: 4 loads, 4 LSLICEs
+     Net sort_filter0/DVw: 12 loads, 12 LSLICEs
+     Net sort_filter0/sort_3x3_0/G_64_RNI40KD1: 4 loads, 4 LSLICEs
+     Net sort_filter0/sort_3x3_0/G_125_RNI3ENK1: 4 loads, 4 LSLICEs
+     Net sort_filter0/sort_3x3_0/G_8_RNIGL0C1: 16 loads, 16 LSLICEs
+     Net sort_filter0/sort_3x3_0/G_121_cnv: 163 loads, 163 LSLICEs
+     Net spi0/wback: 2 loads, 2 LSLICEs
+     Net spi0/N_54_i: 1 loads, 1 LSLICEs
+     Net spi0/state_RNI3NGH[1]: 4 loads, 4 LSLICEs
+     Net spi0/N_20: 4 loads, 4 LSLICEs
+   Number of LSRs:  4
+     Net SDA_c: 346 loads, 346 LSLICEs
+     Net SDA_pad_RNIFJSD1: 6 loads, 6 LSLICEs
+     Net sort_filter0/window_3x3_0/head_15: 10 loads, 10 LSLICEs
+     Net spi0/wback: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net SDA_c: 375 loads
+     Net sort_filter0/sort_3x3_0/G_121_cnv: 163 loads
+     Net new_data_RNI3OE01: 149 loads
+     Net sort_filter0/sort_3x3_0/tmp1[0]: 52 loads
+     Net sort_filter0/rc_counter0/col_cnv[0]: 51 loads
+     Net sort_filter0/sort_3x3_0/tmp1[1]: 51 loads
+     Net sort_filter0/window_3x3_0/dwrreqb: 49 loads
+     Net sort_filter0/window_3x3_0/ReadEn1: 48 loads
+     Net sort_filter0/tmp1[0]: 44 loads
+     Net sort_filter0/G_20: 43 loads
+
+
+
+
+   Number of warnings:  51
+   Number of errors:    0
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(31): Semantic
+     error in "LOCATE COMP "LEDR" SITE "112" ;": COMP "LEDR" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(32): Semantic
+     error in "LOCATE COMP "LEDG" SITE "113" ;": COMP "LEDG" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(36): Semantic
+     error in "LOCATE COMP "SCL" SITE "126" ;": COMP "SCL" not found in design.
+
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(37): Semantic
+     error in "LOCATE COMP "PiCLK" SITE "128" ;": COMP "PiCLK" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(44): Semantic
+     error in "LOCATE COMP "R0" SITE "74" ;": COMP "R0" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(45): Semantic
+     error in "LOCATE COMP "R1" SITE "76" ;": COMP "R1" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(46): Semantic
+     error in "LOCATE COMP "R2" SITE "82" ;": COMP "R2" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(47): Semantic
+     error in "LOCATE COMP "R3" SITE "84" ;": COMP "R3" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(48): Semantic
+     error in "LOCATE COMP "R4" SITE "92" ;": COMP "R4" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(49): Semantic
+     error in "LOCATE COMP "R5" SITE "94" ;": COMP "R5" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(50): Semantic
+     error in "LOCATE COMP "R6" SITE "98" ;": COMP "R6" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(51): Semantic
+     error in "LOCATE COMP "R7" SITE "100" ;": COMP "R7" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(52): Semantic
+     error in "LOCATE COMP "R8" SITE "105" ;": COMP "R8" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(53): Semantic
+     error in "LOCATE COMP "R9" SITE "107" ;": COMP "R9" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(56): Semantic
+     error in "LOCATE COMP "B0" SITE "38" ;": COMP "B0" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(57): Semantic
+     error in "LOCATE COMP "B1" SITE "42" ;": COMP "B1" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(60): Semantic
+     error in "LOCATE COMP "B2" SITE "47" ;": COMP "B2" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(61): Semantic
+     error in "LOCATE COMP "B3" SITE "49" ;": COMP "B3" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(62): Semantic
+     error in "LOCATE COMP "B4" SITE "59" ;": COMP "B4" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(63): Semantic
+     error in "LOCATE COMP "B5" SITE "61" ;": COMP "B5" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(64): Semantic
+     error in "LOCATE COMP "B6" SITE "65" ;": COMP "B6" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(70): Semantic
+
+     error in "LOCATE COMP "XCE1" SITE "4" ;": COMP "XCE1" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(71): Semantic
+     error in "LOCATE COMP "XCE0" SITE "6" ;": COMP "XCE0" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(72): Semantic
+     error in "LOCATE COMP "GPIO25" SITE "9" ;": COMP "GPIO25" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(73): Semantic
+     error in "LOCATE COMP "XIO25" SITE "10" ;": COMP "XIO25" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(74): Semantic
+     error in "LOCATE COMP "GPIO24" SITE "11" ;": COMP "GPIO24" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(75): Semantic
+     error in "LOCATE COMP "XIO24" SITE "12" ;": COMP "XIO24" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(76): Semantic
+     error in "LOCATE COMP "GPIO23" SITE "13" ;": COMP "GPIO23" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(77): Semantic
+     error in "LOCATE COMP "XIO23" SITE "14" ;": COMP "XIO23" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(78): Semantic
+     error in "LOCATE COMP "GPIO22" SITE "19" ;": COMP "GPIO22" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(79): Semantic
+     error in "LOCATE COMP "GPIO27" SITE "20" ;": COMP "GPIO27" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(80): Semantic
+     error in "LOCATE COMP "XIO22" SITE "21" ;": COMP "XIO22" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(81): Semantic
+     error in "LOCATE COMP "XIO27" SITE "22" ;": COMP "XIO27" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(82): Semantic
+     error in "LOCATE COMP "GPIO18" SITE "23" ;": COMP "GPIO18" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(83): Semantic
+     error in "LOCATE COMP "XIO18" SITE "24" ;": COMP "XIO18" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(84): Semantic
+     error in "LOCATE COMP "GPIO17" SITE "25" ;": COMP "GPIO17" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(85): Semantic
+     error in "LOCATE COMP "XIO17" SITE "26" ;": COMP "XIO17" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(86): Semantic
+     error in "LOCATE COMP "GPIO15" SITE "27" ;": COMP "GPIO15" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(87): Semantic
+     error in "LOCATE COMP "XIO15" SITE "28" ;": COMP "XIO15" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(88): Semantic
+     error in "LOCATE COMP "GPIO14" SITE "32" ;": COMP "GPIO14" not found in
+     design. Disable this preference.
+
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(89): Semantic
+     error in "LOCATE COMP "XIO14" SITE "33" ;": COMP "XIO14" not found in
+     design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(90): Semantic
+     error in "LOCATE COMP "XCLK" SITE "34" ;": COMP "XCLK" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(94): Semantic
+     error in "IOBUF PORT "LEDR" IO_TYPE=LVCMOS33 PULLMODE=DOWN ;": Port "LEDR"
+     does not exist in the design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(95): Semantic
+     error in "IOBUF PORT "LEDG" IO_TYPE=LVCMOS33 PULLMODE=DOWN ;": Port "LEDG"
+     does not exist in the design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/median/median.lpf(96): Semantic
+     error in "IOBUF PORT "SCL" IO_TYPE=LVCMOS33 PULLMODE=UP ;": Port "SCL" does
+     not exist in the design. Disable this preference.
+WARNING - map: Preference parsing results:  45 semantic errors detected
+WARNING - map: The JTAG port has been disabled in this project and JTAG pins
+     will be configured as General Purpose IO.  You have to use JTAGENB pin in
+     hardware to change the personality of the port from JTAG pins to general
+     purpose IO.  Reference MachXO2 Handbook for details on dual function JTAG
+     port.
+WARNING - map: Semantic error in "LOCATE COMP "SCLK" SITE "44" ;": Current
+     SYS_CONFIG setting prohibits pin "44" to be used as user IO. Disable this
+     preference.
+WARNING - map: Semantic error in "LOCATE COMP "MOSI" SITE "71" ;": Current
+     SYS_CONFIG setting prohibits pin "71" to be used as user IO. Disable this
+     preference.
+WARNING - map: Semantic error in "LOCATE COMP "MISO" SITE "45" ;": Current
+     SYS_CONFIG setting prohibits pin "45" to be used as user IO. Disable this
+     preference.
+WARNING - map: There are semantic errors in the preference file
+     C:/Users/Yisong/Documents/new/median/median.lpf.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| GSRn                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SCLK                | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| MOSI                | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| MISO                | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SDA                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| CE1                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Block spi0/GND undriven or does not drive anything - clipped.
+Block sort_filter0/sort_3x3_0/VCC undriven or does not drive anything - clipped.
+Block sort_filter0/window_3x3_0/VCC undriven or does not drive anything -
+     clipped.
+Block sort_filter0/window_3x3_0/GND undriven or does not drive anything -
+     clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal spi0/efb0/GND undriven or does not drive anything - clipped.
+Signal sort_filter0/GND undriven or does not drive anything - clipped.
+Signal sort_filter0/sort_3x3_0/GND undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo0/GND undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo1/GND undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/rc_counter0/GND undriven or does not drive anything -
+     clipped.
+Signal SEDSTDBY undriven or does not drive anything - clipped.
+Signal spi0/efb0/CFGSTDBY undriven or does not drive anything - clipped.
+Signal spi0/efb0/CFGWAKE undriven or does not drive anything - clipped.
+Signal spi0/efb0/WBCUFMIRQ undriven or does not drive anything - clipped.
+Signal spi0/efb0/TCOC undriven or does not drive anything - clipped.
+Signal spi0/efb0/TCINT undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIIRQO undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPICSNEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN7 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN6 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN5 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN4 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN3 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN2 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN1 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN0 undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2IRQO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1IRQO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2SDAOEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2SDAO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2SCLOEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2SCLO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1SDAOEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1SDAO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1SCLOEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1SCLO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO0 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO1 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO2 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO3 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO4 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO5 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO6 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO7 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLADRO0 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLADRO1 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLADRO2 undriven or does not drive anything - clipped.
+
+Signal spi0/efb0/PLLADRO3 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLADRO4 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLWEO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLL1STBO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLL0STBO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLRSTO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLCLKO undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_remainder_0_cry_8_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_remainder_0_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_remainder_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_2 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_remainder_0_s_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_remainder_0_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un110_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un110_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_3 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un110_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un103_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un103_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_4 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un103_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un96_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un96_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_5 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un96_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un89_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un89_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_6 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un89_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un82_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un82_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_7 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un82_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un75_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un75_sum_cry_7_0_S0_0 undriven or does not drive
+
+     anything - clipped.
+Signal sort_filter0/N_8 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un75_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un68_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un68_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_9 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un68_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un61_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un61_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_10 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un61_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un54_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un54_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_11 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un54_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un47_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un47_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_12 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un47_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un40_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un40_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_13 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un40_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un33_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un33_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_14 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un33_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un26_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un26_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_15 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un26_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un19_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un19_sum_cry_7_0_S0_0 undriven or does not drive
+
+     anything - clipped.
+Signal sort_filter0/N_16 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un19_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un208_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un208_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_17 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un208_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un201_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un201_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_18 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un201_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un194_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un194_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_19 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un194_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un187_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un187_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_20 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un187_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un180_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un180_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_21 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un180_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un173_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un173_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_22 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un173_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un166_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un166_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_23 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un166_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un159_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un159_sum_cry_7_0_S0_0 undriven or does not drive
+
+     anything - clipped.
+Signal sort_filter0/N_24 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un159_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un152_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un152_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_25 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un152_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un145_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un145_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_26 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un145_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un138_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un138_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_27 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un138_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un131_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un131_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_28 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un131_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un124_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un124_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_29 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un124_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un117_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un117_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_30 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un117_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un215_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un215_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_31 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un215_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/un19_rt1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/N_32 undriven or does not drive anything - clipped.
+
+Signal sort_filter0/un19_rt1_s_11_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un19_rt1_s_11_0_COUT undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un8_rt1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un8_rt1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/N_33 undriven or does not drive anything - clipped.
+Signal sort_filter0/un8_rt1_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un8_rt1_s_31_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un8_rt1_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/mult1_un229_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un229_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_34 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un229_sum_cry_10_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un229_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/un1_rt1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un1_rt1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/N_35 undriven or does not drive anything - clipped.
+Signal sort_filter0/un1_rt1_s_31_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un1_rt1_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/mult1_un222_sum_cry_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un222_sum_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_36 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un222_sum_cry_10_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un61_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un61_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_37 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un61_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un54_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un54_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_38 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un54_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un47_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/mult1_un47_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_39 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un47_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un40_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un40_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_40 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un40_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un33_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un33_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_41 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un33_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un26_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un26_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_42 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un26_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un19_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un19_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_43 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un19_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un166_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un166_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_44 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un166_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un159_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un159_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_45 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un159_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un152_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un152_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_46 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un152_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un145_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/mult1_un145_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_47 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un145_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un138_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un138_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_48 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un138_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un131_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un131_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_49 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un131_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un124_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un124_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_50 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un124_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un117_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un117_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_51 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un117_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un110_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un110_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_52 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un110_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un103_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un103_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_53 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un103_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un96_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un96_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_54 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un96_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un89_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/mult1_un89_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_55 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un89_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un82_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un82_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_56 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un82_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un75_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un75_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_57 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un75_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un68_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un68_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_58 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un68_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un201_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un201_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_59 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un201_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un194_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un194_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_60 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un194_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un187_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un187_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_61 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un187_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un180_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un180_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_62 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un180_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un173_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/mult1_un173_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_63 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un173_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un208_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un208_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_64 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un208_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/un1_col_c_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un1_col_c_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/N_65 undriven or does not drive anything - clipped.
+Signal sort_filter0/un1_col_c_s_27_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un1_col_c_s_27_0_COUT undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un8_col_c_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un8_col_c_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/N_66 undriven or does not drive anything - clipped.
+Signal sort_filter0/un8_col_c_s_31_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un8_col_c_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/mult1_un215_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un215_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_67 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un215_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/un19_col_c_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/N_69 undriven or does not drive anything - clipped.
+Signal sort_filter0/un19_col_c_s_11_0_S1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/un19_col_c_s_11_0_COUT undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/mult1_un222_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un222_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_70 undriven or does not drive anything - clipped.
+Signal sort_filter0/mult1_un222_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un229_sum_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un229_sum_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_71 undriven or does not drive anything - clipped.
+
+Signal sort_filter0/mult1_un229_sum_cry_10_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_un229_sum_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un25_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_2 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un23_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_3 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un21_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_4 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un19_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_5 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/sort_3x3_0/un17_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_6 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un15_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_7 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un13_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_8 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un11_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_9 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un9_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_10 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un7_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_11 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un5_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_12 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un3_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_13 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un1_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_14 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un49_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_15 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un47_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_16 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un45_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_17 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un43_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_18 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un41_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_19 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un37_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_20 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un35_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/sort_3x3_0/N_21 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un33_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_22 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un31_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_23 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un29_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/N_24 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/sort_3x3_0/un27_dvw_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/usedw_t_cry_0_S0[0] undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/N_1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo0/usedw_t_s_0_S1[31] undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/usedw_t_s_0_COUT[31] undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un1_tail_cry_0_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/N_2 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un1_tail_s_9_0_S1_0 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un1_tail_s_9_0_COUT_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un1_head_cry_0_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/N_3 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un1_head_s_9_0_S1_0 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un1_head_s_9_0_COUT_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un4_readen_0_N_22 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un4_readen_0_I_1_0_S0 undriven or does
+     not drive anything - clipped.
+
+Signal sort_filter0/window_3x3_0/fifo0/N_4 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un4_readen_0_I_9_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un4_readen_0_I_9_0_S0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un4_readen_0_I_21_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un4_readen_0_I_21_0_S0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un4_readen_0_I_27_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un4_readen_0_I_27_0_COUT undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un17_head_0_N_22 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un17_head_0_I_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/N_5 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un17_head_0_I_9_0_S1 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un17_head_0_I_9_0_S0 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un17_head_0_I_21_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un17_head_0_I_21_0_S0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un17_head_0_I_27_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un17_head_0_I_27_0_COUT undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un3_writeen_0_N_22 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un3_writeen_0_I_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/N_6 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un3_writeen_0_I_9_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un3_writeen_0_I_9_0_S0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un3_writeen_0_I_21_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un3_writeen_0_I_21_0_S0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un3_writeen_0_I_27_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/un3_writeen_0_I_27_0_COUT undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_adreg_0_N_22 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_adreg_0_I_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/N_7 undriven or does not drive anything -
+     clipped.
+
+Signal sort_filter0/window_3x3_0/fifo0/memory_adreg_0_I_9_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_adreg_0_I_9_0_S0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_adreg_0_I_21_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_adreg_0_I_21_0_S0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_adreg_0_I_27_0_S1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_adreg_0_I_27_0_COUT undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOB8_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOB7_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOB6_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOB5_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOB4_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOB3_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOB2_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOB1_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOB0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo0/memory_memory_0_0_DOA8_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/usedw_t_cry_0_S0_0[0] undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/N_1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo1/usedw_t_s_0_S1_0[31] undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/usedw_t_s_0_COUT_0[31] undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un1_tail_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/N_2 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un1_tail_s_9_0_S1 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un1_tail_s_9_0_COUT undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un1_head_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/N_3 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un1_head_s_9_0_S1 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un1_head_s_9_0_COUT undriven or does not
+     drive anything - clipped.
+
+Signal sort_filter0/window_3x3_0/fifo1/un4_readen_0_N_22 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un4_readen_0_I_1_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/N_4 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un4_readen_0_I_9_0_S1_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un4_readen_0_I_9_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un4_readen_0_I_21_0_S1_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un4_readen_0_I_21_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un4_readen_0_I_27_0_S1_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un4_readen_0_I_27_0_COUT_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un17_head_0_N_22 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un17_head_0_I_1_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/N_5 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un17_head_0_I_9_0_S1_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un17_head_0_I_9_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un17_head_0_I_21_0_S1_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un17_head_0_I_21_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un17_head_0_I_27_0_S1_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un17_head_0_I_27_0_COUT_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un3_writeen_0_N_22 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un3_writeen_0_I_1_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/N_6 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un3_writeen_0_I_9_0_S1_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un3_writeen_0_I_9_0_S0_0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un3_writeen_0_I_21_0_S1_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un3_writeen_0_I_21_0_S0_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un3_writeen_0_I_27_0_S1_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/un3_writeen_0_I_27_0_COUT_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_adreg_0_N_22 undriven or does not
+     drive anything - clipped.
+
+Signal sort_filter0/window_3x3_0/fifo1/memory_adreg_0_I_1_0_S0_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/N_7 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_adreg_0_I_9_0_S1_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_adreg_0_I_9_0_S0_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_adreg_0_I_21_0_S1_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_adreg_0_I_21_0_S0_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_adreg_0_I_27_0_S1_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_adreg_0_I_27_0_COUT_0 undriven or
+     does not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOB8 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOB7 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOB6 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOB5 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOB4 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOB3 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOB2 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOB1 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOB0 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/window_3x3_0/fifo1/memory_memory_0_0_DOA8 undriven or does
+     not drive anything - clipped.
+Signal sort_filter0/rc_counter0/row_var_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/rc_counter0/row_var_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/rc_counter0/N_1 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/rc_counter0/row_var_1_s_31_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/rc_counter0/row_var_1_s_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/rc_counter0/un2_col_var_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/rc_counter0/un2_col_var_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal sort_filter0/rc_counter0/N_2 undriven or does not drive anything -
+     clipped.
+Signal sort_filter0/rc_counter0/un2_col_var_s_31_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/rc_counter0/un2_col_var_s_31_0_COUT undriven or does not
+     drive anything - clipped.
+
+Signal sort_filter0/mult1_remainder_0_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/mult1_remainder_0_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal sort_filter0/N_1 undriven or does not drive anything - clipped.
+Block GND was optimized away.
+Block spi0/efb0/GND was optimized away.
+Block sort_filter0/GND was optimized away.
+Block sort_filter0/sort_3x3_0/GND was optimized away.
+Block sort_filter0/window_3x3_0/fifo0/GND was optimized away.
+Block sort_filter0/window_3x3_0/fifo1/GND was optimized away.
+Block sort_filter0/rc_counter0/GND was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+/sort_filter0:
+    EBRs: 0
+    RAM SLICEs: 16
+    Logic SLICEs: 395
+    PFU Registers: 156
+/sort_filter0/row_c_CR31_ram:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/row_c_CR31_ram_0:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/row_c_CR31_ram_1:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/row_c_CR31_ram_2:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/row_c_CR31_ram_3:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/row_c_CR31_ram_4:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/row_c_CR31_ram_5:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+/sort_filter0/row_c_CR31_ram_6:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0:
+    EBRs: 0
+    RAM SLICEs: 20
+    Logic SLICEs: 293
+    PFU Registers: 393
+/sort_filter0/sort_3x3_0/r4b1_CR7_ram:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0/r4b1_CR7_ram_0:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0/r4b5_CR7_ram:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0/r4b5_CR7_ram_0:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0/r73_CR7_ram:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0/r73_CR7_ram_0:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0/r84_CR7_ram:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0/r84_CR7_ram_0:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0/s5_1_CR7_ram:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/sort_3x3_0/s5_1_CR7_ram_0:
+
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/sort_filter0/window_3x3_0/fifo0:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 67
+    PFU Registers: 82
+    -Contains EBR memory_memory_0_0:  TYPE= DP8KC,  Width_A= 8,  Depth_A= 1024,
+         Depth_B= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B= WRITETHROUGH,  GSR= DISABLED
+/sort_filter0/window_3x3_0/fifo1:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 82
+    PFU Registers: 77
+    -Contains EBR memory_memory_0_0:  TYPE= DP8KC,  Width_A= 8,  Depth_A= 1024,
+         Depth_B= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= SYNC,
+         WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B= WRITETHROUGH,  GSR= DISABLED
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSC0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk_sig_c
+  OSC Nominal Frequency (MHz):                      38.00
+
+Embedded Functional Block Connection Summary:
+---------------------------------------------
+
+   Desired WISHBONE clock frequency: 50.0 MHz
+   Clock source:                     clk_sig_c
+   Reset source:                     NONE
+   Functions mode:
+      I2C #1 (Primary) Function:     DISABLED
+      I2C #2 (Secondary) Function:   DISABLED
+      SPI Function:                  ENABLED
+      Timer/Counter Function:        DISABLED
+      Timer/Counter Mode:            WB
+      UFM Connection:                DISABLED
+      PLL0 Connection:               DISABLED
+      PLL1 Connection:               DISABLED
+   I2C Function Summary:
+   --------------------
+      None
+   SPI Function Summary:
+   --------------------
+      SPI Mode:               SLAVE
+      SPI Data Order:         MSB to LSB
+      SPI Clock Inversion:    DISABLED
+      SPI Phase Adjust:       DISABLED
+
+      SPI Wakeup:             DISABLED
+   Timer/Counter Function Summary:
+   ------------------------------
+      None
+   UFM Function Summary:
+   --------------------
+      UFM Utilization:        General Purpose Flash Memory
+      Available General
+      Purpose Flash Memory:   2046 Pages (2046*128 Bits)
+
+      EBR Blocks with Unique
+      Initialization Data:    0
+
+      WID		EBR Instance
+      ---		------------
+      0b0000000001	sort_filter0/window_3x3_0/fifo1/memory_memory_0_0
+      0b0000000001	sort_filter0/window_3x3_0/fifo0/memory_memory_0_0
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: sort_filter0/window_3x3_0/fifo1/memory_memory_0_0
+         Type: DP8KC
+Instance Name: sort_filter0/window_3x3_0/fifo0/memory_memory_0_0
+         Type: DP8KC
+Instance Name: spi0/efb0/EFBInst_0
+         Type: EFB
+Instance Name: OSC0
+         Type: OSCH
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'GSRnX'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+Components with disabled GSR Property
+-------------------------------------
+
+These components have the GSR property set to DISABLED. The components will not
+     respond to the reset signal 'GSRnX' via the GSR component.
+
+Type and number of components of the type:
+   DP8KC = 2
+
+Type and instance name of component:
+   DP8KC : sort_filter0/window_3x3_0/fifo1/memory_memory_0_0
+   DP8KC : sort_filter0/window_3x3_0/fifo0/memory_memory_0_0
+
+Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+These components have the GSR property set to ENABLED and the local reset is
+     synchronous. The components will respond to the synchronous local reset and
+     to the unrelated asynchronous reset signal 'GSRnX' via the GSR component.
+
+Type and number of components of the type:
+   Register = 27
+
+Type and instance name of component:
+
+   Register : sort_filter0/window_3x3_0/fifo1/looped
+   Register : sort_filter0/window_3x3_0/fifo1/head[0]
+   Register : sort_filter0/window_3x3_0/fifo1/head[1]
+   Register : sort_filter0/window_3x3_0/fifo1/head[2]
+   Register : sort_filter0/window_3x3_0/fifo1/head[3]
+   Register : sort_filter0/window_3x3_0/fifo1/head[4]
+   Register : sort_filter0/window_3x3_0/fifo1/head[5]
+   Register : sort_filter0/window_3x3_0/fifo1/head[6]
+   Register : sort_filter0/window_3x3_0/fifo1/head[7]
+   Register : sort_filter0/window_3x3_0/fifo1/head[8]
+   Register : sort_filter0/window_3x3_0/fifo1/head[9]
+   Register : sort_filter0/window_3x3_0/fifo1/full_t
+   Register : sort_filter0/window_3x3_0/fifo1/empty_t
+   Register : sort_filter0/window_3x3_0/fifo0/empty_t
+   Register : sort_filter0/window_3x3_0/fifo0/full_t
+   Register : sort_filter0/window_3x3_0/fifo0/looped
+   Register : sort_filter0/window_3x3_0/fifo0/head[0]
+   Register : sort_filter0/window_3x3_0/fifo0/head[1]
+   Register : sort_filter0/window_3x3_0/fifo0/head[2]
+   Register : sort_filter0/window_3x3_0/fifo0/head[3]
+   Register : sort_filter0/window_3x3_0/fifo0/head[4]
+   Register : sort_filter0/window_3x3_0/fifo0/head[5]
+   Register : sort_filter0/window_3x3_0/fifo0/head[6]
+   Register : sort_filter0/window_3x3_0/fifo0/head[7]
+   Register : sort_filter0/window_3x3_0/fifo0/head[8]
+   Register : sort_filter0/window_3x3_0/fifo0/head[9]
+   Register : spi0/wbwe
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 4 secs
+   Total REAL Time: 6 secs
+   Peak Memory Usage: 71 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor
+     Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

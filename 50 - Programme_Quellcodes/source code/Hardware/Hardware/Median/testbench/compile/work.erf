@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:\Users\Yisong\Documents\new\median\main.vhd" 
+MESSAGE "Compile Entity "main"" 
+MESSAGE "Compile Architecture "rtl" of Entity "main"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]" 

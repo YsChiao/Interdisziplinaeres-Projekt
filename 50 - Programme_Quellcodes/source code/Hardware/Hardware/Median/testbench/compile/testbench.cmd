@@ -1,0 +1,1 @@
+-w -s "C:\Users\Yisong\Documents\new\median\testbench\library.cfg"  -j "C:\Users\Yisong\Documents\new\median\testbench\projlib.cfg"  -d "C:\Users\Yisong\Documents\new\median\testbench\compile"   -work work  -O3 -e 100 -2002 "C:\Users\Yisong\Documents\new\median\main.vhd"

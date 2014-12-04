@@ -1,0 +1,8 @@
+#Start recording tcl command: 9/15/2014 21:23:22
+#Project Location: C:/Users/Yisong/Documents/new/median; Project name: median
+prj_project open "C:/Users/Yisong/Documents/new/median/median.ldf"
+prj_src remove "C:/Users/Yisong/Documents/new/median/test.vhd"
+prj_run Export -impl median -task Jedecgen
+prj_project save
+prj_project close
+#Stop recording: 9/15/2014 21:28:19

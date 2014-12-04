@@ -1,0 +1,380 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.1.0.96
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Sep 27 02:19:43 2014
+
+
+Command Line:  synthesis -f nn_nn_lattice.synproj -gui 
+
+-- all messages logged in file synthesis.log
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2A
+INFO: ### Device  : LCMXO2-7000HC
+INFO: ### Package : TQFP144
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: fix_gated_clocks = 1
+-- Technology check ok...
+c:/users/yisong/documents/new/mlp/fp_exp.vhd(381): WARNING: Register \float_alu0/fp_exp_clk0/mult_k/buf_r[378]_90 is stuck at Zero (VDB-5013)
+
+Extracted state machine for register: \spi0/state
+State machine has 4 states with original encoding
+original encoding -> new encoding (OneHot Encoding)
+ 00 -> 0001
+ 01 -> 0010
+ 10 -> 0100
+ 11 -> 1000
+ Number of Reachable States for this State Machine are 3 
+
+
+Extracted state machine for register: \float_alu0/state
+State machine has 8 states with original encoding
+original encoding -> new encoding (OneHot Encoding)
+ 000 -> 00000001
+ 001 -> 00000010
+ 010 -> 00000100
+ 011 -> 00001000
+ 100 -> 00010000
+ 101 -> 00100000
+ 110 -> 01000000
+ 111 -> 10000000
+ Number of Reachable States for this State Machine are 6 
+
+
+Extracted state machine for register: \loadWeight0/state
+State machine has 4 states with original encoding
+original encoding -> new encoding (OneHot Encoding)
+ 00 -> 0001
+ 01 -> 0010
+ 10 -> 0100
+ 11 -> 1000
+ Number of Reachable States for this State Machine are 3 
+
+
+Extracted state machine for register: \test0/state
+State machine has 64 states with original encoding
+original encoding -> new encoding (OneHot Encoding)
+ 000000 -> 0000000000000000000000000000000000000000000000000000000000000001
+ 000001 -> 0000000000000000000000000000000000000000000000000000000000000010
+ 000010 -> 0000000000000000000000000000000000000000000000000000000000000100
+ 000011 -> 0000000000000000000000000000000000000000000000000000000000001000
+ 000100 -> 0000000000000000000000000000000000000000000000000000000000010000
+ 000101 -> 0000000000000000000000000000000000000000000000000000000000100000
+ 000110 -> 0000000000000000000000000000000000000000000000000000000001000000
+ 000111 -> 0000000000000000000000000000000000000000000000000000000010000000
+ 001000 -> 0000000000000000000000000000000000000000000000000000000100000000
+ 001001 -> 0000000000000000000000000000000000000000000000000000001000000000
+ 001010 -> 0000000000000000000000000000000000000000000000000000010000000000
+ 001011 -> 0000000000000000000000000000000000000000000000000000100000000000
+ 001100 -> 0000000000000000000000000000000000000000000000000001000000000000
+ 001101 -> 0000000000000000000000000000000000000000000000000010000000000000
+ 001110 -> 0000000000000000000000000000000000000000000000000100000000000000
+ 001111 -> 0000000000000000000000000000000000000000000000001000000000000000
+ 010000 -> 0000000000000000000000000000000000000000000000010000000000000000
+ 010001 -> 0000000000000000000000000000000000000000000000100000000000000000
+ 010010 -> 0000000000000000000000000000000000000000000001000000000000000000
+ 010011 -> 0000000000000000000000000000000000000000000010000000000000000000
+ 010100 -> 0000000000000000000000000000000000000000000100000000000000000000
+ 010101 -> 0000000000000000000000000000000000000000001000000000000000000000
+ 010110 -> 0000000000000000000000000000000000000000010000000000000000000000
+ 010111 -> 0000000000000000000000000000000000000000100000000000000000000000
+ 011000 -> 0000000000000000000000000000000000000001000000000000000000000000
+ 011001 -> 0000000000000000000000000000000000000010000000000000000000000000
+ 011010 -> 0000000000000000000000000000000000000100000000000000000000000000
+ 011011 -> 0000000000000000000000000000000000001000000000000000000000000000
+ 011100 -> 0000000000000000000000000000000000010000000000000000000000000000
+ 011101 -> 0000000000000000000000000000000000100000000000000000000000000000
+ 011110 -> 0000000000000000000000000000000001000000000000000000000000000000
+ 011111 -> 0000000000000000000000000000000010000000000000000000000000000000
+ 100000 -> 0000000000000000000000000000000100000000000000000000000000000000
+ 100001 -> 0000000000000000000000000000001000000000000000000000000000000000
+ 100010 -> 0000000000000000000000000000010000000000000000000000000000000000
+ 100011 -> 0000000000000000000000000000100000000000000000000000000000000000
+ 100100 -> 0000000000000000000000000001000000000000000000000000000000000000
+ 100101 -> 0000000000000000000000000010000000000000000000000000000000000000
+ 100110 -> 0000000000000000000000000100000000000000000000000000000000000000
+ 100111 -> 0000000000000000000000001000000000000000000000000000000000000000
+ 101000 -> 0000000000000000000000010000000000000000000000000000000000000000
+ 101001 -> 0000000000000000000000100000000000000000000000000000000000000000
+ 101010 -> 0000000000000000000001000000000000000000000000000000000000000000
+ 101011 -> 0000000000000000000010000000000000000000000000000000000000000000
+ 101100 -> 0000000000000000000100000000000000000000000000000000000000000000
+ 101101 -> 0000000000000000001000000000000000000000000000000000000000000000
+ 101110 -> 0000000000000000010000000000000000000000000000000000000000000000
+ 101111 -> 0000000000000000100000000000000000000000000000000000000000000000
+ 110000 -> 0000000000000001000000000000000000000000000000000000000000000000
+ 110001 -> 0000000000000010000000000000000000000000000000000000000000000000
+ 110010 -> 0000000000000100000000000000000000000000000000000000000000000000
+ 110011 -> 0000000000001000000000000000000000000000000000000000000000000000
+ 110100 -> 0000000000010000000000000000000000000000000000000000000000000000
+ 110101 -> 0000000000100000000000000000000000000000000000000000000000000000
+ 110110 -> 0000000001000000000000000000000000000000000000000000000000000000
+ 110111 -> 0000000010000000000000000000000000000000000000000000000000000000
+ 111000 -> 0000000100000000000000000000000000000000000000000000000000000000
+ 111001 -> 0000001000000000000000000000000000000000000000000000000000000000
+ 111010 -> 0000010000000000000000000000000000000000000000000000000000000000
+ 111011 -> 0000100000000000000000000000000000000000000000000000000000000000
+ 111100 -> 0001000000000000000000000000000000000000000000000000000000000000
+ 111101 -> 0010000000000000000000000000000000000000000000000000000000000000
+ 111110 -> 0100000000000000000000000000000000000000000000000000000000000000
+ 111111 -> 1000000000000000000000000000000000000000000000000000000000000000
+ Number of Reachable States for this State Machine are 49 
+
+
+Extracted state machine for register: \pr0/state
+State machine has 4 states with original encoding
+original encoding -> new encoding (OneHot Encoding)
+ 00 -> 0001
+ 01 -> 0010
+ 10 -> 0100
+ 11 -> 1000
+ Number of Reachable States for this State Machine are 3 
+
+
+Extracted state machine for register: \output0/state
+State machine has 8 states with original encoding
+original encoding -> new encoding (OneHot Encoding)
+ 000 -> 00000001
+ 001 -> 00000010
+ 010 -> 00000100
+ 011 -> 00001000
+ 100 -> 00010000
+ 101 -> 00100000
+ 110 -> 01000000
+ 111 -> 10000000
+ Number of Reachable States for this State Machine are 6 
+
+
+
+c:/users/yisong/documents/new/mlp/test.vhd(589): WARNING: Bit 0 of Register \test0/sram_input is stuck at Zero (VDB-5010)
+WARNING: Bit 3 of Register \spi0/state_FSM is stuck at Zero (VDB-5010)
+c:/users/yisong/documents/new/mlp/spi.vhd(126): WARNING: Register \spi0/just_written_61 is stuck at Zero (VDB-5013)
+WARNING: Bit 0 of Register \float_alu0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 1 of Register \float_alu0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 0 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 1 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 2 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 3 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 4 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 5 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 6 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 7 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 8 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 9 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 10 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 11 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 12 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 57 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 58 of Register \test0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 0 of Register \pr0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 0 of Register \output0/state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 1 of Register \output0/state_FSM is stuck at Zero (VDB-5010)
+c:/users/yisong/documents/new/mlp/spi.vhd(126): WARNING: Bit 0 of Register \spi0/wbaddr is stuck at Zero (VDB-5010)
+c:/users/yisong/documents/new/mlp/spi.vhd(126): WARNING: Bit 1 of Register \spi0/wbaddr is stuck at One (VDB-5011)
+INFO: ######## Mapping RTL RAM \test0/inputs to 8 Distributed blocks in PSEUDO_DUAL_PORT Mode
+-- Analyzing Verilog file mult_32s_2s.v (VERI-1482)
+mult_32s_2s.v(8): INFO: compiling module mult_32s_2s (VERI-1018)
+WARNING: input port a[31] is not connected on this instance (VDB-1013)
+WARNING: input port a[30] is not connected on this instance (VDB-1013)
+WARNING: input port a[29] is not connected on this instance (VDB-1013)
+WARNING: input port a[28] is not connected on this instance (VDB-1013)
+WARNING: input port a[27] is not connected on this instance (VDB-1013)
+WARNING: input port a[26] is not connected on this instance (VDB-1013)
+WARNING: input port a[25] is not connected on this instance (VDB-1013)
+WARNING: input port a[24] is not connected on this instance (VDB-1013)
+WARNING: input port a[23] is not connected on this instance (VDB-1013)
+WARNING: input port a[22] is not connected on this instance (VDB-1013)
+WARNING: input port a[21] is not connected on this instance (VDB-1013)
+WARNING: input port a[20] is not connected on this instance (VDB-1013)
+WARNING: input port a[19] is not connected on this instance (VDB-1013)
+WARNING: input port a[18] is not connected on this instance (VDB-1013)
+WARNING: input port a[17] is not connected on this instance (VDB-1013)
+WARNING: input port a[16] is not connected on this instance (VDB-1013)
+WARNING: input port a[15] is not connected on this instance (VDB-1013)
+WARNING: input port a[14] is not connected on this instance (VDB-1013)
+WARNING: input port a[13] is not connected on this instance (VDB-1013)
+WARNING: input port a[12] is not connected on this instance (VDB-1013)
+WARNING: input port a[11] is not connected on this instance (VDB-1013)
+WARNING: input port a[10] is not connected on this instance (VDB-1013)
+WARNING: input port a[9] is not connected on this instance (VDB-1013)
+WARNING: input port a[8] is not connected on this instance (VDB-1013)
+WARNING: input port a[7] is not connected on this instance (VDB-1013)
+WARNING: input port a[6] is not connected on this instance (VDB-1013)
+WARNING: input port a[5] is not connected on this instance (VDB-1013)
+WARNING: input port a[4] is not connected on this instance (VDB-1013)
+WARNING: input port a[3] is not connected on this instance (VDB-1013)
+WARNING: input port a[2] is not connected on this instance (VDB-1013)
+WARNING: input port a[1] is not connected on this instance (VDB-1013)
+WARNING: input port a[0] is not connected on this instance (VDB-1013)
+WARNING: input port b[1] is not connected on this instance (VDB-1013)
+WARNING: input port b[0] is not connected on this instance (VDB-1013)
+-- Analyzing Verilog file mult_2u_2u.v (VERI-1482)
+mult_2u_2u.v(8): INFO: compiling module mult_2u_2u (VERI-1018)
+c:/users/yisong/documents/new/mlp/test.vhd(254): WARNING: input port a[1] is not connected on this instance (VDB-1013)
+-- Analyzing Verilog file mult_3u_2u.v (VERI-1482)
+mult_3u_2u.v(8): INFO: compiling module mult_3u_2u (VERI-1018)
+c:/users/yisong/documents/new/mlp/test.vhd(419): WARNING: input port a[2] is not connected on this instance (VDB-1013)
+-- Analyzing Verilog file mult_2u_3u.v (VERI-1482)
+mult_2u_3u.v(8): INFO: compiling module mult_2u_3u (VERI-1018)
+c:/users/yisong/documents/new/mlp/test.vhd(429): WARNING: input port a[1] is not connected on this instance (VDB-1013)
+-- Analyzing Verilog file mult_24u_24u.v (VERI-1482)
+mult_24u_24u.v(8): INFO: compiling module mult_24u_24u (VERI-1018)
+C:/lscc/diamond/3.1_x64/ispfpga/vhdl_packages/syn_arit.vhd(689): WARNING: input port a[23] is not connected on this instance (VDB-1013)
+WARNING: Bit 0 of Register \float_alu0/fp_exp_clk0/nEY2_d1_ret0 is stuck at Zero (VDB-5010)
+c:/users/yisong/documents/new/mlp/test.vhd(589): WARNING: Register \test0/sram_mode_446 is stuck at Zero (VDB-5013)
+c:/users/yisong/documents/new/mlp/fp.vhd(252): WARNING: Register \float_alu0/sub_enable_84 is stuck at Zero (VDB-5013)
+c:/users/yisong/documents/new/mlp/loadweight.vhd(96): WARNING: Register \loadWeight0/sram_mode_46 is stuck at One (VDB-5014)
+c:/users/yisong/documents/new/mlp/fp_exp.vhd(295): WARNING: Register \float_alu0/fp_exp_clk0/delay_fpx/buf[67]_922 is stuck at Zero (VDB-5013)
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+
+################### Begin Area Report (main)######################
+Number of register bits => 2842 of 5148 (55 % )
+AND2 => 15
+BB => 3
+CCU2D => 1343
+DP8KC => 16
+DPR16X4C => 8
+EFB => 1
+FADD2B => 204
+FD1P3AX => 945
+FD1P3BX => 4
+FD1P3DX => 180
+FD1P3IX => 428
+FD1P3JX => 42
+FD1S1A => 8
+FD1S3AX => 1139
+FD1S3BX => 1
+FD1S3DX => 62
+FD1S3IX => 31
+FD1S3JX => 2
+GSR => 1
+IB => 3
+L6MUX21 => 1
+LUT4 => 3442
+MULT2 => 155
+ND2 => 12
+OSCH => 1
+PDPW8KC => 2
+PFUMX => 271
+ROM64X1A => 3
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 3
+  Net : clock, loads : 2785
+  Net : new_data, loads : 113
+  Net : output_new, loads : 8
+Clock Enable Nets
+Number of Clock Enables: 69
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : SDA_c, loads : 298
+  Net : n2069, loads : 162
+  Net : n22568, loads : 160
+  Net : o_0, loads : 105
+  Net : h_0, loads : 83
+  Net : i_0, loads : 79
+  Net : diffExpAB_8, loads : 74
+  Net : n_0, loads : 73
+  Net : diffExpAB_8, loads : 72
+  Net : n61, loads : 67
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets output_new]              |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets new_data]                |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clock]                   |  200.000 MHz|    5.145 MHz|   378 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 343.367  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 62.042  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

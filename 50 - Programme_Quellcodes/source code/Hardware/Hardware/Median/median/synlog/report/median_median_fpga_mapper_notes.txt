@@ -1,0 +1,55 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance sort_filter0.rt1[31:0] 
+@N: MF237 :"c:\users\yisong\documents\new\median\sort_filter.vhd":223:14:223:28|Generating a type rem remainder 
+@N: MF237 :"c:\users\yisong\documents\new\median\sort_filter.vhd":224:12:224:25|Generating a type rem remainder 
+@N: BN362 :|Removing sequential instance G_44 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_42 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_40 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_38 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_36 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_34 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_58 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_56 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_54 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_52 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_50 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_48 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_46 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_74 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_72 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_70 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_68 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_66 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_64 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_62 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_60 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_88 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_86 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_84 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_82 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_80 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_78 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_76 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_96 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_94 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_92 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: BN362 :|Removing sequential instance G_90 in hierarchy view:work.sort_filter(rtl) because there are no references to its outputs 
+@N: MF179 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Found 10 bit by 10 bit '==' comparator, 'adreg'
+@N: MF179 :"c:\users\yisong\documents\new\median\std_fifo.vhd":70:30:70:41|Found 10 bit by 10 bit '==' comparator, 'fifo_proc\.un3_writeen'
+@N: MF179 :"c:\users\yisong\documents\new\median\std_fifo.vhd":86:8:86:18|Found 10 bit by 10 bit '==' comparator, 'fifo_proc\.un17_head'
+@N: MF179 :"c:\users\yisong\documents\new\median\std_fifo.vhd":54:29:54:40|Found 10 bit by 10 bit '==' comparator, 'fifo_proc\.un4_readen'
+@N: FX404 :"c:\users\yisong\documents\new\median\sort_filter.vhd":223:14:223:28|Found addmux in view:work.main(rtl) inst sort_filter0.sort_filter_0\.un3_col_c_if_generate_plus\.mult1_remainder_0[9:0] from sort_filter0.sort_filter_0\.un3_col_c_if_generate_plus\.mult1_un1_rem_adjust[9:0] 
+@N: FX404 :"c:\users\yisong\documents\new\median\sort_filter.vhd":224:12:224:25|Found addmux in view:work.main(rtl) inst sort_filter0.sort_filter_0\.un3_rt1_if_generate_plus\.mult1_remainder_0[9:0] from sort_filter0.sort_filter_0\.un3_rt1_if_generate_plus\.mult1_un1_rem_adjust[9:0] 
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@N: FO126 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Generating RAM sort_filter0.row_c_CR31[31:0]
+@N: FO126 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Generating RAM sort_filter0.sort_3x3_0.s5_1_CR7[7:0]
+@N: FO126 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Generating RAM sort_filter0.sort_3x3_0.r84_CR7[7:0]
+@N: FO126 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Generating RAM sort_filter0.sort_3x3_0.r73_CR7[7:0]
+@N: FO126 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Generating RAM sort_filter0.sort_3x3_0.r4b1_CR7[7:0]
+@N: FO126 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Generating RAM sort_filter0.sort_3x3_0.r4b5_CR7[7:0]
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

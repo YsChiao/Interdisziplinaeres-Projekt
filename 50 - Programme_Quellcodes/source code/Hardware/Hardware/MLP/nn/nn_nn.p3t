@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "nn_nn.log"
+-o "nn_nn.csv"
+-pr "nn_nn.prf"

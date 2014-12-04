@@ -1,0 +1,10 @@
+
+fsm_encoding {13693691} sequential
+
+fsm_state_encoding {13693691} idle {00}
+
+fsm_state_encoding {13693691} read_rxdr {01}
+
+fsm_state_encoding {13693691} write_txdr {10}
+
+fsm_registers {13693691} {state[1]}  {state[0]} 

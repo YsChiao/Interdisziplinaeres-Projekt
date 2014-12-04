@@ -1,0 +1,14 @@
+[Version]
+Version=9.3
+[Designs]
+testbench=testbench.adf
+[Settings]
+Active=testbench
+[Expand]
+testbench=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

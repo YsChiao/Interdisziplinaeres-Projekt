@@ -1,0 +1,93 @@
+@W: MO171 :|Sequential instance sort_filter0.G_33 reduced to a combinational gate by constant propagation 
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Removing sequential instance sort_filter0.sort_3x3_0.r84_CF1[1:0],  because it is equivalent to instance sort_filter0.sort_3x3_0.r73_CF1[1:0]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Removing user instance sort_filter0.sort_3x3_0.s5_1_C1[1:0],  because it is equivalent to instance sort_filter0.sort_3x3_0.r73_C1[1:0]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Removing user instance sort_filter0.sort_3x3_0.r73_C1[1:0],  because it is equivalent to instance sort_filter0.sort_3x3_0.r4b1_C1[1:0]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Removing sequential instance sort_filter0.sort_3x3_0.s5_1_CF1[1:0],  because it is equivalent to instance sort_filter0.sort_3x3_0.r73_CF1[1:0]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Removing sequential instance sort_filter0.sort_3x3_0.r4b1_CF1[1:0],  because it is equivalent to instance sort_filter0.sort_3x3_0.r4b5_CF1[1:0]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_3x3.vhd":180:2:180:3|Removing sequential instance sort_filter0.sort_3x3_0.r73_CF1[1:0],  because it is equivalent to instance sort_filter0.sort_3x3_0.r4b5_CF1[1:0]
+@W: BN132 :|Removing instance sort_filter0.G_17,  because it is equivalent to instance sort_filter0.G_1
+@W: BN132 :|Removing instance sort_filter0.G_2,  because it is equivalent to instance sort_filter0.G_18
+@W: BN132 :|Removing instance sort_filter0.G_19,  because it is equivalent to instance sort_filter0.G_3
+@W: BN132 :"c:\users\yisong\documents\new\median\window_3x3.vhd":202:1:202:2|Removing instance sort_filter0.window_3x3_0.dwrreqb,  because it is equivalent to instance sort_filter0.window_3x3_0.ReadEn0
+@W: BN132 :|Removing instance sort_filter0.G_4,  because it is equivalent to instance sort_filter0.G_20
+@W: BN132 :|Removing instance sort_filter0.G_21,  because it is equivalent to instance sort_filter0.G_5
+@W: BN132 :|Removing instance sort_filter0.G_6,  because it is equivalent to instance sort_filter0.G_22
+@W: BN132 :|Removing instance sort_filter0.G_23,  because it is equivalent to instance sort_filter0.G_7
+@W: BN132 :|Removing instance sort_filter0.G_8,  because it is equivalent to instance sort_filter0.G_24
+@W: BN132 :|Removing instance sort_filter0.G_25,  because it is equivalent to instance sort_filter0.G_9
+@W: BN132 :|Removing instance sort_filter0.G_26,  because it is equivalent to instance sort_filter0.G_10
+@W: BN132 :|Removing instance sort_filter0.G_27,  because it is equivalent to instance sort_filter0.G_11
+@W: BN132 :|Removing instance sort_filter0.G_28,  because it is equivalent to instance sort_filter0.G_12
+@W: BN132 :|Removing instance sort_filter0.G_29,  because it is equivalent to instance sort_filter0.G_13
+@W: BN132 :|Removing instance sort_filter0.G_30,  because it is equivalent to instance sort_filter0.G_14
+@W: BN132 :|Removing instance sort_filter0.G_31,  because it is equivalent to instance sort_filter0.G_15
+@W: BN132 :|Removing instance sort_filter0.G_32,  because it is equivalent to instance sort_filter0.G_16
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":134:1:134:10|Removing instance sort_filter0.sort_3x3_0.G_1,  because it is equivalent to instance sort_filter0.G_1
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":134:1:134:10|Removing instance sort_filter0.sort_3x3_0.G_2,  because it is equivalent to instance sort_filter0.G_18
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":134:1:134:10|Removing instance sort_filter0.sort_3x3_0.G_115,  because it is equivalent to instance sort_filter0.G_3
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":134:1:134:10|Removing instance sort_filter0.sort_3x3_0.G_4,  because it is equivalent to instance sort_filter0.G_20
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":134:1:134:10|Removing instance sort_filter0.sort_3x3_0.G_117,  because it is equivalent to instance sort_filter0.G_5
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":134:1:134:10|Removing instance sort_filter0.sort_3x3_0.G_58,  because it is equivalent to instance sort_filter0.G_22
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[0],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[0]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[1],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[1]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[2],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[2]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[3],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[3]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[4],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[4]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[5],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[5]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[6],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[6]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[7],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[7]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[8],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[8]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo1.memory_raddr_tmp[9],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo1.tail[9]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[0],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[0]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[1],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[1]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[2],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[2]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[3],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[3]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[4],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[4]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[5],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[5]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[6],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[6]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[7],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[7]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[8],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[8]
+@W: BN132 :"c:\users\yisong\documents\new\median\std_fifo.vhd":36:11:36:16|Removing instance sort_filter0.window_3x3_0.fifo0.memory_raddr_tmp[9],  because it is equivalent to instance sort_filter0.window_3x3_0.fifo0.tail[9]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[15],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[17],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[19],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[21],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[23],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[25],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[27],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[29],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[31],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[30],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[28],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[26],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[24],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[22],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[20],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[18],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[16],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[14],  because it is equivalent to instance sort_filter0.rt1[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[13],  because it is equivalent to instance sort_filter0.rt1[12]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.rt1[12],  because it is equivalent to instance sort_filter0.rt1[11]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[15],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[17],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[19],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[21],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[23],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[25],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[27],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[29],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[31],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[30],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[28],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[26],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[24],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[22],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[20],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[18],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[16],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[14],  because it is equivalent to instance sort_filter0.col_c[13]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[13],  because it is equivalent to instance sort_filter0.col_c[12]
+@W: BN132 :"c:\users\yisong\documents\new\median\sort_filter.vhd":199:2:199:3|Removing instance sort_filter0.col_c[12],  because it is equivalent to instance sort_filter0.col_c[11]
+@W: MT246 :"c:\users\yisong\documents\new\median\main.vhd":132:4:132:7|Blackbox OSCH is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\yisong\documents\new\median\efb_spi.vhd":165:4:165:12|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock main|clk_sig_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:clk_sig"

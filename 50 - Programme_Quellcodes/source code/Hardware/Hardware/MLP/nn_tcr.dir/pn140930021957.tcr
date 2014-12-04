@@ -1,0 +1,6 @@
+#Start recording tcl command: 9/30/2014 02:18:00
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_run Map -impl nn -task MapTrace
+prj_project close
+#Stop recording: 9/30/2014 02:19:57

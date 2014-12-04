@@ -1,0 +1,49 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 800R, Built Nov 18 2013 10:58:25
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09L 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian_scck.rpt 
+Printing clock  summary report in "C:\Users\Yisong\Documents\new\gaussian\gaussian\gaussian_gaussian_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 115MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN287 :"c:\users\yisong\documents\new\gaussian\window_3x3.vhd":129:2:129:3|Register WriteEn0 with reset has an initial value of 1. Ignoring initial value.  
+@W: BN288 :"c:\users\yisong\documents\new\gaussian\rc_counter.vhd":29:2:29:3|Register col_var[31:0] with set has an initial value of 0. Ignoring initial value.  
+syn_allowed_resources : blockrams=26  set on top level netlist main
+
+
+Clock Summary
+**************
+
+Start                           Requested     Requested     Clock                                          Clock              
+Clock                           Frequency     Period        Type                                           Group              
+------------------------------------------------------------------------------------------------------------------------------
+System                          1.0 MHz       1000.000      system                                         system_clkgroup    
+main|clk_sig_inferred_clock     1.0 MHz       1000.000      inferred                                       Inferred_clkgroup_0
+spi2|new_data_derived_clock     1.0 MHz       1000.000      derived (from main|clk_sig_inferred_clock)     Inferred_clkgroup_0
+==============================================================================================================================
+
+@W: MT529 :"c:\users\yisong\documents\new\gaussian\spi.vhd":69:3:69:4|Found inferred clock main|clk_sig_inferred_clock which controls 26 sequential elements including spi0.write_pending. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 144MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Sep 14 21:52:45 2014
+
+###########################################################]

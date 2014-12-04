@@ -1,0 +1,21 @@
+#Build: Synplify Pro I-2013.09L , Build 064R, Nov 15 2013
+#install: C:\lscc\diamond\3.1_x64\synpbase
+#OS: Windows 7 6.1
+#Hostname: YISONG-PC
+
+$ Start of Compile
+#Tue Sep 30 03:00:30 2014
+
+Synopsys VHDL Compiler, version comp201309rc, Build 136R, built Nov 18 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.1_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\Yisong\Documents\new\mlp\main.vhd":20:7:20:10|Top entity is set to main.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Sep 30 03:00:31 2014
+
+###########################################################]

@@ -1,0 +1,175 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn140927022520"></A><B><U><big>pn140927022520</big></U></B>
+#Start recording tcl command: 9/27/2014 01:12:56
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_src remove "C:/Users/Yisong/Documents/new/mlp/fp_exp_exp_y1.vhd"
+prj_run Export -impl nn -task Jedecgen
+prj_src remove "C:/Users/Yisong/Documents/new/mlp/fp_exp_exp_y2.vhd"
+prj_run Synthesis -impl nn -task Synplify_Synthesis
+prj_run Export -impl nn -task Jedecgen
+prj_src add "C:/Users/Yisong/Documents/new/mlp/fp_exp_exp_y1.vhd" "C:/Users/Yisong/Documents/new/mlp/fp_exp_exp_y2.vhd"
+prj_src remove "C:/Users/Yisong/Documents/new/mlp/fp_exp_exp_y1.vhd"
+prj_src remove "C:/Users/Yisong/Documents/new/mlp/fp_exp_exp_y2.vhd"
+prj_run Synthesis -impl nn -task Synplify_Synthesis
+prj_run Export -impl nn -task Jedecgen
+prj_run Synthesis -impl nn -task Synplify_Synthesis
+prj_run Synthesis -impl nn -task Synplify_Synthesis
+prj_run Synthesis -impl nn
+prj_run Synthesis -impl nn -task Lattice_Synthesis
+prj_run Export -impl nn -task Jedecgen
+prj_run Synthesis -impl nn -task Synplify_Synthesis
+#Stop recording: 9/27/2014 02:25:20
+
+
+
+<A name="pn140927091147"></A><B><U><big>pn140927091147</big></U></B>
+#Start recording tcl command: 9/27/2014 03:41:07
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+#Stop recording: 9/27/2014 09:11:47
+
+
+
+<A name="pn140928223754"></A><B><U><big>pn140928223754</big></U></B>
+#Start recording tcl command: 9/28/2014 22:18:37
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+#Stop recording: 9/28/2014 22:37:54
+
+
+
+<A name="pn140930021749"></A><B><U><big>pn140930021749</big></U></B>
+#Start recording tcl command: 9/30/2014 00:32:17
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_run Synthesis -impl nn -task Synplify_Synthesis
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+prj_project save
+prj_project close
+#Stop recording: 9/30/2014 02:17:49
+
+
+
+<A name="pn140930021957"></A><B><U><big>pn140930021957</big></U></B>
+#Start recording tcl command: 9/30/2014 02:18:00
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_run Map -impl nn -task MapTrace
+prj_project close
+#Stop recording: 9/30/2014 02:19:57
+
+
+
+<A name="pn140930084531"></A><B><U><big>pn140930084531</big></U></B>
+#Start recording tcl command: 9/30/2014 02:29:19
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+prj_run Export -impl nn -task Jedecgen
+source "C:/Users/Yisong/Documents/new/mlp/hdle_generate_Symbol.tcl"
+prj_run Export -impl nn -task Jedecgen
+prj_src add "C:/Users/Yisong/Documents/new/mlp/loadInput.vhd"
+prj_src remove "C:/Users/Yisong/Documents/new/mlp/loadInput.vhd"
+#Stop recording: 9/30/2014 08:45:31
+
+
+
+<A name="pn141002153239"></A><B><U><big>pn141002153239</big></U></B>
+#Start recording tcl command: 10/2/2014 15:32:06
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_project close
+#Stop recording: 10/2/2014 15:32:39
+
+
+
+<A name="pn141003172120"></A><B><U><big>pn141003172120</big></U></B>
+#Start recording tcl command: 10/3/2014 17:13:15
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+prj_project close
+#Stop recording: 10/3/2014 17:21:20
+
+
+
+<A name="pn141003203055"></A><B><U><big>pn141003203055</big></U></B>
+#Start recording tcl command: 10/3/2014 19:11:51
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+#Stop recording: 10/3/2014 20:30:55
+
+
+
+<A name="pn141003223926"></A><B><U><big>pn141003223926</big></U></B>
+#Start recording tcl command: 10/3/2014 22:17:23
+#Project Location: C:/Users/Yisong/Documents/new/mlp; Project name: nn
+prj_project open "C:/Users/Yisong/Documents/new/mlp/nn.ldf"
+#Stop recording: 10/3/2014 22:39:26
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

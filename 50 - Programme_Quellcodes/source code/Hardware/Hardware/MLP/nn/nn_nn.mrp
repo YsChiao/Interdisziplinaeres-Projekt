@@ -1,0 +1,3386 @@
+             Lattice Mapping Report File for Design Module 'main'
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HC -t TQFP144 -s 4 -oc Commercial
+     nn_nn.ngd -o nn_nn_map.ncd -pr nn_nn.prf -mp nn_nn.mrp
+     C:/Users/Yisong/Documents/new/mlp/nn.lpf -c 0 -gui
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HCTQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.1.0.96
+Mapped on:  09/30/14  03:03:38
+
+Design Summary
+--------------
+
+   Number of registers:   5458 out of  7209 (76%)
+      PFU registers:         5458 out of  6864 (80%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:      6271 out of  3432 (183%)
+      SLICEs as Logic/ROM:   6247 out of  3432 (182%)
+      SLICEs as RAM:           24 out of  2574 (1%)
+      SLICEs as Carry:       1531 out of  3432 (45%)
+   Number of LUT4s:        12531 out of  6864 (183%)
+      Number of logic LUTs:      9421
+      Number of distributed RAM:  24 (48 LUT4s)
+      Number of ripple logic:    1531 (3062 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 6 + 1(JTAGENB) out of 115 (6%)
+   Number of block RAMs:  18 out of 26 (69%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       Yes
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  3
+     Net output_new_sig: 4 loads, 4 rising, 0 falling (Driver:
+     output0/output_new )
+     Net clk_sig_c: 3726 loads, 3726 rising, 0 falling (Driver: OSC0 )
+     Net spi0/efb0/spi_clk_i: 1 loads, 1 rising, 0 falling (Driver: PIO SCLK )
+   Number of Clock Enables:  103
+
+                                    Page 1
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Design Summary (cont)
+---------------------
+     Net output0/state_cnv[0]: 4 loads, 4 LSLICEs
+     Net G_3: 34 loads, 34 LSLICEs
+     Net output0/un4_mlp_done_RNIV0MQ1: 32 loads, 32 LSLICEs
+     Net output0/state_RNISN061[0]: 4 loads, 4 LSLICEs
+     Net pr0/un2_mlp_ready_i: 1 loads, 1 LSLICEs
+     Net test0/f_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net test0/oe: 17 loads, 17 LSLICEs
+     Net test0/un1_rst_2_i: 16 loads, 16 LSLICEs
+     Net test0/ie: 17 loads, 17 LSLICEs
+     Net test0/un1_h_1_sqmuxa_7_0_o2_0_RNIDLTQ3: 32 loads, 32 LSLICEs
+     Net test0/N_4124_i: 7 loads, 7 LSLICEs
+     Net test0/un1_rst_4_1_i: 16 loads, 16 LSLICEs
+     Net test0/weight_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net sram_ready_B: 32 loads, 0 LSLICEs
+     Net test0/numLe: 17 loads, 17 LSLICEs
+     Net test0/he: 17 loads, 17 LSLICEs
+     Net test0/h_0_sqmuxa: 321 loads, 321 LSLICEs
+     Net test0/h_0_sqmuxa_1: 320 loads, 320 LSLICEs
+     Net test0/un1_h_1_sqmuxa_28_0_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_52_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_42_0_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_6_0_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_1_0_1: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_39_0_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_8_0_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_37_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_3_0_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_26_0_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_18: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_31_0_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_27_0_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_32_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_17_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_9: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_44_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_40_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_46_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_38_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_53: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_14: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_11_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_51_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_19_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_36_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_55_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_2_1: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_45_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_22: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_25_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_49: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_23_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_35_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_16_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_12_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_10_0: 32 loads, 32 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Design Summary (cont)
+---------------------
+     Net test0/un1_h_1_sqmuxa_21_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_24_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_30_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_20_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_54_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_47_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_33_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_15_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_29_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_43_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_41: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_4_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_13: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_5_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_48_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_50_0: 32 loads, 32 LSLICEs
+     Net test0/un1_h_1_sqmuxa_34: 32 loads, 32 LSLICEs
+     Net test0/un1_rst_4_i: 16 loads, 16 LSLICEs
+     Net test0/e_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net test0/h_3_sqmuxa: 4 loads, 4 LSLICEs
+     Net test0/addre: 2 loads, 2 LSLICEs
+     Net spi0.wback: 2 loads, 2 LSLICEs
+     Net loadWeight0/addr_112_0: 17 loads, 17 LSLICEs
+     Net loadWeight0/sram_mode_0_sqmuxa: 16 loads, 16 LSLICEs
+     Net loadWeight0/N_262_i_i: 1 loads, 1 LSLICEs
+     Net sram_ready_A: 32 loads, 0 LSLICEs
+     Net loadWeight0/sram_addr_1_sqmuxa: 6 loads, 6 LSLICEs
+     Net receiver0/done_1_sqmuxa: 20 loads, 20 LSLICEs
+     Net receiver0/done_2_sqmuxa_i: 1 loads, 1 LSLICEs
+     Net receiver0/dat_regce[8]: 4 loads, 4 LSLICEs
+     Net receiver0/dat_regce[16]: 4 loads, 4 LSLICEs
+     Net receiver0/dat_regce[24]: 4 loads, 4 LSLICEs
+     Net float_alu0/wait_counter16: 4 loads, 4 LSLICEs
+     Net float_alu0/div_ce: 62 loads, 62 LSLICEs
+     Net float_alu0/mul_ce: 67 loads, 67 LSLICEs
+     Net float_alu0/sub_ce: 48 loads, 48 LSLICEs
+     Net float_alu0/add_ce: 48 loads, 48 LSLICEs
+     Net float_alu0/alu_a_1_sqmuxa: 32 loads, 32 LSLICEs
+     Net float_alu0/N_55_i: 1 loads, 1 LSLICEs
+     Net float_alu0/N_56_i: 1 loads, 1 LSLICEs
+     Net float_alu0/exp_a_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net float_alu0/N_57_i: 1 loads, 1 LSLICEs
+     Net float_alu0/N_53: 16 loads, 16 LSLICEs
+     Net float_alu0/N_58_i: 1 loads, 1 LSLICEs
+     Net spi0/N_43_i: 1 loads, 1 LSLICEs
+     Net spi0/wbaddr_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net spi0/N_33_i: 4 loads, 4 LSLICEs
+   Number of LSRs:  12
+     Net SDA_c: 141 loads, 109 LSLICEs
+     Net loadWeight0/state_RNIBN2L[0]: 17 loads, 17 LSLICEs
+     Net float_alu0/fp_exp_clk0/N_85: 5 loads, 5 LSLICEs
+     Net float_alu0/fp_exp_clk0/shift/eX_0[2]: 4 loads, 4 LSLICEs
+     Net float_alu0/fp_exp_clk0/shift/eX_0[1]: 1 loads, 1 LSLICEs
+     Net float_alu0/fp_exp_clk0/shift/eX_0[3]: 4 loads, 4 LSLICEs
+     Net float_alu0/fp_exp_clk0/shift/un7_mxs_0_cry_22: 1 loads, 1 LSLICEs
+     Net float_alu0/fp_div0/un3_iszero_RNIFOBF: 12 loads, 12 LSLICEs
+
+                                    Page 3
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Design Summary (cont)
+---------------------
+     Net float_alu0/fp_mul0/isInf_f_RNIKABF: 12 loads, 12 LSLICEs
+     Net float_alu0/fp_sub0/isNaN_RNIU5TM: 4 loads, 4 LSLICEs
+     Net float_alu0/fp_add0/isNaN_RNIR9SV: 4 loads, 4 LSLICEs
+     Net spi0/wbaddr_0_sqmuxa_i: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net test0/state_d_sn_1[43]: 907 loads
+     Net test0/state_d_sn[43]: 893 loads
+     Net test0/N_2291_1: 640 loads
+     Net test0/un1_sram_input_16_m0s2: 640 loads
+     Net test0/un1_state_15_sn: 640 loads
+     Net test0/un1_state_15_sn_1: 640 loads
+     Net test0/h[4]: 528 loads
+     Net test0/n[4]: 513 loads
+     Net test0/un1_sram_input_sm0: 512 loads
+     Net test0/i[4]: 501 loads
+
+
+
+
+   Number of warnings:  47
+   Number of errors:    2
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(31): Semantic error in
+     "LOCATE COMP "LEDR" SITE "112" ;": COMP "LEDR" not found in design. Disable
+     this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(32): Semantic error in
+     "LOCATE COMP "LEDG" SITE "113" ;": COMP "LEDG" not found in design. Disable
+     this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(36): Semantic error in
+     "LOCATE COMP "SCL" SITE "126" ;": COMP "SCL" not found in design. Disable
+     this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(37): Semantic error in
+     "LOCATE COMP "PiCLK" SITE "128" ;": COMP "PiCLK" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(44): Semantic error in
+     "LOCATE COMP "R0" SITE "74" ;": COMP "R0" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(45): Semantic error in
+     "LOCATE COMP "R1" SITE "76" ;": COMP "R1" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(46): Semantic error in
+     "LOCATE COMP "R2" SITE "82" ;": COMP "R2" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(47): Semantic error in
+     "LOCATE COMP "R3" SITE "84" ;": COMP "R3" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(48): Semantic error in
+     "LOCATE COMP "R4" SITE "92" ;": COMP "R4" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(49): Semantic error in
+     "LOCATE COMP "R5" SITE "94" ;": COMP "R5" not found in design. Disable this
+     preference.
+
+                                    Page 4
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(50): Semantic error in
+     "LOCATE COMP "R6" SITE "98" ;": COMP "R6" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(51): Semantic error in
+     "LOCATE COMP "R7" SITE "100" ;": COMP "R7" not found in design. Disable
+     this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(52): Semantic error in
+     "LOCATE COMP "R8" SITE "105" ;": COMP "R8" not found in design. Disable
+     this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(53): Semantic error in
+     "LOCATE COMP "R9" SITE "107" ;": COMP "R9" not found in design. Disable
+     this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(56): Semantic error in
+     "LOCATE COMP "B0" SITE "38" ;": COMP "B0" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(57): Semantic error in
+     "LOCATE COMP "B1" SITE "42" ;": COMP "B1" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(60): Semantic error in
+     "LOCATE COMP "B2" SITE "47" ;": COMP "B2" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(61): Semantic error in
+     "LOCATE COMP "B3" SITE "49" ;": COMP "B3" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(62): Semantic error in
+     "LOCATE COMP "B4" SITE "59" ;": COMP "B4" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(63): Semantic error in
+     "LOCATE COMP "B5" SITE "61" ;": COMP "B5" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(64): Semantic error in
+     "LOCATE COMP "B6" SITE "65" ;": COMP "B6" not found in design. Disable this
+     preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(70): Semantic error in
+     "LOCATE COMP "XCE1" SITE "4" ;": COMP "XCE1" not found in design. Disable
+     this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(71): Semantic error in
+     "LOCATE COMP "XCE0" SITE "6" ;": COMP "XCE0" not found in design. Disable
+     this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(72): Semantic error in
+     "LOCATE COMP "GPIO25" SITE "9" ;": COMP "GPIO25" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(73): Semantic error in
+     "LOCATE COMP "XIO25" SITE "10" ;": COMP "XIO25" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(74): Semantic error in
+     "LOCATE COMP "GPIO24" SITE "11" ;": COMP "GPIO24" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(75): Semantic error in
+     "LOCATE COMP "XIO24" SITE "12" ;": COMP "XIO24" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(76): Semantic error in
+     "LOCATE COMP "GPIO23" SITE "13" ;": COMP "GPIO23" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(77): Semantic error in
+     "LOCATE COMP "XIO23" SITE "14" ;": COMP "XIO23" not found in design.
+
+                                    Page 5
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Design Errors/Warnings (cont)
+-----------------------------
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(78): Semantic error in
+     "LOCATE COMP "GPIO22" SITE "19" ;": COMP "GPIO22" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(79): Semantic error in
+     "LOCATE COMP "GPIO27" SITE "20" ;": COMP "GPIO27" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(80): Semantic error in
+     "LOCATE COMP "XIO22" SITE "21" ;": COMP "XIO22" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(81): Semantic error in
+     "LOCATE COMP "XIO27" SITE "22" ;": COMP "XIO27" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(82): Semantic error in
+     "LOCATE COMP "GPIO18" SITE "23" ;": COMP "GPIO18" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(83): Semantic error in
+     "LOCATE COMP "XIO18" SITE "24" ;": COMP "XIO18" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(84): Semantic error in
+     "LOCATE COMP "GPIO17" SITE "25" ;": COMP "GPIO17" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(85): Semantic error in
+     "LOCATE COMP "XIO17" SITE "26" ;": COMP "XIO17" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(86): Semantic error in
+     "LOCATE COMP "GPIO15" SITE "27" ;": COMP "GPIO15" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(87): Semantic error in
+     "LOCATE COMP "XIO15" SITE "28" ;": COMP "XIO15" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(88): Semantic error in
+     "LOCATE COMP "GPIO14" SITE "32" ;": COMP "GPIO14" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(89): Semantic error in
+     "LOCATE COMP "XIO14" SITE "33" ;": COMP "XIO14" not found in design.
+     Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(90): Semantic error in
+     "LOCATE COMP "XCLK" SITE "34" ;": COMP "XCLK" not found in design. Disable
+     this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(94): Semantic error in
+     "IOBUF PORT "LEDR" IO_TYPE=LVCMOS33 PULLMODE=DOWN ;": Port "LEDR" does not
+     exist in the design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(95): Semantic error in
+     "IOBUF PORT "LEDG" IO_TYPE=LVCMOS33 PULLMODE=DOWN ;": Port "LEDG" does not
+     exist in the design. Disable this preference.
+WARNING - map: C:/Users/Yisong/Documents/new/mlp/nn.lpf(96): Semantic error in
+     "IOBUF PORT "SCL" IO_TYPE=LVCMOS33 PULLMODE=UP ;": Port "SCL" does not
+     exist in the design. Disable this preference.
+WARNING - map: Preference parsing results:  45 semantic errors detected
+WARNING - map: The JTAG port has been disabled in this project and JTAG pins
+     will be configured as General Purpose IO.  You have to use JTAGENB pin in
+     hardware to change the personality of the port from JTAG pins to general
+     purpose IO.  Reference MachXO2 Handbook for details on dual function JTAG
+     port.
+ERROR - map: The number of register slices required (3679) exceeds the number of
+
+                                    Page 6
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Design Errors/Warnings (cont)
+-----------------------------
+     register slices available (2317). This device has 3432 register slices, but
+     some of the slices could be used for other logic such as distributed ram,
+     ripple and wide luts.
+ERROR - map: Design doesn't fit into device specified, refer to the Map report
+     for more details.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| GSRn                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SCLK                | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| MOSI                | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| MISO                | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SDA                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| CE1                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block VCC undriven or does not drive anything - clipped.
+Block spi0/GND undriven or does not drive anything - clipped.
+Block float_alu0/VCC undriven or does not drive anything - clipped.
+Block float_alu0/fp_add0/alignment/GND undriven or does not drive anything -
+     clipped.
+Block float_alu0/fp_div0/a_div/GND undriven or does not drive anything -
+     clipped.
+Block float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/GND undriven or does
+     not drive anything - clipped.
+Block float_alu0/fp_exp_clk0/delay_ny/GND undriven or does not drive anything -
+     clipped.
+Block loadWeight0/VCC undriven or does not drive anything - clipped.
+Block test0/VCC undriven or does not drive anything - clipped.
+Block pr0/VCC undriven or does not drive anything - clipped.
+Block pr0/GND undriven or does not drive anything - clipped.
+Block output0/VCC undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/eX_0_i[2] was merged into signal
+     float_alu0/fp_exp_clk0/shift/eX_0[2]
+Signal float_alu0/fp_exp_clk0/shift/eX_0_i[1] was merged into signal
+     float_alu0/fp_exp_clk0/shift/eX_0[1]
+Signal float_alu0/fp_sub0/alignment/un16_diff_exp_4_bm undriven or does not
+     drive anything - clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal spi0/efb0/GND undriven or does not drive anything - clipped.
+Signal float_alu0/GND undriven or does not drive anything - clipped.
+Signal float_alu0/fp_add0/GND undriven or does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/GND undriven or does not drive
+
+                                    Page 7
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal float_alu0/fp_sub0/GND undriven or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/alignment/GND undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/GND undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/GND undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.12.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.1.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.8.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.2.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.9.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.3.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.10.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.4.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.11.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.5.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.19.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.6.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.0.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.14.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.21.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.15.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.22.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.16.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.23.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.17.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.24.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.18.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.20.int_mod/GND undriven or does not
+     drive anything - clipped.
+
+                                    Page 8
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_div0/a_div/divisor.13.int_mod/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.7.int_mod/GND undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/GND undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/GND undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/GND undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_klog2/GND undriven or does not drive anything
+     - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/VCC undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/GND undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/GND undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/GND undriven or does not drive anything -
+     clipped.
+Signal receiver0/GND undriven or does not drive anything - clipped.
+Signal sram_dp0/ram_dq_true0/VCC undriven or does not drive anything - clipped.
+Signal sram_dp0/ram_dq_true0/GND undriven or does not drive anything - clipped.
+Signal loadWeight0/GND undriven or does not drive anything - clipped.
+Signal test0/GND undriven or does not drive anything - clipped.
+Signal output0/GND undriven or does not drive anything - clipped.
+Signal SEDSTDBY undriven or does not drive anything - clipped.
+Signal spi0/efb0/CFGSTDBY undriven or does not drive anything - clipped.
+Signal spi0/efb0/CFGWAKE undriven or does not drive anything - clipped.
+Signal spi0/efb0/WBCUFMIRQ undriven or does not drive anything - clipped.
+Signal spi0/efb0/TCOC undriven or does not drive anything - clipped.
+Signal spi0/efb0/TCINT undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIIRQO undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPICSNEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN7 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN6 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN5 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN4 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN3 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN2 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN1 undriven or does not drive anything - clipped.
+Signal spi0/efb0/SPIMCSN0 undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2IRQO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1IRQO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2SDAOEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2SDAO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2SCLOEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C2SCLO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1SDAOEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1SDAO undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1SCLOEN undriven or does not drive anything - clipped.
+Signal spi0/efb0/I2C1SCLO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO0 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO1 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO2 undriven or does not drive anything - clipped.
+
+                                    Page 9
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal spi0/efb0/PLLDATO3 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO4 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO5 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO6 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLDATO7 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLADRO0 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLADRO1 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLADRO2 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLADRO3 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLADRO4 undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLWEO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLL1STBO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLL0STBO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLRSTO undriven or does not drive anything - clipped.
+Signal spi0/efb0/PLLCLKO undriven or does not drive anything - clipped.
+Signal float_alu0/un1_wait_counter_cry_25_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/subBAExpEq_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/subBAExpEq_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/N_1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_add0/subBAExpEq_cry_23_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/un3_frac_norm2_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/N_2 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_add0/un3_frac_norm2_cry_21_0_COUT undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_add0/un1_A_int_2_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/un1_A_int_2_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/N_3 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_add0/un1_A_int_2_s_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/un1_A_int_2_s_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/un2_exp_add_norm1_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_add0/N_4 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_add0/un2_exp_add_norm1_s_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/un2_exp_add_norm1_s_7_0_COUT undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_add0/diffExpAB_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/diffExpAB_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/N_5 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_add0/diffExpAB_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/diffExpAB_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/diffExpAB_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+
+                                   Page 10
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_add0/diffExpAB_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/diffExpAB_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/diffExpAB_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/diffExpAB_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/diffExpAB_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/addSubAB_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/addSubAB_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/N_6 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_add0/addSubAB_s_27_0_S1 undriven or does not drive anything
+     - clipped.
+Signal float_alu0/fp_add0/addSubAB_s_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/un5_frac_0_N_17 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_add0/un5_frac_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/N_7 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_add0/un5_frac_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/un5_frac_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/un5_frac_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/un5_frac_0_I_21_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/exp_Norm_int_2_cry_0_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/exp_Norm_int_2_cry_0_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/exp_Norm_int_2_s_7_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/exp_Norm_int_2_s_7_0_COUT undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_0_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_0_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/N_2 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_1_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_1_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_3_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_3_0_S0 undriven or
+     does not drive anything - clipped.
+
+                                   Page 11
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_5_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_5_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_7_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_add0/subtraction_norm/un3_underflow_cry_7_0_COUT undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subBAExpEq_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/subBAExpEq_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/N_1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subBAExpEq_cry_23_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/un3_frac_norm2_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/N_2 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/un3_frac_norm2_cry_21_0_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_sub0/un1_A_int_2_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/un1_A_int_2_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/N_3 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/un1_A_int_2_s_7_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/un1_A_int_2_s_7_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/un2_exp_add_norm1_cry_0_0_S0_0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_sub0/N_4 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/un2_exp_add_norm1_s_7_0_S1_0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_sub0/un2_exp_add_norm1_s_7_0_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/N_5 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_1_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_1_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_3_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_3_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_5_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_5_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_7_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/diffExpAB_cry_7_0_COUT_0 undriven or does not drive
+
+                                   Page 12
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal float_alu0/fp_sub0/addSubAB_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/addSubAB_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/N_6 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/addSubAB_s_27_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/addSubAB_s_27_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/un5_frac_0_N_17 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_sub0/un5_frac_0_I_1_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/N_7 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/un5_frac_0_I_9_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/un5_frac_0_I_9_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/un5_frac_0_I_21_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/un5_frac_0_I_21_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/exp_Norm_int_2_cry_0_0_S1_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/exp_Norm_int_2_cry_0_0_S0_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/exp_Norm_int_2_s_7_0_S1_0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/exp_Norm_int_2_s_7_0_COUT_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_0_0_S1_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_0_0_S0_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/N_2 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_1_0_S1_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_1_0_S0_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_3_0_S1_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_3_0_S0_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_5_0_S1_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_5_0_S0_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_7_0_S0_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_sub0/subtraction_norm/un3_underflow_cry_7_0_COUT_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/un27_cry_0_0_S1 undriven or does not drive anything -
+
+                                   Page 13
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal float_alu0/fp_mul0/un27_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_mul0/N_1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/un27_cry_1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_mul0/un27_cry_1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_mul0/un27_cry_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_mul0/un27_cry_3_0_S0 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_mul0/un27_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_mul0/un27_cry_5_0_COUT undriven or does not drive anything
+     - clipped.
+Signal float_alu0/fp_mul0/un3_exp_final_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_2 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/un3_exp_final_s_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/un3_exp_final_s_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/un6_exp_int_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/un6_exp_int_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_3 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/un6_exp_int_s_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/un6_exp_int_s_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_9_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_9_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_4 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_9_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_10_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_10_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_5 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_10_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_11_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_11_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_6 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_11_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_1_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_1_cry_1_0_S0 undriven or does not drive
+
+                                   Page 14
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_7 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_1_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_12_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_12_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_8 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_12_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_12_cry_25_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_14_cry_2_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_14_cry_2_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_9 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_14_cry_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_17_cry_2_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_17_cry_2_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_10 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_17_s_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_17_s_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_13_cry_2_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_13_cry_2_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_11 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_13_cry_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_15_cry_2_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_15_cry_2_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_12 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_15_cry_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_16_cry_2_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_16_cry_2_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_13 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_16_cry_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_18_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_18_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_14 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_18_cry_1_0_S1 undriven or does not drive
+
+                                   Page 15
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_18_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_18_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_18_cry_28_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_18_cry_28_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_0_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_15 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_0_cry_23_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_2_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_2_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_16 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_2_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_3_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_3_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_17 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_3_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_4_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_4_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_18 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_4_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_5_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_5_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_19 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_5_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_6_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_6_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_20 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_6_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_7_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_7_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_21 undriven or does not drive anything - clipped.
+
+                                   Page 16
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_mul0/prod_madd_7_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_8_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_8_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_22 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_8_cry_24_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_23 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_s_31_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_s_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_19_cry_4_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_19_cry_4_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_24 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_19_cry_32_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_19_cry_32_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_20_cry_4_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_20_cry_4_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_25 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_20_s_31_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_20_s_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_26 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_3_0_S0 undriven or does not drive
+
+                                   Page 17
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/prod_madd_21_cry_33_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/un3_frac_round_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_mul0/N_27 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_mul0/un3_frac_round_cry_21_0_COUT undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/frac_final_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/N_1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/frac_final_cry_21_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/exp_Biased_Norm_0_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/exp_Biased_Norm_0_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/N_2 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/exp_Biased_Norm_0_cry_7_0_COUT undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_0_0_S1_14 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_0_0_S0_14 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_1_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_1_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_3_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_3_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_5_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_5_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_7_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_7_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_9_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_9_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_11_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_11_0_S0 undriven or
+     does not drive anything - clipped.
+
+                                   Page 18
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_13_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_13_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_15_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_15_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_17_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_17_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_19_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_19_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_21_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_21_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_23_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.25.int_mod/outp_cry_23_0_COUT_14
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.12.int_mod/outp_cry_0_0_S1_21 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.12.int_mod/outp_cry_0_0_S0_21 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.12.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.12.int_mod/outp_cry_23_0_COUT_21
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.1.int_mod/outp_cry_0_0_S1_0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.1.int_mod/outp_cry_0_0_S0_0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.1.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.1.int_mod/outp_cry_23_0_COUT_0 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.8.int_mod/outp_cry_0_0_S1_17 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.8.int_mod/outp_cry_0_0_S0_17 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.8.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.8.int_mod/outp_cry_23_0_COUT_17 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.2.int_mod/outp_cry_0_0_S1_1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.2.int_mod/outp_cry_0_0_S0_1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.2.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.2.int_mod/outp_cry_23_0_COUT_1 undriven
+     or does not drive anything - clipped.
+
+                                   Page 19
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_div0/a_div/divisor.9.int_mod/outp_cry_0_0_S1_18 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.9.int_mod/outp_cry_0_0_S0_18 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.9.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.9.int_mod/outp_cry_23_0_COUT_18 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.3.int_mod/outp_cry_0_0_S1_2 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.3.int_mod/outp_cry_0_0_S0_2 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.3.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.3.int_mod/outp_cry_23_0_COUT_2 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.10.int_mod/outp_cry_0_0_S1_19 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.10.int_mod/outp_cry_0_0_S0_19 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.10.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.10.int_mod/outp_cry_23_0_COUT_19
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.4.int_mod/outp_cry_0_0_S1_3 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.4.int_mod/outp_cry_0_0_S0_3 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.4.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.4.int_mod/outp_cry_23_0_COUT_3 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.11.int_mod/outp_cry_0_0_S1_20 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.11.int_mod/outp_cry_0_0_S0_20 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.11.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.11.int_mod/outp_cry_23_0_COUT_20
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.5.int_mod/outp_cry_0_0_S1_4 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.5.int_mod/outp_cry_0_0_S0_4 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.5.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.5.int_mod/outp_cry_23_0_COUT_4 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.19.int_mod/outp_cry_0_0_S1_10 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.19.int_mod/outp_cry_0_0_S0_10 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.19.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.19.int_mod/outp_cry_23_0_COUT_10
+     undriven or does not drive anything - clipped.
+
+                                   Page 20
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_div0/a_div/divisor.6.int_mod/outp_cry_0_0_S1_5 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.6.int_mod/outp_cry_0_0_S0_5 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.6.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.6.int_mod/outp_cry_23_0_COUT_5 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.0.int_mod/outp_cry_0_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.0.int_mod/outp_cry_0_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.0.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.0.int_mod/outp_cry_23_0_COUT undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.14.int_mod/outp_cry_0_0_S1_23 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.14.int_mod/outp_cry_0_0_S0_23 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.14.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.14.int_mod/outp_cry_23_0_COUT_23
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.21.int_mod/outp_cry_0_0_S1_12 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.21.int_mod/outp_cry_0_0_S0_12 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.21.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.21.int_mod/outp_cry_23_0_COUT_12
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.15.int_mod/outp_cry_0_0_S1_24 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.15.int_mod/outp_cry_0_0_S0_24 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.15.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.15.int_mod/outp_cry_23_0_COUT_24
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.22.int_mod/outp_cry_0_0_S1_13 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.22.int_mod/outp_cry_0_0_S0_13 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.22.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.22.int_mod/outp_cry_23_0_COUT_13
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.16.int_mod/outp_cry_0_0_S1_7 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.16.int_mod/outp_cry_0_0_S0_7 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.16.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.16.int_mod/outp_cry_23_0_COUT_7 undriven
+     or does not drive anything - clipped.
+
+                                   Page 21
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_div0/a_div/divisor.23.int_mod/outp_cry_0_0_S1_15 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.23.int_mod/outp_cry_0_0_S0_15 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.23.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.23.int_mod/outp_cry_23_0_COUT_15
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.17.int_mod/outp_cry_0_0_S1_8 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.17.int_mod/outp_cry_0_0_S0_8 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.17.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.17.int_mod/outp_cry_23_0_COUT_8 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.24.int_mod/outp_cry_0_0_S1_16 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.24.int_mod/outp_cry_0_0_S0_16 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.24.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.24.int_mod/outp_cry_23_0_COUT_16
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.18.int_mod/outp_cry_0_0_S1_9 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.18.int_mod/outp_cry_0_0_S0_9 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.18.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.18.int_mod/outp_cry_23_0_COUT_9 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.20.int_mod/outp_cry_0_0_S1_11 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.20.int_mod/outp_cry_0_0_S0_11 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.20.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.20.int_mod/outp_cry_23_0_COUT_11
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.13.int_mod/outp_cry_0_0_S1_22 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.13.int_mod/outp_cry_0_0_S0_22 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.13.int_mod/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.13.int_mod/outp_cry_23_0_COUT_22
+     undriven or does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.7.int_mod/outp_cry_0_0_S1_6 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.7.int_mod/outp_cry_0_0_S0_6 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.7.int_mod/N_1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_div0/a_div/divisor.7.int_mod/outp_cry_23_0_COUT_6 undriven
+     or does not drive anything - clipped.
+
+                                   Page 22
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_exp_clk0/un6_er_e3_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un6_er_e3_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/N_14 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/un6_er_e3_s_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un6_er_e3_s_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un7_nk_b0_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un7_nk_b0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/N_15 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/un7_nk_b0_s_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un7_nk_b0_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/nY_c1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/nY_c1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/N_16 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/nY_c1_s_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/nY_c1_s_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un7_nz0_d1_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un7_nz0_d1_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/N_17 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/un7_nz0_d1_cry_20_0_COUT undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/un2_nz_e1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un2_nz_e1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/N_18 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/un2_nz_e1_s_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un2_nz_e1_s_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un6_fr1_e2_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/N_19 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/un6_fr1_e2_cry_22_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/un6_fr1_e2_cry_22_0_COUT undriven or does not
+     drive anything - clipped.
+
+                                   Page 23
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_exp_clk0/shift/un7_mxs_0_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/un7_mxs_0_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/N_1 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/shift/un7_mxs_0_cry_22_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/un7_mxs_0_cry_22_0_COUT undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/eX_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/N_2 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/shift/eX_0_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/eX_0_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/eX_0_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/eX_0_s_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/shift/eX_0_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un93_buf_x_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un93_buf_x_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/N_1 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un93_buf_x_cry_1_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un93_buf_x_cry_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un93_buf_x_cry_3_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un93_buf_x_cry_11_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un216_buf_x_cry_1_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un216_buf_x_cry_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/N_2 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un216_buf_x_cry_2_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un216_buf_x_cry_2_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un216_buf_x_cry_4_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un216_buf_x_s_16_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un216_buf_x_s_16_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un252_buf_x_cry_1_0_S1 undriven or does not
+     drive anything - clipped.
+
+                                   Page 24
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_exp_clk0/mult_k/un252_buf_x_cry_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/N_3 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un252_buf_x_cry_2_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un252_buf_x_cry_2_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un252_buf_x_cry_12_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un186_buf_x_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un186_buf_x_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/N_4 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_k/un186_buf_x_cry_11_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_klog2/un241_buf_x_cry_0_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_klog2/un241_buf_x_cry_0_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_klog2/N_1 undriven or does not drive anything
+     - clipped.
+Signal float_alu0/fp_exp_clk0/mult_klog2/un241_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_klog2/un241_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_klog2/un241_buf_x_cry_29_0_COUT undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1_DO8 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1_DO7 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1_DO6 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1_DO5 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1_DO4 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1_DO3 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1_DO2 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1_DO1 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/sum_cry_0_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/sum_cry_0_0_S0 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/N_1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/sum_s_13_0_S1 undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/sum_s_13_0_COUT undriven
+     or does not drive anything - clipped.
+
+                                   Page 25
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un75_buf_x_c
+     ry_1_0_S1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un75_buf_x_c
+     ry_1_0_S0 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/N_1 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un75_buf_x_c
+     ry_7_0_S1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un75_buf_x_c
+     ry_7_0_COUT undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un60_buf_x_c
+     ry_1_0_S1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un60_buf_x_c
+     ry_1_0_S0 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/N_2 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un60_buf_x_c
+     ry_7_0_S1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un60_buf_x_c
+     ry_7_0_COUT undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un90_buf_x_c
+     ry_1_0_S1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un90_buf_x_c
+     ry_1_0_S0 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/N_3 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un90_buf_x_c
+     ry_7_0_S1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un90_buf_x_c
+     ry_7_0_COUT undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un137_buf_x_
+     cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un137_buf_x_
+     cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/N_4 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un137_buf_x_
+     cry_2_0_S0 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un137_buf_x_
+     cry_8_0_COUT undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un107_buf_x_
+     cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un107_buf_x_
+     cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/N_5 undriven
+     or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un107_buf_x_
+     cry_2_0_S0 undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/un107_buf_x_
+     cry_8_0_COUT undriven or does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un338_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un338_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_2 undriven or does not drive anything -
+     clipped.
+
+                                   Page 26
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_exp_clk0/mult_z1/un338_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un263_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un263_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_3 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un263_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un248_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un248_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_5 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un248_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un293_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un293_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_6 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un293_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un278_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un278_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_8 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un278_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un323_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un323_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_9 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un323_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un203_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un203_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_11 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un203_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un188_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un188_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_12 undriven or does not drive anything -
+     clipped.
+
+                                   Page 27
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_exp_clk0/mult_z1/un188_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un233_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un233_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_14 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un233_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un218_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un218_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_15 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un218_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un355_buf_x_cry_2_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un355_buf_x_cry_2_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_17 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un355_buf_x_cry_31_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_4_cry_2_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_4_cry_2_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_18 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_4_cry_31_0_COUT undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_0_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_0_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_20 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_3_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_3_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_5_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_5_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_7_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un449_buf_x_cry_35_0_COUT undriven or does
+     not drive anything - clipped.
+
+                                   Page 28
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_0_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_0_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_21 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_3_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_3_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_5_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_5_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_7_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_7_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_9_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_9_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_11_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_cry_11_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_s_33_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un556_buf_x_s_33_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_0_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_0_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_23 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_3_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_3_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_5_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_5_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_7_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un508_buf_x_cry_35_0_COUT undriven or does
+     not drive anything - clipped.
+
+                                   Page 29
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal float_alu0/fp_exp_clk0/mult_z1/un467_buf_x_cry_4_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un467_buf_x_cry_4_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_24 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un467_buf_x_cry_35_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un387_buf_x_cry_2_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un387_buf_x_cry_2_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_26 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un387_buf_x_cry_31_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un467_buf_x_4_cry_2_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un467_buf_x_4_cry_2_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_27 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un467_buf_x_4_cry_31_0_COUT undriven or
+     does not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un308_buf_x_cry_1_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un308_buf_x_cry_1_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_29 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un308_buf_x_cry_28_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un419_buf_x_cry_0_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un419_buf_x_cry_0_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_30 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un419_buf_x_cry_29_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un485_buf_x_cry_0_0_S1 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un485_buf_x_cry_0_0_S0 undriven or does
+     not drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/N_32 undriven or does not drive anything -
+     clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un485_buf_x_s_29_0_S1 undriven or does not
+     drive anything - clipped.
+Signal float_alu0/fp_exp_clk0/mult_z1/un485_buf_x_s_29_0_COUT undriven or does
+     not drive anything - clipped.
+Signal float_alu0/un1_wait_counter_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/un1_wait_counter_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal float_alu0/N_1 undriven or does not drive anything - clipped.
+Signal receiver0/un2_count_cry_0_0_S1 undriven or does not drive anything -
+
+                                   Page 30
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal receiver0/un2_count_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal receiver0/N_33 undriven or does not drive anything - clipped.
+Signal receiver0/un2_count_s_31_0_S1 undriven or does not drive anything -
+     clipped.
+Signal receiver0/un2_count_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_14_1_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[29] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[28] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOA8 undriven or does not drive
+     anything - clipped.
+
+                                   Page 31
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_13_2_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[27] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[26] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_12_3_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[25] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[24] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOB5 undriven or does not drive
+     anything - clipped.
+
+                                   Page 32
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_11_4_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[23] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[22] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_10_5_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[21] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[20] undriven or does not drive anything -
+     clipped.
+
+                                   Page 33
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_9_6_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[19] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[18] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOA4 undriven or does not drive
+     anything - clipped.
+
+                                   Page 34
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_8_7_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[17] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[16] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_7_8_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[15] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[14] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOA8 undriven or does not drive
+     anything - clipped.
+
+                                   Page 35
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_6_9_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[13] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[12] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_5_10_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[11] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[10] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOB5 undriven or does not drive
+     anything - clipped.
+
+                                   Page 36
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_4_11_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[9] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[8] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_3_12_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[7] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[6] undriven or does not drive anything -
+     clipped.
+
+                                   Page 37
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_2_13_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[5] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[4] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOA4 undriven or does not drive
+     anything - clipped.
+
+                                   Page 38
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_1_14_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[3] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[2] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOA8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_0_15_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[1] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[0] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOB8 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOB7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOB6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOB5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOB4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOB3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOB2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOA8 undriven or does not drive
+     anything - clipped.
+
+                                   Page 39
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOA7 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOA6 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOA5 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOA4 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOA3 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/ram_dp_true_0_15_0_DOA2 undriven or does not drive
+     anything - clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[31] undriven or does not drive anything -
+     clipped.
+Signal sram_dp0/ram_dq_true0/QA_1[30] undriven or does not drive anything -
+     clipped.
+Signal loadWeight0/addr_3_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal loadWeight0/N_1 undriven or does not drive anything - clipped.
+Signal loadWeight0/addr_3_s_31_0_S1 undriven or does not drive anything -
+     clipped.
+Signal loadWeight0/addr_3_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal test0/numL_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal test0/N_1 undriven or does not drive anything - clipped.
+Signal test0/numL_s_0_S1[31] undriven or does not drive anything - clipped.
+Signal test0/numL_s_0_COUT[31] undriven or does not drive anything - clipped.
+Signal test0/h_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal test0/N_2 undriven or does not drive anything - clipped.
+Signal test0/h_s_0_S1[31] undriven or does not drive anything - clipped.
+Signal test0/h_s_0_COUT[31] undriven or does not drive anything - clipped.
+Signal test0/n_lcry_0_S1 undriven or does not drive anything - clipped.
+Signal test0/n_lcry_0_S0 undriven or does not drive anything - clipped.
+Signal test0/N_4 undriven or does not drive anything - clipped.
+Signal test0/n_cry_0_COUT[30] undriven or does not drive anything - clipped.
+Signal test0/o_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal test0/N_6 undriven or does not drive anything - clipped.
+Signal test0/o_s_0_S1[31] undriven or does not drive anything - clipped.
+Signal test0/o_s_0_COUT[31] undriven or does not drive anything - clipped.
+Signal test0/i_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal test0/N_12 undriven or does not drive anything - clipped.
+Signal test0/i_s_0_S1[31] undriven or does not drive anything - clipped.
+Signal test0/i_s_0_COUT[31] undriven or does not drive anything - clipped.
+Signal test0/un21_5_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal test0/un21_5_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal test0/N_14 undriven or does not drive anything - clipped.
+Signal test0/un21_5_s_11_0_S1 undriven or does not drive anything - clipped.
+Signal test0/un21_5_s_11_0_COUT undriven or does not drive anything - clipped.
+Signal test0/un1_counter_cry_5_0_S1 undriven or does not drive anything -
+     clipped.
+Signal test0/un1_counter_cry_5_0_S0 undriven or does not drive anything -
+     clipped.
+Signal test0/N_15 undriven or does not drive anything - clipped.
+Signal test0/un1_counter_cry_10_0_COUT undriven or does not drive anything -
+     clipped.
+Signal test0/un21_0_cry_0_0_S1 undriven or does not drive anything - clipped.
+
+                                   Page 40
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal test0/un21_0_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal test0/N_18 undriven or does not drive anything - clipped.
+Signal test0/un21_0_s_11_0_S1 undriven or does not drive anything - clipped.
+Signal test0/un21_0_s_11_0_COUT undriven or does not drive anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_1_0_S0 undriven or does not drive anything
+     - clipped.
+Signal test0/N_20 undriven or does not drive anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_9_0_S1 undriven or does not drive anything
+     - clipped.
+Signal test0/un43_float_alu_ready_0_I_9_0_S0 undriven or does not drive anything
+     - clipped.
+Signal test0/un43_float_alu_ready_0_I_51_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_51_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_33_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_33_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_27_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_57_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_57_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_81_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_81_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_45_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un43_float_alu_ready_0_I_45_0_COUT undriven or does not drive
+     anything - clipped.
+Signal test0/N_14308_i undriven or does not drive anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_1_0_S0 undriven or does not drive anything
+     - clipped.
+Signal test0/N_23 undriven or does not drive anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_9_0_S1 undriven or does not drive anything
+     - clipped.
+Signal test0/un60_float_alu_ready_0_I_9_0_S0 undriven or does not drive anything
+     - clipped.
+Signal test0/un60_float_alu_ready_0_I_51_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_51_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_33_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_33_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_27_0_S1 undriven or does not drive
+
+                                   Page 41
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_27_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_57_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_57_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_81_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_81_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_45_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un60_float_alu_ready_0_I_45_0_COUT undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_N_77 undriven or does not drive anything -
+     clipped.
+Signal test0/un83_float_alu_ready_0_I_1_0_S0 undriven or does not drive anything
+     - clipped.
+Signal test0/N_27 undriven or does not drive anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_9_0_S1 undriven or does not drive anything
+     - clipped.
+Signal test0/un83_float_alu_ready_0_I_9_0_S0 undriven or does not drive anything
+     - clipped.
+Signal test0/un83_float_alu_ready_0_I_51_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_51_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_33_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_33_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_27_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_57_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_57_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_81_0_S1 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_81_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_45_0_S0 undriven or does not drive
+     anything - clipped.
+Signal test0/un83_float_alu_ready_0_I_45_0_COUT undriven or does not drive
+     anything - clipped.
+
+                                   Page 42
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Signal output0/k_cry_0_S0[0] undriven or does not drive anything - clipped.
+Signal output0/N_2 undriven or does not drive anything - clipped.
+Signal output0/k_s_0_S1[31] undriven or does not drive anything - clipped.
+Signal output0/k_s_0_COUT[31] undriven or does not drive anything - clipped.
+Block float_alu0/fp_exp_clk0/shift/buf_r_pipe_1_RNO was optimized away.
+Block float_alu0/fp_exp_clk0/shift/eX_0_cry_1_0_RNIIKR8 was optimized away.
+Block float_alu0/fp_sub0/alignment/loop3.un16_diff_exp_4_bm was optimized away.
+Block GND was optimized away.
+Block spi0/efb0/GND was optimized away.
+Block float_alu0/GND was optimized away.
+Block float_alu0/fp_add0/GND was optimized away.
+Block float_alu0/fp_add0/subtraction_norm/GND was optimized away.
+Block float_alu0/fp_sub0/GND was optimized away.
+Block float_alu0/fp_sub0/alignment/GND was optimized away.
+Block float_alu0/fp_sub0/subtraction_norm/GND was optimized away.
+Block float_alu0/fp_mul0/GND was optimized away.
+Block float_alu0/fp_div0/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.25.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.12.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.1.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.8.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.2.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.9.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.3.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.10.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.4.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.11.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.5.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.19.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.6.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.0.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.14.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.21.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.15.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.22.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.16.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.23.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.17.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.24.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.18.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.20.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.13.int_mod/GND was optimized away.
+Block float_alu0/fp_div0/a_div/divisor.7.int_mod/GND was optimized away.
+Block float_alu0/fp_exp_clk0/GND was optimized away.
+Block float_alu0/fp_exp_clk0/shift/GND was optimized away.
+Block float_alu0/fp_exp_clk0/mult_k/GND was optimized away.
+Block float_alu0/fp_exp_clk0/mult_klog2/GND was optimized away.
+Block float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/VCC was optimized away.
+Block float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/GND was optimized away.
+Block float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/GND was optimized away.
+Block float_alu0/fp_exp_clk0/exp_y2/exp_y2_23.exp_y2/t_1/mult_r0_1/GND was
+     optimized away.
+Block float_alu0/fp_exp_clk0/mult_z1/GND was optimized away.
+Block receiver0/GND was optimized away.
+Block sram_dp0/ram_dq_true0/VCC was optimized away.
+Block sram_dp0/ram_dq_true0/GND was optimized away.
+
+                                   Page 43
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Removed logic (cont)
+--------------------
+Block loadWeight0/GND was optimized away.
+Block test0/GND was optimized away.
+Block output0/GND was optimized away.
+
+Memory Usage
+------------
+
+    INFO: Design contains EBR with GSR enabled. The GSR is only applicable for
+         output registers except FIFO.
+    /float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR nExpY1_1_0_0:  TYPE= PDPW8KC,  Width= 18,  Depth_R= 256,
+         REGMODE= OUTREG,  RESETMODE= SYNC,  GSR= DISABLED
+    -Contains EBR nExpY1_1_0_1:  TYPE= PDPW8KC,  Width= 10,  Depth_R= 256,
+         REGMODE= OUTREG,  RESETMODE= SYNC,  GSR= DISABLED
+/sram_dp0/ram_dq_true0:
+    EBRs: 16
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR ram_dp_true_0_15_0:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_0_15:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_1_14:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_2_13:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_3_12:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_4_11:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_5_10:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+
+                                   Page 44
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Memory Usage (cont)
+-------------------
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_6_9:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_7_8:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_8_7:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_9_6:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_10_5:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_11_4:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_12_3:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_13_2:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+    -Contains EBR ram_dp_true_0_14_1:  TYPE= DP8KC,  Width_B= 2,  Depth_A= 4096,
+         Depth_B= 4096,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= INIT_ALL_0s,  MEM_LPC_FILE=
+         ram_dp_true.lpc
+/test0:
+    EBRs: 0
+    RAM SLICEs: 16
+    Logic SLICEs: 2689
+    PFU Registers: 2692
+/test0/inputs_ram:
+    EBRs: 0
+    RAM SLICEs: 1
+
+                                   Page 45
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Memory Usage (cont)
+-------------------
+    Logic SLICEs: 0
+    PFU Registers: 0
+/test0/inputs_ram_0:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/test0/inputs_ram_1:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/test0/inputs_ram_2:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/test0/inputs_ram_3:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/test0/inputs_ram_4:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/test0/inputs_ram_5:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+/test0/inputs_ram_6:
+    EBRs: 0
+    RAM SLICEs: 1
+    Logic SLICEs: 0
+    PFU Registers: 0
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSC0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clk_sig_c
+  OSC Nominal Frequency (MHz):                      38.00
+
+Embedded Functional Block Connection Summary:
+---------------------------------------------
+
+   Desired WISHBONE clock frequency: 50.0 MHz
+   Clock source:                     clk_sig_c
+   Reset source:                     NONE
+   Functions mode:
+      I2C #1 (Primary) Function:     DISABLED
+
+                                   Page 46
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+Embedded Functional Block Connection Summary: (cont)
+----------------------------------------------------
+      I2C #2 (Secondary) Function:   DISABLED
+      SPI Function:                  ENABLED
+      Timer/Counter Function:        DISABLED
+      Timer/Counter Mode:            WB
+      UFM Connection:                DISABLED
+      PLL0 Connection:               DISABLED
+      PLL1 Connection:               DISABLED
+   I2C Function Summary:
+   --------------------
+      None
+   SPI Function Summary:
+   --------------------
+      SPI Mode:               SLAVE
+      SPI Data Order:         MSB to LSB
+      SPI Clock Inversion:    DISABLED
+      SPI Phase Adjust:       DISABLED
+      SPI Wakeup:             DISABLED
+   Timer/Counter Function Summary:
+   ------------------------------
+      None
+   UFM Function Summary:
+   --------------------
+      UFM Utilization:        General Purpose Flash Memory
+      Available General
+      Purpose Flash Memory:   2046 Pages (2046*128 Bits)
+
+      EBR Blocks with Unique
+      Initialization Data:    0
+
+      WID		EBR Instance
+      ---		------------
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_15_0
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_0_15
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_1_14
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_2_13
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_3_12
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_4_11
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_5_10
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_6_9
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_7_8
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_8_7
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_9_6
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_10_5
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_11_4
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_12_3
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_13_2
+      0b0000000001	sram_dp0/ram_dq_true0/ram_dp_true_0_14_1
+      0b0000000011	float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_0
+      0b0000000100	float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1
+
+ASIC Components
+---------------
+
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_15_0
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_0_15
+         Type: DP8KC
+
+                                   Page 47
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+ASIC Components (cont)
+----------------------
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_1_14
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_2_13
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_3_12
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_4_11
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_5_10
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_6_9
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_7_8
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_8_7
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_9_6
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_10_5
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_11_4
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_12_3
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_13_2
+         Type: DP8KC
+Instance Name: sram_dp0/ram_dq_true0/ram_dp_true_0_14_1
+         Type: DP8KC
+Instance Name: float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_0
+         Type: PDPW8KC
+Instance Name: float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1
+         Type: PDPW8KC
+Instance Name: spi0/efb0/EFBInst_0
+         Type: EFB
+Instance Name: OSC0
+         Type: OSCH
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'GSRnX'.
+
+GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+
+Components with disabled GSR Property
+-------------------------------------
+
+These components have the GSR property set to DISABLED. The components will not
+     respond to the reset signal 'GSRnX' via the GSR component.
+
+Type and number of components of the type:
+   PDPW8KC = 2
+
+Type and instance name of component:
+   PDPW8KC : float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_0
+   PDPW8KC : float_alu0/fp_exp_clk0/exp_y1/exp_y1_23.exp_y1/nExpY1_1_0_1
+
+                                   Page 48
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+GSR Usage (cont)
+----------------
+
+Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+These components have the GSR property set to ENABLED and the local reset is
+     synchronous. The components will respond to the synchronous local reset and
+     to the unrelated asynchronous reset signal 'GSRnX' via the GSR component.
+
+Type and number of components of the type:
+   Register = 118
+
+Type and instance name of component:
+   Register : loadWeight0/addr[31]
+   Register : loadWeight0/addr[0]
+   Register : loadWeight0/addr[1]
+   Register : loadWeight0/addr[2]
+   Register : loadWeight0/addr[3]
+   Register : loadWeight0/addr[4]
+   Register : loadWeight0/addr[5]
+   Register : loadWeight0/addr[6]
+   Register : loadWeight0/addr[7]
+   Register : loadWeight0/addr[8]
+   Register : loadWeight0/addr[9]
+   Register : loadWeight0/addr[10]
+   Register : loadWeight0/addr[11]
+   Register : loadWeight0/addr[12]
+   Register : loadWeight0/addr[13]
+   Register : loadWeight0/addr[14]
+   Register : loadWeight0/addr[15]
+   Register : loadWeight0/addr[16]
+   Register : loadWeight0/addr[17]
+   Register : loadWeight0/addr[18]
+   Register : loadWeight0/addr[19]
+   Register : loadWeight0/addr[20]
+   Register : loadWeight0/addr[21]
+   Register : loadWeight0/addr[22]
+   Register : loadWeight0/addr[23]
+   Register : loadWeight0/addr[24]
+   Register : loadWeight0/addr[25]
+   Register : loadWeight0/addr[26]
+   Register : loadWeight0/addr[27]
+   Register : loadWeight0/addr[28]
+   Register : loadWeight0/addr[29]
+   Register : loadWeight0/addr[30]
+   Register : float_alu0/fp_exp_clk0/nX_a1[24]
+   Register : float_alu0/fp_exp_clk0/shift/buf_r_pipe_47
+   Register : float_alu0/fp_exp_clk0/shift/buf_r_pipe_36
+   Register : float_alu0/fp_exp_clk0/shift/buf_r_pipe_25
+   Register : float_alu0/fp_exp_clk0/shift/buf_r_pipe_162
+   Register : float_alu0/fp_exp_clk0/shift/buf_r_pipe_14
+   Register : float_alu0/fp_exp_clk0/shift/buf_r_pipe_125
+   Register : float_alu0/fp_exp_clk0/shift/buf_r_pipe_123
+   Register : float_alu0/fp_exp_clk0/shift/buf_r_pipe_1
+   Register : float_alu0/fp_exp_clk0/shift/buf_r[0]
+   Register : float_alu0/fp_exp_clk0/shift/buf_r[1]
+   Register : float_alu0/fp_exp_clk0/shift/buf_r[2]
+   Register : float_alu0/fp_exp_clk0/shift/buf_r[3]
+   Register : float_alu0/fp_exp_clk0/shift/buf_r[4]
+   Register : float_alu0/fp_exp_clk0/shift/buf_r[5]
+   Register : float_alu0/fp_exp_clk0/shift/buf_r[6]
+
+                                   Page 49
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+GSR Usage (cont)
+----------------
+   Register : float_alu0/fp_exp_clk0/shift/buf_r[7]
+   Register : float_alu0/fp_exp_clk0/nX_a1[16]
+   Register : float_alu0/fp_exp_clk0/nX_a1[17]
+   Register : float_alu0/fp_exp_clk0/nX_a1[18]
+   Register : float_alu0/fp_exp_clk0/nX_a1[19]
+   Register : float_alu0/fp_exp_clk0/nX_a1[20]
+   Register : float_alu0/fp_exp_clk0/nX_a1[21]
+   Register : float_alu0/fp_exp_clk0/nX_a1[22]
+   Register : float_alu0/fp_exp_clk0/nX_a1[23]
+   Register : float_alu0/fp_div0/FP_Z[0]
+   Register : float_alu0/fp_div0/FP_Z[1]
+   Register : float_alu0/fp_div0/FP_Z[2]
+   Register : float_alu0/fp_div0/FP_Z[3]
+   Register : float_alu0/fp_div0/FP_Z[4]
+   Register : float_alu0/fp_div0/FP_Z[5]
+   Register : float_alu0/fp_div0/FP_Z[6]
+   Register : float_alu0/fp_div0/FP_Z[7]
+   Register : float_alu0/fp_div0/FP_Z[8]
+   Register : float_alu0/fp_div0/FP_Z[9]
+   Register : float_alu0/fp_div0/FP_Z[10]
+   Register : float_alu0/fp_div0/FP_Z[11]
+   Register : float_alu0/fp_div0/FP_Z[12]
+   Register : float_alu0/fp_div0/FP_Z[13]
+   Register : float_alu0/fp_div0/FP_Z[14]
+   Register : float_alu0/fp_div0/FP_Z[15]
+   Register : float_alu0/fp_div0/FP_Z[16]
+   Register : float_alu0/fp_div0/FP_Z[17]
+   Register : float_alu0/fp_div0/FP_Z[18]
+   Register : float_alu0/fp_div0/FP_Z[19]
+   Register : float_alu0/fp_div0/FP_Z[20]
+   Register : float_alu0/fp_div0/FP_Z[21]
+   Register : float_alu0/fp_mul0/FP_Z[0]
+   Register : float_alu0/fp_mul0/FP_Z[1]
+   Register : float_alu0/fp_mul0/FP_Z[2]
+   Register : float_alu0/fp_mul0/FP_Z[3]
+   Register : float_alu0/fp_mul0/FP_Z[4]
+   Register : float_alu0/fp_mul0/FP_Z[5]
+   Register : float_alu0/fp_mul0/FP_Z[6]
+   Register : float_alu0/fp_mul0/FP_Z[7]
+   Register : float_alu0/fp_mul0/FP_Z[8]
+   Register : float_alu0/fp_mul0/FP_Z[9]
+   Register : float_alu0/fp_mul0/FP_Z[10]
+   Register : float_alu0/fp_mul0/FP_Z[11]
+   Register : float_alu0/fp_mul0/FP_Z[12]
+   Register : float_alu0/fp_mul0/FP_Z[13]
+   Register : float_alu0/fp_mul0/FP_Z[14]
+   Register : float_alu0/fp_mul0/FP_Z[15]
+   Register : float_alu0/fp_mul0/FP_Z[16]
+   Register : float_alu0/fp_mul0/FP_Z[17]
+   Register : float_alu0/fp_mul0/FP_Z[18]
+   Register : float_alu0/fp_mul0/FP_Z[19]
+   Register : float_alu0/fp_mul0/FP_Z[20]
+   Register : float_alu0/fp_mul0/FP_Z[21]
+   Register : float_alu0/fp_sub0/FP_Z[23]
+   Register : float_alu0/fp_sub0/FP_Z[24]
+   Register : float_alu0/fp_sub0/FP_Z[25]
+
+                                   Page 50
+
+
+
+
+Design:  main                                          Date:  09/30/14  03:03:38
+
+GSR Usage (cont)
+----------------
+   Register : float_alu0/fp_sub0/FP_Z[26]
+   Register : float_alu0/fp_sub0/FP_Z[27]
+   Register : float_alu0/fp_sub0/FP_Z[28]
+   Register : float_alu0/fp_sub0/FP_Z[29]
+   Register : float_alu0/fp_sub0/FP_Z[30]
+   Register : float_alu0/fp_add0/FP_Z[30]
+   Register : float_alu0/fp_add0/FP_Z[23]
+   Register : float_alu0/fp_add0/FP_Z[24]
+   Register : float_alu0/fp_add0/FP_Z[25]
+   Register : float_alu0/fp_add0/FP_Z[26]
+   Register : float_alu0/fp_add0/FP_Z[27]
+   Register : float_alu0/fp_add0/FP_Z[28]
+   Register : float_alu0/fp_add0/FP_Z[29]
+   Register : spi0/wbwe
+
+EBR components with enabled GSR
+-------------------------------
+
+These EBR components have the GSR property set to ENABLED. The components will
+     respond to the asynchronous reset signal 'GSRnX' via the GSR component.
+
+Type and number of components of the type:
+   DP8KC = 16
+
+Type and instance name of component:
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_15_0
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_0_15
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_1_14
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_2_13
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_3_12
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_4_11
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_5_10
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_6_9
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_7_8
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_8_7
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_9_6
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_10_5
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_11_4
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_12_3
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_13_2
+   DP8KC : sram_dp0/ram_dq_true0/ram_dp_true_0_14_1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 35 secs
+   Total REAL Time: 36 secs
+   Peak Memory Usage: 188 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 51
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor
+     Corporation,  All rights reserved.

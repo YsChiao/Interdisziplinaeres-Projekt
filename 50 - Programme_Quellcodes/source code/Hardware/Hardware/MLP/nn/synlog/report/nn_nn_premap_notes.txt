@@ -1,0 +1,7 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: BN362 :"c:\users\yisong\documents\new\mlp\output.vhd":39:2:39:3|Removing sequential instance output_done of view:PrimLib.dffre(prim) in hierarchy view:work.output(rtl) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\mlp\fp_exp.vhd":851:4:851:5|Removing sequential instance ofl0_a1 of view:PrimLib.dff(prim) in hierarchy view:work.fp_exp_clk(arch) because there are no references to its outputs 
+@N: BN115 :"c:\users\yisong\documents\new\mlp\fp_exp.vhd":599:2:599:10|Removing instance delay_ofl of view:work.delay_1_1_delay_ofl(arch) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\mlp\fp_exp.vhd":293:4:293:5|Removing sequential instance buf[1] of view:PrimLib.dff(prim) in hierarchy view:work.delay_1_1_delay_ofl(arch) because there are no references to its outputs 
+@N: BN362 :"c:\users\yisong\documents\new\mlp\receiver.vhd":44:4:44:5|Removing sequential instance count4x_sig[31:0] of view:PrimLib.dffr(prim) in hierarchy view:work.receiver(rtl) because there are no references to its outputs 

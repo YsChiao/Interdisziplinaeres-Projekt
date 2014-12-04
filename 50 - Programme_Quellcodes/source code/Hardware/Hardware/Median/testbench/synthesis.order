@@ -1,0 +1,16 @@
+i<>.\..\spi2_tb.vhd
+i<>.\..\efb_spi.vhd
+i<>.\..\spi.vhd
+i<>.\..\reset.vhd
+i<>.\..\main.vhd
+i<>.\..\main_tb.vhd
+i<>.\..\std_fifo.vhd
+i<>.\..\window_3x3.vhd
+i<>.\..\window_3x3_tb.vhd
+i<>.\..\rc_counter.vhd
+i<>.\..\sort_3x3.vhd
+i<>.\..\sort_filter.vhd
+i<>.\..\sort_3x3_tb.vhd
+i<>.\..\sort_filter_tb.vhd
+i<>.\..\std_fifo_tb.vhd
+i<>.\..\test.vhd

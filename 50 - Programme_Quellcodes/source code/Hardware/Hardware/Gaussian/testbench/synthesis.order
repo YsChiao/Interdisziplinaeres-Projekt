@@ -1,0 +1,13 @@
+i<>.\..\conv_3x3_pkg.vhd
+i<>.\..\efb_spi.vhd
+i<>.\..\spi.vhd
+i<>.\..\spi2_tb.vhd
+i<>.\..\rc_counter.vhd
+i<>.\..\window_3x3.vhd
+i<>.\..\conv_3x3.vhd
+i<>.\..\reset.vhd
+i<>.\..\main.vhd
+i<>.\..\conv_3x3_tb.vhd
+i<>.\..\main_tb.vhd
+i<>.\..\std_fifo.vhd
+i<>.\..\std_fifo_tb.vhd
